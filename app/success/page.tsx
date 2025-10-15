@@ -35,8 +35,8 @@ export default function Success() {
 
         <p className="text-gray-700 mb-8 text-lg">
           Questions? Email us at{' '}
-          <a href="mailto:hello@aistrategyllc.com" className="text-teal hover:underline">
-            hello@aistrategyllc.com
+          <a href="mailto:michele@aistrategyllc.com" className="text-teal hover:underline">
+            michele@aistrategyllc.com
           </a>
         </p>
 

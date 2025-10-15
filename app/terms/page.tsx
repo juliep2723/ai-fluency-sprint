@@ -38,7 +38,7 @@ export default function Terms() {
               Experience your first session risk-free. If you don't have at least one breakthrough moment, we'll refund 100% of your payment.
             </p>
             <p className="text-gray-700 mt-2 text-lg">
-              To request a refund under this guarantee, you must notify us within 48 hours after your first session via email at hello@aistrategyllc.com.
+              To request a refund under this guarantee, you must notify us within 48 hours after your first session via email at michele@aistrategyllc.com.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function Terms() {
           </p>
           <p className="text-gray-700 text-lg">
             AI Strategy LLC<br />
-            Email: hello@aistrategyllc.com
+            Email: michele@aistrategyllc.com
           </p>
         </div>
       </section>

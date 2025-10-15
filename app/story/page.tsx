@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/card'
 export default function Story() {
   const handleStripeCheckout = () => {
     // TODO: Implement Stripe checkout
-    alert('Stripe checkout will be implemented here. For now, email us at hello@aistrategyllc.com to get started!')
+    alert('Stripe checkout will be implemented here. For now, email us at michele@aistrategyllc.com to get started!')
   }
 
   return (
@@ -298,7 +298,7 @@ export default function Story() {
             <div className="bg-white p-8 rounded-xl shadow-md">
               <h3 className="text-2xl font-semibold text-navy mb-4">How do I schedule?</h3>
               <p className="text-gray-700 text-xl">
-                After purchase, email us at hello@aistrategyllc.com with your preferred start date and we'll send you calendar options within 24 hours.
+                After purchase, email us at michele@aistrategyllc.com with your preferred start date and we'll send you calendar options within 24 hours.
               </p>
             </div>
           </div>

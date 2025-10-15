@@ -89,7 +89,7 @@ export default function Privacy() {
           </p>
           <p className="text-gray-700 text-lg">
             AI Strategy LLC<br />
-            Email: hello@aistrategyllc.com
+            Email: michele@aistrategyllc.com
           </p>
         </div>
       </section>

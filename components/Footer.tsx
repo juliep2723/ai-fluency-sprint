@@ -17,7 +17,7 @@ export default function Footer() {
             <Link href="/terms" className="hover:opacity-80">
               Terms of Service
             </Link>
-            <a href="mailto:hello@aistrategyllc.com" className="hover:opacity-80">
+            <a href="mailto:michele@aistrategyllc.com" className="hover:opacity-80">
               Contact
             </a>
           </div>
