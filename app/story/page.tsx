@@ -45,18 +45,22 @@ export default function Story() {
         },
       })
       
+      const data = await response.json()
+      
       if (!response.ok) {
-        throw new Error('Checkout failed')
+        console.error('Checkout error details:', data)
+        throw new Error(data.details || data.error || 'Checkout failed')
       }
       
-      const { url } = await response.json()
+      const { url } = data
       
       if (url) {
         window.location.href = url
       }
     } catch (error) {
       console.error('Checkout error:', error)
-      alert('Unable to start checkout. Please email us at michele@aistrategyllc.com to get started!')
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+      alert(`Unable to start checkout: ${errorMessage}\n\nPlease check the browser console for details or email us at michele@aistrategyllc.com`)
     }
   }
 
