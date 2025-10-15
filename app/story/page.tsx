@@ -5,9 +5,28 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 
 export default function Story() {
-  const handleStripeCheckout = () => {
-    // TODO: Implement Stripe checkout
-    alert('Stripe checkout will be implemented here. For now, email us at michele@aistrategyllc.com to get started!')
+  const handleStripeCheckout = async () => {
+    try {
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      
+      if (!response.ok) {
+        throw new Error('Checkout failed')
+      }
+      
+      const { url } = await response.json()
+      
+      if (url) {
+        window.location.href = url
+      }
+    } catch (error) {
+      console.error('Checkout error:', error)
+      alert('Unable to start checkout. Please email us at michele@aistrategyllc.com to get started!')
+    }
   }
 
   return (
