@@ -14,7 +14,7 @@ STRIPE_SECRET_KEY=sk_test_...
 ### 2. Create Product in Stripe
 - Go to Products in Stripe Dashboard
 - Create new product: "Executive AI Fluency Sprint"
-- Set price: $2,497
+- Set price: $1,499
 - Copy the price ID
 
 ### 3. Update the Story Page

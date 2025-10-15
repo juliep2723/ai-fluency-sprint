@@ -29,7 +29,7 @@ export default function Terms() {
 
           <h2 className="text-3xl font-bold text-navy mt-10 mb-4">Payment Terms</h2>
           <p className="text-gray-700 text-lg">
-            The total fee for the Executive AI Fluency Sprint is $2,497 USD. Payment is due in full upon registration. We accept payment via credit card through our secure payment processor, Stripe.
+            The total fee for the Executive AI Fluency Sprint is $1,499 USD. Payment is due in full upon registration. We accept payment via credit card through our secure payment processor, Stripe.
           </p>
 
           <h2 className="text-3xl font-bold text-navy mt-10 mb-4">Satisfaction Guarantee</h2>

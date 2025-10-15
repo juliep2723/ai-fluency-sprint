@@ -228,7 +228,7 @@ export default function Story() {
           <Card className="p-12 bg-navy text-white shadow-2xl border-0">
             <h3 className="text-3xl font-bold mb-8 text-center">Your Investment</h3>
             <div className="text-center mb-10">
-              <p className="text-6xl font-bold mb-3">$2,497</p>
+              <p className="text-6xl font-bold mb-3">$1,499</p>
               <p className="text-2xl opacity-90">Complete 3-5 Session Sprint</p>
             </div>
             
