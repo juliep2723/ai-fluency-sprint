@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
 import { motion } from 'framer-motion'
 
 // Animation variants
@@ -65,24 +64,11 @@ export default function Home() {
             <span className="text-teal">AI-Confident</span>
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
             Transform how you think about and partner with AI through personalized guidance from two Silicon Valley veterans who pioneered these methods in corporate venture-building
           </motion.p>
-          
-          {/* Clear offering description */}
-          <motion.div 
-            className="bg-white/10 backdrop-blur rounded-xl p-6 mb-12 max-w-3xl mx-auto"
-            variants={fadeInUp}
-          >
-            <p className="text-lg text-gray-200">
-              We offer <span className="font-semibold text-teal">personalized AI training and coaching</span> in focused, 
-              high-impact sessions for individuals, teams, and organizations. 
-              Not courses, but transformation through guided discovery.
-            </p>
-          </motion.div>
-
           <motion.div variants={fadeInUp}>
             <Link href="/offerings">
               <Button 
@@ -100,24 +86,14 @@ export default function Home() {
       <section className="py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-6"
+            className="text-4xl md:text-5xl font-bold text-navy text-center mb-16"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Your Transformation Journey With Us
+            The Transformation Journey
           </motion.h2>
-          
-          <motion.p 
-            className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            Through our personalized sessions, we'll guide you through three distinct stages of AI mastery:
-          </motion.p>
           
           <motion.div 
             className="space-y-6"
@@ -139,7 +115,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">Curious but Underwhelmed</h3>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
-                You've tried AI tools like ChatGPT. They answered some questions. Generated some emails. But you expected more—and you were right to.
+                "You've tried AI tools like ChatGPT. They answered some questions. Generated some emails. But you expected more—and you were right to."
               </p>
             </motion.div>
 
@@ -164,7 +140,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">The Awakening</h3>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
-                Through guided exploration, you discover AI isn't a better search engine—it's a thought partner that amplifies your expertise in ways that seemed impossible weeks ago.
+                "Through guided exploration, you discover AI isn't a better search engine—it's a thought partner that amplifies your expertise in ways that seemed impossible weeks ago."
               </p>
             </motion.div>
 
@@ -189,15 +165,55 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">Empowered & Inspired</h3>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
-                You're creating solutions others can't conceive of. AI is your cognitive co-pilot for invention, discovery, and breakthrough thought.
+                "You're creating solutions others can't conceive of. AI is your cognitive co-pilot for invention, discovery, and breakthrough thought."
               </p>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* The Experience - Light Gray Background (changed from white) */}
+      {/* Why This Matters Now - Light Gray Background */}
       <section className="py-24 px-6 bg-light-gray">
+        <motion.div 
+          className="max-w-4xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+        >
+          <motion.h2 
+            className="text-4xl md:text-5xl font-bold text-navy text-center mb-16"
+            variants={fadeInUp}
+          >
+            Why This Matters Now
+          </motion.h2>
+          
+          <motion.div className="prose prose-xl mx-auto text-center" variants={fadeInUp}>
+            <p className="text-xl text-gray-700 mb-8">
+              AI isn't just another tool—it's a new form of collaboration that transforms what's possible when you combine decades of expertise with breakthrough technology.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-12 mt-12">
+            <motion.div variants={fadeInUp}>
+              <h3 className="text-2xl font-bold text-navy mb-4">The opportunity:</h3>
+              <p className="text-lg text-gray-700">
+                Your experience isn't a liability—it's the unlock. Leaders developing AI fluency now are shaping what comes next. Those who wait will spend years catching up.
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <h3 className="text-2xl font-bold text-navy mb-4">What makes this different:</h3>
+              <p className="text-lg text-gray-700">
+                We don't teach prompt engineering or generic AI literacy. We guide you to discovery-based breakthroughs that fundamentally change how you approach problem-solving in your domain.
+              </p>
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* The Experience - White Background */}
+      <section className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.h2 
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-20"
@@ -218,7 +234,7 @@ export default function Home() {
           >
             {/* Discover Ways */}
             <motion.div 
-              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               variants={scaleIn}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
@@ -230,7 +246,7 @@ export default function Home() {
 
             {/* Breakthrough Moments */}
             <motion.div 
-              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               variants={scaleIn}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
@@ -242,7 +258,7 @@ export default function Home() {
 
             {/* Transform Expertise */}
             <motion.div 
-              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               variants={scaleIn}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
@@ -255,8 +271,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQs - White Background (changed from light-gray) */}
-      <section className="py-24 px-6 bg-white">
+      {/* FAQs - Light Gray Background */}
+      <section className="py-24 px-6 bg-light-gray">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-16"
@@ -283,9 +299,9 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <h3 className="text-2xl font-bold text-navy mb-3">How is this different from other AI training?</h3>
+              <h3 className="text-2xl font-bold text-navy mb-3">How is this different from other AI courses?</h3>
               <p className="text-lg text-gray-700">
-                We don't deliver pre-packaged courses or teach generic "prompt engineering." Instead, we provide personalized coaching and guided discovery sessions that create breakthroughs specific to your expertise and goals.
+                We don't teach generic "prompt engineering." We guide you to discovery-based breakthroughs specific to your expertise and goals.
               </p>
             </motion.div>
 
@@ -318,78 +334,6 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
-
-      {/* Call to Action - Light Gray Background */}
-      <section className="py-24 px-6 bg-light-gray">
-        <motion.div 
-          className="max-w-4xl mx-auto text-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={staggerContainer}
-        >
-          <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy mb-8"
-            variants={fadeInUp}
-          >
-            Ready to Transform Your AI Journey?
-          </motion.h2>
-          
-          <motion.p 
-            className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto"
-            variants={fadeInUp}
-          >
-            Choose your next step and begin your transformation today.
-          </motion.p>
-
-          <motion.div 
-            className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto"
-            variants={staggerContainer}
-          >
-            <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300 border-0">
-                <h3 className="text-2xl font-bold text-navy mb-4">Learn About Us</h3>
-                <p className="text-gray-700 mb-6">
-                  Discover our story, methodology, and why we're passionate about AI transformation.
-                </p>
-                <Link href="/about">
-                  <Button className="w-full bg-navy hover:bg-navy/90 text-white">
-                    Our Story →
-                  </Button>
-                </Link>
-              </Card>
-            </motion.div>
-
-            <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-teal/5">
-                <h3 className="text-2xl font-bold text-navy mb-4">Explore Offerings</h3>
-                <p className="text-gray-700 mb-6">
-                  View our individual sprint, team programs, and organizational assessments.
-                </p>
-                <Link href="/offerings">
-                  <Button className="w-full bg-teal hover:bg-teal/90 text-white">
-                    View Offerings →
-                  </Button>
-                </Link>
-              </Card>
-            </motion.div>
-
-            <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300 border-0">
-                <h3 className="text-2xl font-bold text-navy mb-4">Get in Touch</h3>
-                <p className="text-gray-700 mb-6">
-                  Have questions? Ready to start? We'd love to hear from you.
-                </p>
-                <a href="mailto:michele@aistrategyllc.com">
-                  <Button className="w-full bg-navy hover:bg-navy/90 text-white">
-                    Contact Us →
-                  </Button>
-                </a>
-              </Card>
-            </motion.div>
-          </motion.div>
-        </motion.div>
       </section>
     </main>
   )
