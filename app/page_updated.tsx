@@ -65,12 +65,24 @@ export default function Home() {
             <span className="text-teal">AI-Confident</span>
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
             Transform how you think about and partner with AI through personalized guidance from two Silicon Valley veterans who pioneered these methods in corporate venture-building
           </motion.p>
           
+          {/* Clear offering description */}
+          <motion.div 
+            className="bg-white/10 backdrop-blur rounded-xl p-6 mb-12 max-w-3xl mx-auto"
+            variants={fadeInUp}
+          >
+            <p className="text-lg text-gray-200">
+              We offer <span className="font-semibold text-teal">personalized AI training and coaching</span> in focused, 
+              high-impact sessions for individuals, teams, and organizations. 
+              Not courses, but transformation through guided discovery.
+            </p>
+          </motion.div>
+
           <motion.div variants={fadeInUp}>
             <Link href="/offerings">
               <Button 
@@ -194,7 +206,7 @@ export default function Home() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Personalized AI Training Experience
+            The Experience
           </motion.h2>
           
           <motion.div 
