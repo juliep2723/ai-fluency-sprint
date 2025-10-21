@@ -16,8 +16,8 @@ export default function Footer() {
             <h4 className="font-semibold mb-3">Navigation</h4>
             <div className="flex flex-col gap-2 text-base opacity-80">
               <Link href="/" className="hover:opacity-100">Home</Link>
-              <Link href="/story" className="hover:opacity-100">Our Story</Link>
               <Link href="/about" className="hover:opacity-100">About Us</Link>
+              <Link href="/offerings" className="hover:opacity-100">Offerings</Link>
             </div>
           </div>
           
@@ -25,9 +25,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3">Ready to begin?</h4>
             <div className="flex flex-col gap-2 text-base opacity-80">
-              <Link href="/story" className="hover:opacity-100">Individual Sprint</Link>
-              <a href="mailto:michele@aistrategyllc.com?subject=Team%20Program%20Consultation" className="hover:opacity-100">Team Program</a>
-              <a href="mailto:michele@aistrategyllc.com?subject=AI%20Readiness%20Assessment" className="hover:opacity-100">Readiness Assessment</a>
+              <Link href="/offerings" className="hover:opacity-100">Individual Sprint</Link>
+              <Link href="/offerings" className="hover:opacity-100">Team Program</Link>
+              <Link href="/offerings" className="hover:opacity-100">Readiness Assessment</Link>
             </div>
           </div>
           

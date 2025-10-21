@@ -15,11 +15,11 @@ export default function Navigation() {
             <Link href="/" className="text-gray-700 hover:text-navy font-medium transition-colors">
               Home
             </Link>
-            <Link href="/story" className="text-gray-700 hover:text-navy font-medium transition-colors">
-              Our Story
-            </Link>
             <Link href="/about" className="text-gray-700 hover:text-navy font-medium transition-colors">
               About Us
+            </Link>
+            <Link href="/offerings" className="text-gray-700 hover:text-navy font-medium transition-colors">
+              Offerings
             </Link>
             <a href="mailto:michele@aistrategyllc.com" className="text-gray-700 hover:text-navy font-medium transition-colors">
               Contact
@@ -27,9 +27,9 @@ export default function Navigation() {
           </div>
           
           {/* CTA Button */}
-          <Link href="/story">
+          <Link href="/offerings">
             <Button className="bg-teal hover:bg-teal/90 text-white px-6 py-2 shadow-md hover:shadow-lg transition-all duration-300">
-              Begin Your Journey
+              Explore Offerings
             </Button>
           </Link>
         </div>
