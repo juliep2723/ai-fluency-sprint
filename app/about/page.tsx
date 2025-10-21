@@ -85,25 +85,9 @@ export default function About() {
             <motion.p className="text-xl mb-8 leading-relaxed" variants={fadeInUp}>
               We met at Mach49, a corporate venture-building firm where we spent years helping Fortune 500 companies launch new ventures at startup speed.
             </motion.p>
-            
-            <motion.p className="text-xl mb-8 leading-relaxed" variants={fadeInUp}>
-              Julie created the customer discovery methodology that became foundational to how Mach49 worked—she never met a customer discovery hurdle she couldn't overcome, helping teams get to the truth of what customers actually needed.
-            </motion.p>
-            
-            <motion.p className="text-xl mb-8 leading-relaxed" variants={fadeInUp}>
-              Michele brought decades of strategy consulting and enterprise leadership, co-leading successful venture-building projects that transformed ambitious ideas into viable businesses.
-            </motion.p>
-
-            <motion.h3 className="text-3xl font-bold text-navy mt-12 mb-6" variants={fadeInUp}>
-              When AI Emerged
-            </motion.h3>
 
             <motion.p className="text-xl mb-8 leading-relaxed" variants={fadeInUp}>
-              When ChatGPT launched, we started collaborating on AI applications—experimenting with synthetic interviews, new research approaches, creative applications neither of us had imagined possible.
-            </motion.p>
-
-            <motion.p className="text-xl mb-8 leading-relaxed" variants={fadeInUp}>
-              But we noticed something unexpected: talented, accomplished colleagues around us—people who'd built multi-million dollar ventures—were hesitant, even intimidated by AI.
+              When ChatGPT launched, we started collaborating on creative AI applications neither of us had imagined possible. But we noticed something unexpected: talented, accomplished colleagues around us—people who'd built multi-million dollar ventures—were hesitant, even intimidated by AI.
             </motion.p>
 
             <motion.p className="text-xl mb-8 leading-relaxed" variants={fadeInUp}>
@@ -234,38 +218,6 @@ export default function About() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
-
-      {/* Our Partnership - White Background */}
-      <section className="py-24 px-6 bg-white">
-        <motion.div 
-          className="max-w-4xl mx-auto"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerContainer}
-        >
-          <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
-            variants={fadeInUp}
-          >
-            Our Partnership
-          </motion.h2>
-
-          <motion.div className="prose prose-xl mx-auto text-gray-700" variants={fadeInUp}>
-            <p className="mb-6 leading-relaxed">
-              Michele and Julie's collaboration began at Mach49, where they worked side-by-side on venture-building projects. When AI emerged, they naturally began exploring it together—Michele bringing strategic frameworks, Julie bringing creative discovery methods.
-            </p>
-
-            <p className="mb-6 leading-relaxed">
-              What started as informal experimentation evolved into a systematic approach. As they helped more colleagues and clients achieve AI breakthroughs, they refined their methods, learning what works and what doesn't. The result is a proven system that combines strategic rigor with creative exploration.
-            </p>
-
-            <p className="mb-6 leading-relaxed">
-              Today, they bring this battle-tested methodology to executives ready to transform their relationship with AI. Their complementary strengths ensure you get both the strategic clarity to know where AI matters and the discovery skills to unlock its full potential.
-            </p>
-          </motion.div>
-        </motion.div>
       </section>
 
       {/* Why We Do This Work - Navy Background */}
