@@ -2,29 +2,50 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-8 px-6">
+    <footer className="bg-primary text-white py-12 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-xl font-semibold">AI Strategy LLC</p>
-            <p className="text-base opacity-80">From Curious to Confident</p>
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
+          {/* Company Info */}
+          <div>
+            <p className="text-xl font-semibold mb-2">AI Strategy LLC</p>
+            <p className="text-base opacity-80">From AI-Curious to AI-Confident</p>
           </div>
           
-          <div className="flex gap-6 text-base">
-            <Link href="/privacy" className="hover:opacity-80">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:opacity-80">
-              Terms of Service
-            </Link>
-            <a href="mailto:michele@aistrategyllc.com" className="hover:opacity-80">
-              Contact
-            </a>
+          {/* Navigation */}
+          <div>
+            <h4 className="font-semibold mb-3">Navigation</h4>
+            <div className="flex flex-col gap-2 text-base opacity-80">
+              <Link href="/" className="hover:opacity-100">Home</Link>
+              <Link href="/story" className="hover:opacity-100">Our Story</Link>
+              <Link href="/about" className="hover:opacity-100">About Us</Link>
+            </div>
+          </div>
+          
+          {/* Offerings */}
+          <div>
+            <h4 className="font-semibold mb-3">Ready to begin?</h4>
+            <div className="flex flex-col gap-2 text-base opacity-80">
+              <Link href="/story" className="hover:opacity-100">Individual Sprint</Link>
+              <a href="mailto:michele@aistrategyllc.com?subject=Team%20Program%20Consultation" className="hover:opacity-100">Team Program</a>
+              <a href="mailto:michele@aistrategyllc.com?subject=AI%20Readiness%20Assessment" className="hover:opacity-100">Readiness Assessment</a>
+            </div>
+          </div>
+          
+          {/* Legal & Contact */}
+          <div>
+            <h4 className="font-semibold mb-3">Contact & Legal</h4>
+            <div className="flex flex-col gap-2 text-base opacity-80">
+              <a href="mailto:michele@aistrategyllc.com" className="hover:opacity-100">
+                michele@aistrategyllc.com
+              </a>
+              <Link href="/privacy" className="hover:opacity-100">Privacy Policy</Link>
+              <Link href="/terms" className="hover:opacity-100">Terms of Service</Link>
+            </div>
           </div>
         </div>
         
-        <div className="mt-6 pt-6 border-t border-white/20 text-center text-base opacity-60">
-          © 2024 AI Strategy LLC. All rights reserved.
+        <div className="pt-8 border-t border-white/20 text-center text-base opacity-60">
+          © 2025 AI Strategy LLC. All rights reserved.
         </div>
       </div>
     </footer>

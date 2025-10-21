@@ -257,11 +257,9 @@ export default function Story() {
                 <p className="text-gray-300 mb-6">
                   Build collective capability across your team
                 </p>
-                <a href="mailto:michele@aistrategyllc.com?subject=Team%20Program%20Consultation" className="block">
-                  <Button className="w-full bg-white/20 hover:bg-white/30 text-white border border-white/40">
-                    Explore Team Program →
-                  </Button>
-                </a>
+                <Button className="w-full bg-white/20 hover:bg-white/30 text-white border border-white/40">
+                  Explore Team Program →
+                </Button>
               </Card>
             </motion.div>
 
@@ -273,11 +271,9 @@ export default function Story() {
                 <p className="text-gray-300 mb-6">
                   Strategic roadmap for AI transformation
                 </p>
-                <a href="mailto:michele@aistrategyllc.com?subject=AI%20Readiness%20Assessment" className="block">
-                  <Button className="w-full bg-white/20 hover:bg-white/30 text-white border border-white/40">
-                    Schedule Assessment →
-                  </Button>
-                </a>
+                <Button className="w-full bg-white/20 hover:bg-white/30 text-white border border-white/40">
+                  Schedule Assessment →
+                </Button>
               </Card>
             </motion.div>
           </motion.div>
@@ -315,24 +311,20 @@ export default function Story() {
                 >
                   Individual breakthrough → Book Your Sprint
                 </Button>
-                <a href="mailto:michele@aistrategyllc.com?subject=Team%20Program%20Consultation">
-                  <Button 
-                    size="lg"
-                    variant="outline"
-                    className="border-navy text-navy hover:bg-navy hover:text-white px-8 py-6 text-lg"
-                  >
-                    Team capability → Schedule Consultation
-                  </Button>
-                </a>
-                <a href="mailto:michele@aistrategyllc.com?subject=AI%20Readiness%20Assessment">
-                  <Button 
-                    size="lg"
-                    variant="outline"
-                    className="border-navy text-navy hover:bg-navy hover:text-white px-8 py-6 text-lg"
-                  >
-                    Organizational readiness → Schedule Assessment
-                  </Button>
-                </a>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-navy text-navy hover:bg-navy hover:text-white px-8 py-6 text-lg"
+                >
+                  Team capability → Schedule Consultation
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-navy text-navy hover:bg-navy hover:text-white px-8 py-6 text-lg"
+                >
+                  Organizational readiness → Schedule Assessment
+                </Button>
               </div>
             </motion.div>
           </motion.div>

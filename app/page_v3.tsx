@@ -79,24 +79,20 @@ export default function Home() {
                 Start Your Individual Transformation
               </Button>
             </Link>
-            <a href="mailto:michele@aistrategyllc.com?subject=Team%20Program%20Consultation">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-navy px-10 py-7 text-lg"
-              >
-                Build Team Capability
-              </Button>
-            </a>
-            <a href="mailto:michele@aistrategyllc.com?subject=AI%20Readiness%20Assessment">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-navy px-10 py-7 text-lg"
-              >
-                Map Your Organization's Readiness
-              </Button>
-            </a>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-navy px-10 py-7 text-lg"
+            >
+              Build Team Capability
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-navy px-10 py-7 text-lg"
+            >
+              Map Your Organization's Readiness
+            </Button>
           </motion.div>
         </motion.div>
       </section>
@@ -258,11 +254,9 @@ export default function Home() {
                 </div>
 
                 <div className="text-center mt-auto">
-                  <a href="mailto:michele@aistrategyllc.com?subject=Team%20Program%20Consultation" className="block">
-                    <Button className="bg-navy hover:bg-navy/90 text-white w-full">
-                      Schedule a Consultation →
-                    </Button>
-                  </a>
+                  <Button className="bg-navy hover:bg-navy/90 text-white w-full">
+                    Schedule a Consultation →
+                  </Button>
                 </div>
               </Card>
             </motion.div>
@@ -291,11 +285,9 @@ export default function Home() {
                 </div>
 
                 <div className="text-center mt-auto">
-                  <a href="mailto:michele@aistrategyllc.com?subject=AI%20Readiness%20Assessment" className="block">
-                    <Button className="bg-navy hover:bg-navy/90 text-white w-full">
-                      Explore Your Readiness →
-                    </Button>
-                  </a>
+                  <Button className="bg-navy hover:bg-navy/90 text-white w-full">
+                    Explore Your Readiness →
+                  </Button>
                 </div>
               </Card>
             </motion.div>
