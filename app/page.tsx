@@ -104,7 +104,7 @@ export default function Home() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Through personalized sessions, we'll guide you through three distinct stages of AI mastery:
+            Through personalized sessions, we'll guide you through distinct stages of AI mastery:
           </motion.p>
           
           <motion.div 
