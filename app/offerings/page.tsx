@@ -74,7 +74,7 @@ export default function Offerings() {
           animate="visible"
           variants={fadeInUp}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-8">Your AI Breakthrough Starts Here</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-8">Ready to Shift Gears?</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Whether you're an individual leader, building team capability, or transforming your organization, we have a path designed for your success.
           </p>
@@ -94,7 +94,7 @@ export default function Offerings() {
             className="text-3xl font-bold text-navy text-center mb-10"
             variants={fadeInUp}
           >
-            Choose Your Transformation
+            Find Your Starting Point
           </motion.h2>
           
           <motion.div className="grid md:grid-cols-3 gap-6" variants={staggerContainer}>
@@ -107,14 +107,14 @@ export default function Offerings() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
-                <h3 className="text-xl font-bold text-navy mb-2">Executive AI Fluency Sprint</h3>
-                <p className="text-gray-600 mb-4">Personal breakthrough for individual leaders</p>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <p><span className="font-semibold">Format:</span> 1-on-1 personalized sessions</p>
-                  <p><span className="font-semibold">Sessions:</span> 3-5 sessions total</p>
-                  <p><span className="font-semibold">Investment:</span> $1,499</p>
+                <div className="text-center mb-4">
+                  <h4 className="text-sm font-semibold text-teal uppercase tracking-wider mb-2">For You</h4>
+                  <h3 className="text-xl font-bold text-navy">AI Fluency Sprint</h3>
                 </div>
-                <p className="text-teal font-semibold mt-4 text-sm">Learn more →</p>
+                <p className="text-gray-600 text-center">
+                  Start with yourself. Our 1-on-1 sprint transforms you from a casual user to an AI-confident strategist.
+                </p>
+                <p className="text-teal font-semibold mt-6 text-sm text-center">Learn more →</p>
               </Card>
             </motion.a>
 
@@ -127,14 +127,14 @@ export default function Offerings() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
-                <h3 className="text-xl font-bold text-navy mb-2">AI Mastery Team Intensive</h3>
-                <p className="text-gray-600 mb-4">Build collective capability across your team</p>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <p><span className="font-semibold">Format:</span> 4-part series</p>
-                  <p><span className="font-semibold">Team size:</span> 5-15 participants</p>
-                  <p><span className="font-semibold">Investment:</span> Custom pricing</p>
+                <div className="text-center mb-4">
+                  <h4 className="text-sm font-semibold text-teal uppercase tracking-wider mb-2">For Your Team</h4>
+                  <h3 className="text-xl font-bold text-navy">AI-Confident Team Sprint</h3>
                 </div>
-                <p className="text-teal font-semibold mt-4 text-sm">Learn more →</p>
+                <p className="text-gray-600 text-center">
+                  Empower your unit. We get your entire team fluent and aligned for immediate impact.
+                </p>
+                <p className="text-teal font-semibold mt-6 text-sm text-center">Learn more →</p>
               </Card>
             </motion.a>
 
@@ -147,14 +147,14 @@ export default function Offerings() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
-                <h3 className="text-xl font-bold text-navy mb-2">AI Readiness Assessment</h3>
-                <p className="text-gray-600 mb-4">Strategic roadmap for AI transformation</p>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <p><span className="font-semibold">Format:</span> Comprehensive diagnostic</p>
-                  <p><span className="font-semibold">Duration:</span> 3-4 weeks</p>
-                  <p><span className="font-semibold">Investment:</span> Custom pricing</p>
+                <div className="text-center mb-4">
+                  <h4 className="text-sm font-semibold text-teal uppercase tracking-wider mb-2">For Your Company</h4>
+                  <h3 className="text-xl font-bold text-navy">AI Readiness Assessment</h3>
                 </div>
-                <p className="text-teal font-semibold mt-4 text-sm">Learn more →</p>
+                <p className="text-gray-600 text-center">
+                  Transform your enterprise. We build a strategic roadmap for company-wide AI adoption.
+                </p>
+                <p className="text-teal font-semibold mt-6 text-sm text-center">Learn more →</p>
               </Card>
             </motion.a>
           </motion.div>
@@ -281,7 +281,7 @@ export default function Offerings() {
         >
           <motion.div variants={fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold text-navy text-center mb-4">
-              AI Mastery Team Intensive
+              AI-Confident Team Sprint
             </h2>
             <p className="text-2xl text-gray-600 italic text-center mb-12">
               Build collective capability across your team

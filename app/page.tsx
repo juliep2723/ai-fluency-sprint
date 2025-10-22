@@ -68,7 +68,7 @@ export default function Home() {
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Transform how you think about and partner with AI through personalized guidance from two Silicon Valley veterans who pioneered these methods in corporate venture-building
+            Two Silicon Valley veterans discovered most leaders are using AI like a Ferrari in first gear. We'll help you unlock its full power through personalized guidance.
           </motion.p>
           
           <motion.div variants={fadeInUp}>
@@ -77,7 +77,7 @@ export default function Home() {
                 size="lg" 
                 className="bg-teal hover:bg-teal/90 text-white px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
-                Explore Our Offerings →
+                Start Your Transformation →
               </Button>
             </Link>
           </motion.div>

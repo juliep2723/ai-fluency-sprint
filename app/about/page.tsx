@@ -39,40 +39,23 @@ const scaleIn = {
 export default function About() {
   return (
     <main className="min-h-screen">
-      {/* The Discovery - Navy Background */}
+      {/* Our Story - Navy Background */}
       <section className="py-24 px-6 bg-navy text-white pt-32">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
           animate="visible"
-          variants={staggerContainer}
-        >
-          <motion.h1 
-            className="text-4xl md:text-6xl font-bold text-center mb-12 leading-tight"
-            variants={fadeInUp}
-          >
-            Two Silicon Valley veterans discovered that most people were using AI like a <span className="text-teal">Ferrari in first gear</span>—technically functional, but missing 95% of its power.
-          </motion.h1>
-        </motion.div>
-      </section>
-
-      {/* Our Story - White Background */}
-      <section className="py-24 px-6 bg-white">
-        <motion.div 
-          className="max-w-4xl mx-auto"
-          initial="hidden"
-          whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-16"
+            className="text-4xl md:text-5xl font-bold text-white text-center mb-16"
             variants={fadeInUp}
           >
             Our Story
           </motion.h2>
 
-          <div className="prose prose-xl mx-auto text-gray-700">
+          <div className="prose prose-xl mx-auto text-gray-300">
             <motion.p className="text-xl mb-8 leading-relaxed" variants={fadeInUp}>
               We met at Mach49, a corporate venture-building firm where we spent years helping Fortune 500 companies launch new ventures. When ChatGPT launched, we started collaborating on creative AI applications neither of us had imagined possible. But talented colleagues—people who'd built multi-million dollar ventures—were hesitant, even intimidated by AI.
             </motion.p>
@@ -88,8 +71,8 @@ export default function About() {
         </motion.div>
       </section>
 
-      {/* Meet Your Guides - Light Gray Background */}
-      <section className="py-24 px-6 bg-light-gray">
+      {/* Meet Your Guides - White Background */}
+      <section className="py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <motion.h2 
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-16"
@@ -192,7 +175,7 @@ export default function About() {
                 size="lg" 
                 className="bg-teal hover:bg-teal/90 text-white px-12 py-8 text-xl shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                Explore Our Offerings
+                Start Your Transformation
               </Button>
             </Link>
           </motion.div>
