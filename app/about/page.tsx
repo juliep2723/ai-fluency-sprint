@@ -47,19 +47,12 @@ export default function About() {
           animate="visible"
           variants={staggerContainer}
         >
-          <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-center mb-12"
-            variants={fadeInUp}
-          >
-            The Discovery
-          </motion.h2>
-          
-          <motion.p 
-            className="text-2xl text-center text-gray-300 leading-relaxed"
+          <motion.h1 
+            className="text-4xl md:text-6xl font-bold text-center mb-12 leading-tight"
             variants={fadeInUp}
           >
             Two Silicon Valley veterans discovered that most people were using AI like a <span className="text-teal">Ferrari in first gear</span>—technically functional, but missing 95% of its power.
-          </motion.p>
+          </motion.h1>
         </motion.div>
       </section>
 
