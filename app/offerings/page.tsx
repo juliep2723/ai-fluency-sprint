@@ -74,7 +74,7 @@ export default function Offerings() {
           animate="visible"
           variants={fadeInUp}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-8">Stop Using AI at 5%. Start Using It at 95%.</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-8">Your AI Breakthrough Starts Here</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Whether you're an individual leader, building team capability, or transforming your organization, we have a path designed for your success.
           </p>
@@ -110,8 +110,8 @@ export default function Offerings() {
                 <h3 className="text-xl font-bold text-navy mb-2">Executive AI Fluency Sprint</h3>
                 <p className="text-gray-600 mb-4">Personal breakthrough for individual leaders</p>
                 <div className="space-y-2 text-sm text-gray-700">
-                  <p><span className="font-semibold">Format:</span> 3-5 personalized sessions</p>
-                  <p><span className="font-semibold">Duration:</span> 2-3 weeks</p>
+                  <p><span className="font-semibold">Format:</span> 1-on-1 personalized sessions</p>
+                  <p><span className="font-semibold">Sessions:</span> 3-5 sessions total</p>
                   <p><span className="font-semibold">Investment:</span> $1,499</p>
                 </div>
                 <p className="text-teal font-semibold mt-4 text-sm">Learn more →</p>
@@ -127,7 +127,7 @@ export default function Offerings() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
-                <h3 className="text-xl font-bold text-navy mb-2">AI Curious to AI Confident</h3>
+                <h3 className="text-xl font-bold text-navy mb-2">AI Mastery Team Intensive</h3>
                 <p className="text-gray-600 mb-4">Build collective capability across your team</p>
                 <div className="space-y-2 text-sm text-gray-700">
                   <p><span className="font-semibold">Format:</span> 4-part series</p>
@@ -281,7 +281,7 @@ export default function Offerings() {
         >
           <motion.div variants={fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold text-navy text-center mb-4">
-              AI Curious to AI Confident: Team Program
+              AI Mastery Team Intensive
             </h2>
             <p className="text-2xl text-gray-600 italic text-center mb-12">
               Build collective capability across your team
