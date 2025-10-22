@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { motion } from 'framer-motion'
@@ -68,7 +69,7 @@ export default function Home() {
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Two Silicon Valley veterans discovered most leaders are using AI like a Ferrari in first gear. We'll help you unlock its full power through personalized guidance.
+            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="font-bold text-teal">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
           </motion.p>
           
           <motion.div variants={fadeInUp}>
@@ -243,9 +244,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQs - White Background (changed from light-gray) */}
+      {/* Meet Your Guides - White Background */}
       <section className="py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <motion.h2 
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-16"
             initial="hidden"
@@ -253,56 +254,88 @@ export default function Home() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Frequently Asked Questions
+            Meet Your Guides
           </motion.h2>
 
-          <motion.div 
-            className="space-y-8"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
+          <motion.div className="space-y-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}>
+            {/* Michele */}
             <motion.div variants={fadeInUp}>
-              <h3 className="text-2xl font-bold text-navy mb-3">What if I'm not technical?</h3>
-              <p className="text-lg text-gray-700">
-                Perfect. This isn't about coding or engineering—it's about thought partnership. Your domain expertise is the foundation.
-              </p>
+              <Card className="p-8 shadow-lg">
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+                    <Image
+                      src="/michele.png"
+                      alt="Michele Chambliss"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-navy mb-2">Michele Chambliss</h3>
+                    <p className="text-lg text-teal font-semibold mb-4">From Enterprise Transformation to Personal AI Mastery</p>
+                    
+                    <ul className="space-y-3 text-charcoal">
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>Harvard MBA with 30+ years in strategy consulting, enterprise leadership, and Silicon Valley ventures</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>Spearheaded AI capabilities rollout at Mach49, creating training programs and leading client masterclasses</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>HBS executive coach for 4+ years, bringing deep insight into how leaders adopt new capabilities</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>Brings strategic clarity on where AI creates genuine advantage, plus operational expertise to make transformation actually happen</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
             </motion.div>
 
+            {/* Julie */}
             <motion.div variants={fadeInUp}>
-              <h3 className="text-2xl font-bold text-navy mb-3">How is this different from other AI training?</h3>
-              <p className="text-lg text-gray-700">
-                We don't deliver pre-packaged courses or teach generic "prompt engineering." Instead, we provide personalized coaching and guided discovery sessions that create breakthroughs specific to your expertise and goals.
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeInUp}>
-              <h3 className="text-2xl font-bold text-navy mb-3">What kind of results can I expect?</h3>
-              <p className="text-lg text-gray-700">
-                Breakthrough moments where you discover AI use cases you never imagined. Repeatable patterns you'll use for years. Confidence that makes you AI-fluent, not just AI-literate.
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeInUp}>
-              <h3 className="text-2xl font-bold text-navy mb-3">Is this a good fit for my team?</h3>
-              <p className="text-lg text-gray-700">
-                Yes—we offer a custom Team Program designed for groups building collective AI capability together.
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeInUp}>
-              <h3 className="text-2xl font-bold text-navy mb-3">What happens after the sprint?</h3>
-              <p className="text-lg text-gray-700">
-                You'll have the fluency and patterns to continue discovering new use cases independently. Many clients return for advanced sessions or bring their teams.
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeInUp}>
-              <h3 className="text-2xl font-bold text-navy mb-3">Can you help assess our organizational readiness?</h3>
-              <p className="text-lg text-gray-700">
-                Absolutely. Our AI Readiness Assessment provides a comprehensive diagnostic and transformation roadmap.
-              </p>
+              <Card className="p-8 shadow-lg">
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+                    <Image
+                      src="/julie.png"
+                      alt="Julie Price"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-navy mb-2">Julie Price</h3>
+                    <p className="text-lg text-teal font-semibold mb-4">Pioneer in AI Fluency & Customer Discovery</p>
+                    
+                    <ul className="space-y-3 text-charcoal">
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>Wharton MBA who invented customer discovery methodology used across 100+ venture projects at Mach49</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>Pioneered "AI Unlock" sessions that helped individuals move past fear to discover unexpected AI value</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>Contributor to gold medal-winning Harvard Business Review podcast on AI innovation</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-teal mr-2 mt-1">•</span>
+                        <span>Uses discovery-based learning methods to transform AI from intimidating technology into creative thought partner</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
             </motion.div>
           </motion.div>
         </div>
@@ -315,7 +348,7 @@ export default function Home() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={staggerContainer}
+          variants={fadeInUp}
         >
           <motion.h2 
             className="text-4xl md:text-5xl font-bold text-navy mb-8"
@@ -324,58 +357,15 @@ export default function Home() {
             Ready to Transform Your AI Journey?
           </motion.h2>
           
-          <motion.p 
-            className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto"
-            variants={fadeInUp}
-          >
-            Choose your next step and begin your transformation today.
-          </motion.p>
-
-          <motion.div 
-            className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto"
-            variants={staggerContainer}
-          >
-            <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300 border-0">
-                <h3 className="text-2xl font-bold text-navy mb-4">Learn About Us</h3>
-                <p className="text-gray-700 mb-6">
-                  Discover our story, methodology, and why we're passionate about AI transformation.
-                </p>
-                <Link href="/about">
-                  <Button className="w-full bg-navy hover:bg-navy/90 text-white">
-                    Our Story →
-                  </Button>
-                </Link>
-              </Card>
-            </motion.div>
-
-            <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-teal/5">
-                <h3 className="text-2xl font-bold text-navy mb-4">Explore Offerings</h3>
-                <p className="text-gray-700 mb-6">
-                  View our individual sprint, team programs, and organizational assessments.
-                </p>
-                <Link href="/offerings">
-                  <Button className="w-full bg-teal hover:bg-teal/90 text-white">
-                    View Offerings →
-                  </Button>
-                </Link>
-              </Card>
-            </motion.div>
-
-            <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300 border-0">
-                <h3 className="text-2xl font-bold text-navy mb-4">Get in Touch</h3>
-                <p className="text-gray-700 mb-6">
-                  Have questions? Ready to start? We'd love to hear from you.
-                </p>
-                <a href="mailto:michele@aistrategyllc.com">
-                  <Button className="w-full bg-navy hover:bg-navy/90 text-white">
-                    Contact Us →
-                  </Button>
-                </a>
-              </Card>
-            </motion.div>
+          <motion.div variants={fadeInUp}>
+            <Link href="/offerings">
+              <Button 
+                size="lg" 
+                className="bg-teal hover:bg-teal/90 text-white px-12 py-8 text-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                Explore Our Offerings →
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </section>

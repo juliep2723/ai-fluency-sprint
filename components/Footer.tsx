@@ -16,7 +16,6 @@ export default function Footer() {
             <h4 className="font-semibold mb-3">Navigation</h4>
             <div className="flex flex-col gap-2 text-base opacity-80">
               <Link href="/" className="hover:opacity-100">Home</Link>
-              <Link href="/about" className="hover:opacity-100">About Us</Link>
               <Link href="/offerings" className="hover:opacity-100">Offerings</Link>
             </div>
           </div>
