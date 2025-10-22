@@ -69,7 +69,7 @@ export default function Home() {
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="font-bold text-teal">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
+            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="font-bold text-2xl md:text-3xl text-orange-600">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
           </motion.p>
           
           <motion.div variants={fadeInUp}>
