@@ -69,7 +69,7 @@ export default function Home() {
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="font-bold text-2xl md:text-3xl text-orange-600">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
+            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="font-bold text-orange-600 inline-block align-baseline">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
           </motion.p>
           
           <motion.div variants={fadeInUp}>
@@ -185,18 +185,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Experience - Light Gray Background (changed from white) */}
+      {/* Experience Option 1 - Cards with Numbers and Gradient Accents */}
       <section className="py-24 px-6 bg-light-gray">
         <div className="max-w-6xl mx-auto">
-          <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-20"
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
+            className="text-center mb-20"
           >
-            Personalized AI Training Experience
-          </motion.h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+              Personalized AI Training Experience
+            </h2>
+            <p className="text-xl text-gray-600">Option 1: Numbered Cards with Gradient Accents</p>
+          </motion.div>
           
           <motion.div 
             className="grid md:grid-cols-3 gap-8"
@@ -205,40 +208,184 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            {/* Discover Ways */}
             <motion.div 
-              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="relative bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
               variants={scaleIn}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-teal to-blue-500"></div>
+              <div className="text-6xl font-bold text-teal/20 mb-4">01</div>
               <h3 className="text-2xl font-bold text-navy mb-4">Discover Ways to Use AI You Didn't Know Existed</h3>
               <p className="text-gray-700 text-lg">
                 Solve problems you've accepted as unsolvable. Enhance how you think and work in ways that seemed impossible before.
               </p>
             </motion.div>
 
-            {/* Breakthrough Moments */}
             <motion.div 
-              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="relative bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
               variants={scaleIn}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+              <div className="text-6xl font-bold text-blue-500/20 mb-4">02</div>
               <h3 className="text-2xl font-bold text-navy mb-4">Experience Breakthrough Moments That Change Everything</h3>
               <p className="text-gray-700 text-lg">
                 Break through the "prompt engineering" trap. Develop patterns that unlock AI's hidden potential and fundamentally shift what you believe is possible.
               </p>
             </motion.div>
 
-            {/* Transform Expertise */}
             <motion.div 
-              className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="relative bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
               variants={scaleIn}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-500 to-orange-500"></div>
+              <div className="text-6xl font-bold text-purple-500/20 mb-4">03</div>
               <h3 className="text-2xl font-bold text-navy mb-4">Transform Your Expertise Into Competitive Advantage</h3>
               <p className="text-gray-700 text-lg">
                 Your knowledge becomes AI's greatest amplifier. Your experience provides guardrails for breakthrough thinking. You move from AI user to AI thought partner.
               </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Experience Option 2 - Timeline Journey Style */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center mb-20"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+              Personalized AI Training Experience
+            </h2>
+            <p className="text-xl text-gray-600">Option 2: Journey Timeline with Connected Flow</p>
+          </motion.div>
+          
+          <motion.div 
+            className="relative"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+          >
+            {/* Connection Line */}
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-teal via-blue-500 to-purple-500 transform -translate-y-1/2"></div>
+            
+            <div className="grid md:grid-cols-3 gap-8 relative">
+              <motion.div 
+                className="bg-teal/5 border-2 border-teal p-10 rounded-2xl relative"
+                variants={scaleIn}
+              >
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-teal rounded-full flex items-center justify-center text-white font-bold">1</div>
+                <h3 className="text-2xl font-bold text-navy mb-4 mt-4">Discover Ways to Use AI You Didn't Know Existed</h3>
+                <p className="text-gray-700 text-lg">
+                  Solve problems you've accepted as unsolvable. Enhance how you think and work in ways that seemed impossible before.
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="bg-blue-500/5 border-2 border-blue-500 p-10 rounded-2xl relative"
+                variants={scaleIn}
+              >
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
+                <h3 className="text-2xl font-bold text-navy mb-4 mt-4">Experience Breakthrough Moments That Change Everything</h3>
+                <p className="text-gray-700 text-lg">
+                  Break through the "prompt engineering" trap. Develop patterns that unlock AI's hidden potential and fundamentally shift what you believe is possible.
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="bg-purple-500/5 border-2 border-purple-500 p-10 rounded-2xl relative"
+                variants={scaleIn}
+              >
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                <h3 className="text-2xl font-bold text-navy mb-4 mt-4">Transform Your Expertise Into Competitive Advantage</h3>
+                <p className="text-gray-700 text-lg">
+                  Your knowledge becomes AI's greatest amplifier. Your experience provides guardrails for breakthrough thinking. You move from AI user to AI thought partner.
+                </p>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Experience Option 3 - Feature Blocks with Icons */}
+      <section className="py-24 px-6 bg-light-gray">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center mb-20"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+              Personalized AI Training Experience
+            </h2>
+            <p className="text-xl text-gray-600">Option 3: Icon Cards with Hover Effects</p>
+          </motion.div>
+          
+          <motion.div 
+            className="grid md:grid-cols-3 gap-10"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+          >
+            <motion.div 
+              className="group relative"
+              variants={scaleIn}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-teal to-teal/50 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+              <div className="relative bg-white p-10 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
+                <div className="w-16 h-16 bg-teal/10 rounded-full flex items-center justify-center mb-6">
+                  <span className="text-3xl">🔍</span>
+                </div>
+                <h3 className="text-2xl font-bold text-navy mb-4">Discover Ways to Use AI You Didn't Know Existed</h3>
+                <p className="text-gray-700 text-lg">
+                  Solve problems you've accepted as unsolvable. Enhance how you think and work in ways that seemed impossible before.
+                </p>
+                <div className="mt-6 h-1 w-20 bg-teal rounded-full"></div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="group relative"
+              variants={scaleIn}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-500/50 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+              <div className="relative bg-white p-10 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
+                <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mb-6">
+                  <span className="text-3xl">💡</span>
+                </div>
+                <h3 className="text-2xl font-bold text-navy mb-4">Experience Breakthrough Moments That Change Everything</h3>
+                <p className="text-gray-700 text-lg">
+                  Break through the "prompt engineering" trap. Develop patterns that unlock AI's hidden potential and fundamentally shift what you believe is possible.
+                </p>
+                <div className="mt-6 h-1 w-20 bg-blue-500 rounded-full"></div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="group relative"
+              variants={scaleIn}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-purple-500/50 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+              <div className="relative bg-white p-10 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-300">
+                <div className="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mb-6">
+                  <span className="text-3xl">🚀</span>
+                </div>
+                <h3 className="text-2xl font-bold text-navy mb-4">Transform Your Expertise Into Competitive Advantage</h3>
+                <p className="text-gray-700 text-lg">
+                  Your knowledge becomes AI's greatest amplifier. Your experience provides guardrails for breakthrough thinking. You move from AI user to AI thought partner.
+                </p>
+                <div className="mt-6 h-1 w-20 bg-purple-500 rounded-full"></div>
+              </div>
             </motion.div>
           </motion.div>
         </div>
@@ -263,7 +410,7 @@ export default function Home() {
               <Card className="p-8 shadow-lg">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
-                    <Image
+          <Image
                       src="/michele.png"
                       alt="Michele Chambliss"
                       width={128}
@@ -303,7 +450,7 @@ export default function Home() {
               <Card className="p-8 shadow-lg">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
-                    <Image
+          <Image
                       src="/julie.png"
                       alt="Julie Price"
                       width={128}
