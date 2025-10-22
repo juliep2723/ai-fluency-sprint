@@ -45,7 +45,6 @@ export default function About() {
           className="max-w-4xl mx-auto"
           initial="hidden"
           animate="visible"
-          viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
           <motion.h2 
