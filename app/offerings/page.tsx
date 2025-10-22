@@ -74,15 +74,95 @@ export default function Offerings() {
           animate="visible"
           variants={fadeInUp}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-8">Choose Your Path to AI Fluency</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-8">Stop Using AI at 5%. Start Using It at 95%.</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Whether you're an individual leader, building team capability, or transforming your organization, we have a path designed for your success.
           </p>
         </motion.div>
       </section>
 
+      {/* Overview Table - Off-White Background */}
+      <section className="py-16 px-6 bg-off-white">
+        <motion.div 
+          className="max-w-5xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+        >
+          <motion.h2 
+            className="text-3xl font-bold text-navy text-center mb-10"
+            variants={fadeInUp}
+          >
+            Choose Your Transformation
+          </motion.h2>
+          
+          <motion.div className="grid md:grid-cols-3 gap-6" variants={staggerContainer}>
+            {/* Executive Sprint */}
+            <motion.a 
+              href="#executive-sprint"
+              className="block"
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
+                <h3 className="text-xl font-bold text-navy mb-2">Executive AI Fluency Sprint</h3>
+                <p className="text-gray-600 mb-4">Personal breakthrough for individual leaders</p>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p><span className="font-semibold">Format:</span> 3-5 personalized sessions</p>
+                  <p><span className="font-semibold">Duration:</span> 2-3 weeks</p>
+                  <p><span className="font-semibold">Investment:</span> $1,499</p>
+                </div>
+                <p className="text-teal font-semibold mt-4 text-sm">Learn more →</p>
+              </Card>
+            </motion.a>
+
+            {/* Team Program */}
+            <motion.a 
+              href="#team-program"
+              className="block"
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
+                <h3 className="text-xl font-bold text-navy mb-2">AI Curious to AI Confident</h3>
+                <p className="text-gray-600 mb-4">Build collective capability across your team</p>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p><span className="font-semibold">Format:</span> 4-part series</p>
+                  <p><span className="font-semibold">Team size:</span> 5-15 participants</p>
+                  <p><span className="font-semibold">Investment:</span> Custom pricing</p>
+                </div>
+                <p className="text-teal font-semibold mt-4 text-sm">Learn more →</p>
+              </Card>
+            </motion.a>
+
+            {/* Assessment */}
+            <motion.a 
+              href="#assessment"
+              className="block"
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
+                <h3 className="text-xl font-bold text-navy mb-2">AI Readiness Assessment</h3>
+                <p className="text-gray-600 mb-4">Strategic roadmap for AI transformation</p>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p><span className="font-semibold">Format:</span> Comprehensive diagnostic</p>
+                  <p><span className="font-semibold">Duration:</span> 3-4 weeks</p>
+                  <p><span className="font-semibold">Investment:</span> Custom pricing</p>
+                </div>
+                <p className="text-teal font-semibold mt-4 text-sm">Learn more →</p>
+              </Card>
+            </motion.a>
+          </motion.div>
+        </motion.div>
+      </section>
+
       {/* Executive AI Fluency Sprint - White Background */}
-      <section className="py-24 px-6 bg-white">
+      <section id="executive-sprint" className="py-24 px-6 bg-white">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -191,7 +271,7 @@ export default function Offerings() {
       </section>
 
       {/* Team Program - Light Gray Background */}
-      <section className="py-24 px-6 bg-light-gray">
+      <section id="team-program" className="py-24 px-6 bg-light-gray">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -279,7 +359,7 @@ export default function Offerings() {
       </section>
 
       {/* AI Readiness Assessment - White Background */}
-      <section className="py-24 px-6 bg-white">
+      <section id="assessment" className="py-24 px-6 bg-white">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
