@@ -240,15 +240,15 @@ export default function Offerings() {
 
           {/* Investment Section */}
           <motion.div variants={scaleIn} className="max-w-md mx-auto">
-            <Card className="p-8 bg-navy text-white shadow-2xl border-0">
-              <h3 className="text-2xl font-bold mb-4 text-center">Your Investment</h3>
-              <div className="text-center mb-6">
-                <p className="text-4xl font-bold mb-2">$1,499</p>
+            <Card className="p-6 bg-navy text-white shadow-2xl border-0">
+              <h3 className="text-2xl font-bold mb-3 text-center">Your Investment</h3>
+              <div className="text-center mb-4">
+                <p className="text-4xl font-bold mb-1">$1,499</p>
                 <p className="text-lg opacity-90">Complete Sprint Journey</p>
               </div>
               
-              <div className="bg-white/10 rounded-lg p-4 mb-6">
-                <p className="text-center font-semibold mb-2">100% Satisfaction Guarantee</p>
+              <div className="bg-white/10 rounded-lg p-3 mb-4">
+                <p className="text-center font-semibold mb-1">100% Satisfaction Guarantee</p>
                 <p className="text-center opacity-90 text-sm">
                   Experience your first session risk-free. If you don't have at least one breakthrough moment, we'll refund 100%
                 </p>
@@ -256,13 +256,13 @@ export default function Offerings() {
 
               <Button 
                 size="lg" 
-                className="w-full bg-teal hover:bg-teal/90 text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="w-full bg-teal hover:bg-teal/90 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={handleStripeCheckout}
               >
                 Begin Your Sprint Today
               </Button>
 
-              <p className="text-center text-sm mt-6 opacity-75">
+              <p className="text-center text-sm mt-3 opacity-75">
                 Secure checkout powered by Stripe
               </p>
             </Card>
