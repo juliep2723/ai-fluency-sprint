@@ -111,7 +111,7 @@ export default function Offerings() {
                   <h4 className="text-base font-semibold text-teal uppercase tracking-wider mb-2">For You</h4>
                   <h3 className="text-xl font-bold text-navy">AI Fluency Sprint</h3>
                 </div>
-                <p className="text-lg text-gray-600 text-center">
+                <p className="text-lg text-gray-600 text-center leading-snug">
                   Start with yourself. Our 1-on-1 sprint transforms you from a casual user to an AI-confident strategist.
                 </p>
                 <p className="text-teal font-semibold mt-6 text-base text-center">Learn more →</p>
@@ -131,7 +131,7 @@ export default function Offerings() {
                   <h4 className="text-base font-semibold text-teal uppercase tracking-wider mb-2">For Your Team</h4>
                   <h3 className="text-xl font-bold text-navy">AI-Confident Team Sprint</h3>
                 </div>
-                <p className="text-lg text-gray-600 text-center">
+                <p className="text-lg text-gray-600 text-center leading-snug">
                   Empower your unit. We get your entire team fluent and aligned for immediate impact.
                 </p>
                 <p className="text-teal font-semibold mt-6 text-base text-center">Learn more →</p>
@@ -151,7 +151,7 @@ export default function Offerings() {
                   <h4 className="text-base font-semibold text-teal uppercase tracking-wider mb-2">For Your Company</h4>
                   <h3 className="text-xl font-bold text-navy">AI Readiness Assessment</h3>
                 </div>
-                <p className="text-lg text-gray-600 text-center">
+                <p className="text-lg text-gray-600 text-center leading-snug">
                   Transform your enterprise. We build a strategic roadmap for company-wide AI adoption.
                 </p>
                 <p className="text-teal font-semibold mt-6 text-base text-center">Learn more →</p>

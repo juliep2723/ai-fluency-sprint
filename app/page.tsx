@@ -127,7 +127,7 @@ export default function Home() {
                 </motion.div>
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">Curious but Underwhelmed</h3>
-              <p className="text-2xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
+              <p className="text-lg text-black max-w-3xl mx-auto text-center">
                 You've tried AI tools like ChatGPT. They answered some questions. Generated some emails. But you expected more—and you were right to.
               </p>
             </motion.div>
@@ -152,7 +152,7 @@ export default function Home() {
                 </motion.div>
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">The Awakening</h3>
-              <p className="text-2xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
+              <p className="text-lg text-black max-w-3xl mx-auto text-center">
                 Through guided exploration, you discover AI isn't a better search engine—it's a thought partner that amplifies your expertise in ways that seemed impossible weeks ago.
               </p>
             </motion.div>
@@ -177,7 +177,7 @@ export default function Home() {
                 </motion.div>
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">Empowered & Inspired</h3>
-              <p className="text-2xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
+              <p className="text-lg text-black max-w-3xl mx-auto text-center">
                 You're creating solutions others can't conceive of. AI is your cognitive co-pilot for invention, discovery, and breakthrough thought.
               </p>
             </motion.div>
