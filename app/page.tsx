@@ -99,7 +99,7 @@ export default function Home() {
           </motion.h2>
           
           <motion.p 
-            className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto"
+            className="text-lg text-black text-center mb-12 max-w-3xl mx-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
