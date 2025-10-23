@@ -69,7 +69,7 @@ export default function Home() {
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Two Silicon Valley veterans discovered <span className="font-bold text-teal">most leaders are using AI like a Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
+            Two Silicon Valley veterans discovered <span className="font-bold text-teal">most leaders are using AI like a Ferrari in first gear</span><span className="text-teal">...</span> We'll help you unlock its full power through personalized guidance.
           </motion.p>
           
           <motion.div variants={fadeInUp}>
@@ -95,7 +95,7 @@ export default function Home() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Your Transformation Journey With Us
+            Your Transformation Journey with Us
           </motion.h2>
           
           <motion.p 
@@ -127,7 +127,7 @@ export default function Home() {
                 </motion.div>
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">Curious but Underwhelmed</h3>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
+              <p className="text-2xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
                 You've tried AI tools like ChatGPT. They answered some questions. Generated some emails. But you expected more—and you were right to.
               </p>
             </motion.div>
@@ -152,7 +152,7 @@ export default function Home() {
                 </motion.div>
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">The Awakening</h3>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
+              <p className="text-2xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
                 Through guided exploration, you discover AI isn't a better search engine—it's a thought partner that amplifies your expertise in ways that seemed impossible weeks ago.
               </p>
             </motion.div>
@@ -177,7 +177,7 @@ export default function Home() {
                 </motion.div>
               </div>
               <h3 className="text-2xl font-bold text-center text-navy mb-3">Empowered & Inspired</h3>
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
+              <p className="text-2xl text-gray-700 max-w-3xl mx-auto text-center leading-relaxed">
                 You're creating solutions others can't conceive of. AI is your cognitive co-pilot for invention, discovery, and breakthrough thought.
               </p>
             </motion.div>
@@ -368,7 +368,7 @@ export default function Home() {
             className="text-4xl md:text-5xl font-bold text-navy mb-8"
             variants={fadeInUp}
           >
-            Ready to Transform Your AI Journey?
+            Let's Get to AI-Confident
           </motion.h2>
           
           <motion.div variants={fadeInUp}>

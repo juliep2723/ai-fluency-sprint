@@ -75,7 +75,7 @@ export default function Offerings() {
           variants={fadeInUp}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-8">Ready to Shift Gears?</h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
             Whether you're an individual leader, building team capability, or transforming your organization, we have a path designed for your success.
           </p>
         </motion.div>
@@ -108,13 +108,13 @@ export default function Offerings() {
             >
               <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
                 <div className="text-center mb-4">
-                  <h4 className="text-sm font-semibold text-teal uppercase tracking-wider mb-2">For You</h4>
+                  <h4 className="text-base font-semibold text-teal uppercase tracking-wider mb-2">For You</h4>
                   <h3 className="text-xl font-bold text-navy">AI Fluency Sprint</h3>
                 </div>
-                <p className="text-gray-600 text-center">
+                <p className="text-lg text-gray-600 text-center">
                   Start with yourself. Our 1-on-1 sprint transforms you from a casual user to an AI-confident strategist.
                 </p>
-                <p className="text-teal font-semibold mt-6 text-sm text-center">Learn more →</p>
+                <p className="text-teal font-semibold mt-6 text-base text-center">Learn more →</p>
               </Card>
             </motion.a>
 
@@ -128,13 +128,13 @@ export default function Offerings() {
             >
               <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
                 <div className="text-center mb-4">
-                  <h4 className="text-sm font-semibold text-teal uppercase tracking-wider mb-2">For Your Team</h4>
+                  <h4 className="text-base font-semibold text-teal uppercase tracking-wider mb-2">For Your Team</h4>
                   <h3 className="text-xl font-bold text-navy">AI-Confident Team Sprint</h3>
                 </div>
-                <p className="text-gray-600 text-center">
+                <p className="text-lg text-gray-600 text-center">
                   Empower your unit. We get your entire team fluent and aligned for immediate impact.
                 </p>
-                <p className="text-teal font-semibold mt-6 text-sm text-center">Learn more →</p>
+                <p className="text-teal font-semibold mt-6 text-base text-center">Learn more →</p>
               </Card>
             </motion.a>
 
@@ -148,13 +148,13 @@ export default function Offerings() {
             >
               <Card className="p-6 h-full hover:shadow-xl transition-shadow cursor-pointer bg-white">
                 <div className="text-center mb-4">
-                  <h4 className="text-sm font-semibold text-teal uppercase tracking-wider mb-2">For Your Company</h4>
+                  <h4 className="text-base font-semibold text-teal uppercase tracking-wider mb-2">For Your Company</h4>
                   <h3 className="text-xl font-bold text-navy">AI Readiness Assessment</h3>
                 </div>
-                <p className="text-gray-600 text-center">
+                <p className="text-lg text-gray-600 text-center">
                   Transform your enterprise. We build a strategic roadmap for company-wide AI adoption.
                 </p>
-                <p className="text-teal font-semibold mt-6 text-sm text-center">Learn more →</p>
+                <p className="text-teal font-semibold mt-6 text-base text-center">Learn more →</p>
               </Card>
             </motion.a>
           </motion.div>
@@ -180,7 +180,7 @@ export default function Offerings() {
           </motion.div>
 
           <motion.div className="prose prose-xl mx-auto mb-12" variants={fadeInUp}>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Move from underwhelmed to amazed through personalized discovery sessions that unlock AI use cases you didn't know existed. This isn't about learning to write better prompts—it's about fundamentally transforming how you think with AI as your thought partner.
             </p>
           </motion.div>
@@ -189,7 +189,7 @@ export default function Offerings() {
             <motion.div variants={scaleIn}>
               <Card className="p-8 h-full shadow-lg border-0">
                 <h3 className="text-2xl font-bold text-navy mb-6">What's Included</h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
                     <span>3 to 5 personalized sessions tailored to your goals</span>
@@ -220,14 +220,14 @@ export default function Offerings() {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-semibold text-lg text-navy mb-2">Choose your pace:</h4>
-                    <ul className="space-y-2 text-gray-700">
+                    <ul className="space-y-2 text-lg text-gray-700">
                       <li>• 5 one-hour sessions for focused, iterative learning</li>
                       <li>• 3 sessions of 100 minutes for intensive transformation</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg text-navy mb-2">Delivery options:</h4>
-                    <ul className="space-y-2 text-gray-700">
+                    <ul className="space-y-2 text-lg text-gray-700">
                       <li>• Virtual sessions via Zoom</li>
                       <li>• In-person available in San Francisco Bay Area and Greater Boston</li>
                       <li>• Flexible scheduling including evenings and weekends</li>
@@ -289,7 +289,7 @@ export default function Offerings() {
           </motion.div>
 
           <motion.div className="prose prose-xl mx-auto mb-12" variants={fadeInUp}>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Move your team from tentative exploration to confident, practical application. This custom 4-part series develops shared language, repeatable patterns, and team-wide AI fluency that compounds over time. Your team will discover how to leverage AI for competitive advantage in your specific domain.
             </p>
           </motion.div>
@@ -298,7 +298,7 @@ export default function Offerings() {
             <motion.div variants={scaleIn}>
               <Card className="p-8 h-full shadow-lg border-0 bg-white">
                 <h3 className="text-2xl font-bold text-navy mb-6">Perfect For</h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3">•</span>
                     <span>Leadership teams building new capabilities together</span>
@@ -322,7 +322,7 @@ export default function Offerings() {
             <motion.div variants={scaleIn}>
               <Card className="p-8 h-full shadow-lg border-0 bg-white">
                 <h3 className="text-2xl font-bold text-navy mb-6">What's Included</h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
                     <span>4 customized sessions tailored to your team's objectives</span>
@@ -377,7 +377,7 @@ export default function Offerings() {
           </motion.div>
 
           <motion.div className="prose prose-xl mx-auto mb-12" variants={fadeInUp}>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               A comprehensive 3 to 4 week diagnostic that identifies where AI can drive transformation in your business. We'll work with your leadership team to uncover high-impact opportunities, assess organizational readiness, and establish a prioritized roadmap that balances quick wins with strategic initiatives.
             </p>
           </motion.div>
@@ -386,7 +386,7 @@ export default function Offerings() {
             <motion.div variants={scaleIn}>
               <Card className="p-8 h-full shadow-lg border-0">
                 <h3 className="text-2xl font-bold text-navy mb-6">What You'll Receive</h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
                     <span>Current-state capability assessment across your organization</span>
@@ -414,7 +414,7 @@ export default function Offerings() {
             <motion.div variants={scaleIn}>
               <Card className="p-8 h-full shadow-lg border-0">
                 <h3 className="text-2xl font-bold text-navy mb-6">Our Process</h3>
-                <div className="space-y-4 text-gray-700">
+                <div className="space-y-4 text-lg text-gray-700">
                   <div>
                     <h4 className="font-semibold mb-1">Week 1: Discovery</h4>
                     <p className="text-sm">Leadership interviews and current-state analysis</p>
