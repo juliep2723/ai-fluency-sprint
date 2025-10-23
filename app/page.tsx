@@ -212,7 +212,7 @@ export default function Home() {
               className="md:w-4/5"
               variants={scaleIn}
             >
-              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-teal">
+              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-8 border-[#009B9F]">
                 <h3 className="text-2xl font-bold text-navy mb-3">
                   Discover Ways to Use AI <span className="text-teal">You Didn't Know Existed</span>
                 </h3>
@@ -227,7 +227,7 @@ export default function Home() {
               className="md:w-4/5 md:ml-auto"
               variants={scaleIn}
             >
-              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-teal">
+              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-8 border-[#009B9F]">
                 <div className="md:text-right">
                   <h3 className="text-2xl font-bold text-navy mb-3">
                     Experience <span className="text-teal">Breakthrough Moments</span> That Change Everything
@@ -244,7 +244,7 @@ export default function Home() {
               className="md:w-4/5"
               variants={scaleIn}
             >
-              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-teal">
+              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-8 border-[#009B9F]">
                 <h3 className="text-2xl font-bold text-navy mb-3">
                   Transform Your Expertise Into <span className="text-teal">Competitive Advantage</span>
                 </h3>
