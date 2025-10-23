@@ -5,7 +5,7 @@ export default function Privacy() {
       <section className="py-16 px-6 bg-navy text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-center">Privacy Policy</h1>
-          <p className="text-center mt-4 text-gray-300">Last updated: October 14, 2024</p>
+          <p className="text-center mt-4 text-gray-300">Last updated: October 23, 2025</p>
         </div>
       </section>
 
@@ -22,9 +22,11 @@ export default function Privacy() {
           </p>
           <ul className="text-gray-700 text-lg">
             <li>Name and contact information (email, phone number)</li>
-            <li>Professional information relevant to our coaching services</li>
+            <li>Professional and organizational information relevant to our services</li>
             <li>Payment and billing information</li>
             <li>Communications between you and us</li>
+            <li>For team and enterprise services: participant names and roles</li>
+            <li>For assessments: organizational data shared during the diagnostic process</li>
           </ul>
 
           <h2 className="text-3xl font-bold text-navy mt-10 mb-4">How We Use Your Information</h2>
