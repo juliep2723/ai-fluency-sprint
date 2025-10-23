@@ -212,9 +212,9 @@ export default function Home() {
               className="md:w-4/5"
               variants={scaleIn}
             >
-              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-orange-500">
+              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-teal">
                 <h3 className="text-2xl font-bold text-navy mb-3">
-                  Discover Ways to Use AI <span className="text-orange-500">You Didn't Know Existed</span>
+                  Discover Ways to Use AI <span className="text-teal">You Didn't Know Existed</span>
                 </h3>
                 <p className="text-lg text-black">
                   Solve problems you've accepted as unsolvable. Enhance how you think and work in ways that seemed impossible before.
@@ -227,7 +227,7 @@ export default function Home() {
               className="md:w-4/5 md:ml-auto"
               variants={scaleIn}
             >
-              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-r-4 border-teal">
+              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-teal">
                 <div className="md:text-right">
                   <h3 className="text-2xl font-bold text-navy mb-3">
                     Experience <span className="text-teal">Breakthrough Moments</span> That Change Everything
@@ -244,9 +244,9 @@ export default function Home() {
               className="md:w-4/5"
               variants={scaleIn}
             >
-              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-600">
+              <Card className="p-10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-teal">
                 <h3 className="text-2xl font-bold text-navy mb-3">
-                  Transform Your Expertise Into <span className="text-purple-600">Competitive Advantage</span>
+                  Transform Your Expertise Into <span className="text-teal">Competitive Advantage</span>
                 </h3>
                 <p className="text-lg text-black">
                   Your knowledge becomes AI's greatest amplifier. Your experience provides guardrails for breakthrough thinking. You move from AI user to AI thought partner.
