@@ -69,7 +69,7 @@ export default function Home() {
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="text-orange-500 inline-block align-baseline">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
+            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="font-bold text-orange-500 inline-block align-baseline">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
           </motion.p>
           
           <motion.div variants={fadeInUp}>
@@ -287,7 +287,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-navy mb-2">Michele Chambliss</h3>
-                    <p className="text-lg text-teal font-semibold mb-4">From Enterprise Transformation to Personal AI Mastery</p>
+                    <p className="text-xl text-teal font-semibold mb-4">From Enterprise Transformation to Personal AI Mastery</p>
                     
                     <ul className="space-y-3 text-lg text-black">
                       <li className="flex items-start">
@@ -327,7 +327,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-navy mb-2">Julie Price</h3>
-                    <p className="text-lg text-teal font-semibold mb-4">Pioneer in AI Fluency & Customer Discovery</p>
+                    <p className="text-xl text-teal font-semibold mb-4">Pioneer in AI Fluency & Customer Discovery</p>
                     
                     <ul className="space-y-3 text-lg text-black">
                       <li className="flex items-start">
