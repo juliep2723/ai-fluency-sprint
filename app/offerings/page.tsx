@@ -249,7 +249,7 @@ export default function Offerings() {
               
               <div className="bg-white/10 rounded-lg p-3 mb-4">
                 <p className="text-center font-semibold mb-1">100% Satisfaction Guarantee</p>
-                <p className="text-center opacity-90 text-sm">
+                <p className="text-center opacity-90 text-base">
                   Experience your first session risk-free. If you don't have at least one breakthrough moment, we'll refund 100%
                 </p>
               </div>
