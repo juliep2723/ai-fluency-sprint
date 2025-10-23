@@ -66,10 +66,10 @@ export default function Home() {
             <span className="text-teal">AI-Confident</span>
           </motion.h1>
           <motion.p 
-            className="text-2xl md:text-3xl font-bold text-white mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="text-orange-500">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
+            Two Silicon Valley veterans discovered most leaders are using AI like a <span className="text-orange-500 inline-block align-baseline">Ferrari in first gear</span>. We'll help you unlock its full power through personalized guidance.
           </motion.p>
           
           <motion.div variants={fadeInUp}>
@@ -216,7 +216,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-navy mb-3">
                   Discover Ways to Use AI <span className="text-orange-500">You Didn't Know Existed</span>
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-black">
                   Solve problems you've accepted as unsolvable. Enhance how you think and work in ways that seemed impossible before.
                 </p>
               </Card>
@@ -232,7 +232,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-navy mb-3">
                     Experience <span className="text-teal">Breakthrough Moments</span> That Change Everything
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-lg text-black">
                     Break through the "prompt engineering" trap. Develop patterns that unlock AI's hidden potential and fundamentally shift what you believe is possible.
                   </p>
                 </div>
@@ -248,7 +248,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-navy mb-3">
                   Transform Your Expertise Into <span className="text-purple-600">Competitive Advantage</span>
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-black">
                   Your knowledge becomes AI's greatest amplifier. Your experience provides guardrails for breakthrough thinking. You move from AI user to AI thought partner.
                 </p>
               </Card>
@@ -289,7 +289,7 @@ export default function Home() {
                     <h3 className="text-2xl font-bold text-navy mb-2">Michele Chambliss</h3>
                     <p className="text-lg text-teal font-semibold mb-4">From Enterprise Transformation to Personal AI Mastery</p>
                     
-                    <ul className="space-y-3 text-charcoal">
+                    <ul className="space-y-3 text-lg text-black">
                       <li className="flex items-start">
                         <span className="text-teal mr-2 mt-1">•</span>
                         <span>Harvard MBA with 30+ years in strategy consulting, enterprise leadership, and Silicon Valley ventures</span>
@@ -329,7 +329,7 @@ export default function Home() {
                     <h3 className="text-2xl font-bold text-navy mb-2">Julie Price</h3>
                     <p className="text-lg text-teal font-semibold mb-4">Pioneer in AI Fluency & Customer Discovery</p>
                     
-                    <ul className="space-y-3 text-charcoal">
+                    <ul className="space-y-3 text-lg text-black">
                       <li className="flex items-start">
                         <span className="text-teal mr-2 mt-1">•</span>
                         <span>Wharton MBA who invented customer discovery methodology used across 100+ venture projects at Mach49</span>
