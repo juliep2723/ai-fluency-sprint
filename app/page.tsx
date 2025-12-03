@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Holiday Banner - Top of Page */}
-      <section className="bg-gradient-to-r from-teal via-teal/90 to-teal pt-24 pb-3 px-6">
+      <section className="pt-24 pb-3 px-6" style={{ backgroundColor: '#14B8A6' }}>
         <motion.div 
           className="max-w-6xl mx-auto text-center"
           initial={{ opacity: 0, y: -10 }}
