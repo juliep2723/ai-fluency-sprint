@@ -18,6 +18,9 @@ export default function Navigation() {
             <Link href="/offerings" className="text-gray-700 hover:text-navy font-medium transition-colors">
               Offerings
             </Link>
+            <Link href="/sidekick" className="text-gray-700 hover:text-navy font-medium transition-colors">
+              Holiday Offer
+            </Link>
             <a href="mailto:michele@aistrategyllc.com" className="text-gray-700 hover:text-navy font-medium transition-colors">
               Contact
             </a>

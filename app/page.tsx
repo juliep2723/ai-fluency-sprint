@@ -47,8 +47,25 @@ const scaleIn = {
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* Holiday Banner - Top of Page */}
+      <section className="bg-gradient-to-r from-teal via-teal/90 to-teal pt-24 pb-3 px-6">
+        <motion.div 
+          className="max-w-6xl mx-auto text-center"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Link href="/sidekick" className="block group hover:opacity-90 transition-opacity">
+            <p className="text-white font-semibold text-lg md:text-xl">
+              🎁 <span className="underline decoration-2 underline-offset-2 group-hover:decoration-white/70">New Holiday Offer:</span> AI Sidekick Starter Kit for Parents • 
+              <span className="ml-2 font-bold">Learn More →</span>
+            </p>
+          </Link>
+        </motion.div>
+      </section>
+
       {/* Hero Section - Navy Background */}
-      <section className="relative bg-navy text-white pt-32 pb-24 px-6 overflow-hidden">
+      <section className="relative bg-navy text-white pt-16 pb-24 px-6 overflow-hidden">
         {/* Subtle gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-slate-800 opacity-50"></div>
         
