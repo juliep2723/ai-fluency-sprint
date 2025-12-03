@@ -70,7 +70,7 @@ export default function Sidekick() {
           <a href="#gift-options">
             <Button 
               size="lg" 
-              className="bg-teal hover:bg-teal/90 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
             >
               Pick Your Gift
             </Button>
@@ -108,8 +108,12 @@ export default function Sidekick() {
           </motion.p>
 
           <motion.div className="grid md:grid-cols-2 gap-4 mb-8" variants={staggerContainer}>
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full shadow-lg hover:shadow-xl border-l-4 border-teal text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Spot scams before they click</h3>
                 <p className="text-lg text-black mt-1">
                   Forward weird texts, emails, and "urgent" notices to their sidekick for a safety check.
@@ -117,8 +121,12 @@ export default function Sidekick() {
               </Card>
             </motion.div>
 
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full shadow-lg hover:shadow-xl border-l-4 border-teal text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Translate gobbledygook</h3>
                 <p className="text-lg text-black mt-1">
                   Turn medical, legal, and financial jargon into plain English they can actually act on.
@@ -126,8 +134,12 @@ export default function Sidekick() {
               </Card>
             </motion.div>
 
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full shadow-lg hover:shadow-xl border-l-4 border-teal text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Write tough emails</h3>
                 <p className="text-lg text-black mt-1">
                   To HOAs, contractors, customer service, even family – firm, clear, and kind.
@@ -135,8 +147,12 @@ export default function Sidekick() {
               </Card>
             </motion.div>
 
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full shadow-lg hover:shadow-xl border-l-4 border-teal text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Fix real-world stuff</h3>
                 <p className="text-lg text-black mt-1">
                   Snap a photo of a leaky faucet, mystery plant, or confusing bill and ask, "What do I do about this?"
@@ -159,7 +175,7 @@ export default function Sidekick() {
             <a href="#gift-options">
               <Button 
                 size="lg" 
-                className="bg-teal hover:bg-teal/90 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
               >
                 Pick Your Gift
               </Button>
@@ -255,8 +271,12 @@ export default function Sidekick() {
 
           <motion.div className="grid md:grid-cols-3 gap-6 mb-8" variants={staggerContainer}>
             {/* Solo Sidekick */}
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-xl border-2 border-teal transition-all">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all">
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Solo Sidekick</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$99</div>
@@ -280,7 +300,7 @@ export default function Sidekick() {
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-teal hover:bg-teal/90 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={() => handleStripeCheckout('solo')}
                 >
                   Purchase Solo Sidekick
@@ -289,8 +309,12 @@ export default function Sidekick() {
             </motion.div>
 
             {/* Sidekick Plus */}
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-xl border-2 border-teal relative">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal relative transition-all">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-teal text-white px-4 py-1 rounded-full text-sm font-semibold">
                   Most Popular
                 </div>
@@ -320,7 +344,7 @@ export default function Sidekick() {
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-navy hover:bg-navy/90 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-navy hover:bg-navy/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={() => handleStripeCheckout('plus')}
                 >
                   Purchase Sidekick Plus
@@ -329,8 +353,12 @@ export default function Sidekick() {
             </motion.div>
 
             {/* Family Pack */}
-            <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-xl border-2 border-teal transition-all">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all">
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Family Pack</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$249</div>
@@ -354,7 +382,7 @@ export default function Sidekick() {
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-teal hover:bg-teal/90 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={() => handleStripeCheckout('family')}
                 >
                   Purchase Family Pack
@@ -397,8 +425,12 @@ export default function Sidekick() {
           </motion.p>
 
           <motion.div className="grid md:grid-cols-2 gap-4" variants={staggerContainer}>
-            <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-5 h-full shadow-lg hover:shadow-xl border-0 bg-white text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Respectful</h3>
                 <p className="text-lg text-black mt-1">
                   Assumes they're smart and experienced, because they are. We're just updating the tools.
@@ -406,8 +438,12 @@ export default function Sidekick() {
               </Card>
             </motion.div>
 
-            <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-5 h-full shadow-lg hover:shadow-xl border-0 bg-white text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Outcome-first</h3>
                 <p className="text-lg text-black mt-1">
                   We talk about their life (bills, trips, doctor visits), not "learning a new platform."
@@ -415,8 +451,12 @@ export default function Sidekick() {
               </Card>
             </motion.div>
 
-            <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-5 h-full shadow-lg hover:shadow-xl border-0 bg-white text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Superpower-framed</h3>
                 <p className="text-lg text-black mt-1">
                   More "magic wand for real life" than "remedial tech course."
@@ -424,8 +464,12 @@ export default function Sidekick() {
               </Card>
             </motion.div>
 
-            <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+            <motion.div 
+              variants={scaleIn}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Card className="p-5 h-full shadow-lg hover:shadow-xl border-0 bg-white text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Confidence-building</h3>
                 <p className="text-lg text-black mt-1">
                   They rediscover how capable they already are, with a 24/7 sidekick on call.
