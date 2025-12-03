@@ -37,18 +37,15 @@ const scaleIn = {
 
 export default function Sidekick() {
   const handleStripeCheckout = (productType: string) => {
-    // Placeholder - will be replaced with actual Stripe URLs
     const stripeUrls: { [key: string]: string } = {
-      solo: '#', // TODO: Replace with actual Stripe checkout URL
-      plus: '#', // TODO: Replace with actual Stripe checkout URL
-      family: '#' // TODO: Replace with actual Stripe checkout URL
+      solo: 'https://buy.stripe.com/bJe28le3c134ga3aEC9k402',
+      plus: 'https://buy.stripe.com/dRm9ANbV48vw5vph309k403',
+      family: 'https://buy.stripe.com/aFa4gt8IS7rs0b52869k404'
     }
     
     const url = stripeUrls[productType]
-    if (url && url !== '#') {
+    if (url) {
       window.location.href = url
-    } else {
-      alert('Checkout link coming soon! Please contact us at michele@aistrategyllc.com')
     }
   }
 
