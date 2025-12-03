@@ -62,15 +62,11 @@ export default function Sidekick() {
           animate="visible"
           variants={fadeInUp}
         >
-          <div className="inline-block bg-teal/20 px-4 py-2 rounded-full mb-6">
-            <p className="text-lg font-semibold text-teal">🎁 Limited Time Holiday Offering</p>
-          </div>
+          <p className="text-xl text-teal font-semibold mb-4">🎁 Limited Time Holiday Offering</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
-            For parents who are brilliant at life and baffled by AI.
-          </p>
-          <p className="text-xl text-white max-w-2xl mx-auto">
-            Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."
+          <p className="text-2xl text-gray-200 max-w-3xl mx-auto">
+            For parents who are brilliant at life and baffled by AI.<br />
+            <span className="text-xl text-gray-300">Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."</span>
           </p>
         </motion.div>
       </section>
