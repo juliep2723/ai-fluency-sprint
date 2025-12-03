@@ -321,7 +321,7 @@ export default function Sidekick() {
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Sidekick Plus</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$149</div>
-                  <p className="text-lg text-black">Extra hand-holding & staying power</p>
+                  <p className="text-lg text-black">Extra hand-holding</p>
                 </div>
                 
                 <div className="mb-6">
