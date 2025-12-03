@@ -167,7 +167,7 @@ export default function Sidekick() {
           >
             <p className="text-2xl text-black text-center font-semibold">
               They're not "learning AI."<br />
-              They're learning <span className="text-teal">how to get help with the life stuff that usually ends up on your plate.</span>
+              They're learning <span className="text-teal">to get help with life stuff that usually ends up on your plate.</span>
             </p>
           </motion.div>
           
@@ -270,20 +270,20 @@ export default function Sidekick() {
           </motion.h2>
 
           <motion.div className="grid md:grid-cols-3 gap-6 mb-8" variants={staggerContainer}>
-            {/* Solo Sidekick */}
+            {/* Sidekick Solo */}
             <motion.div 
               variants={scaleIn}
               whileHover={{ scale: 1.03, y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all">
+              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all flex flex-col">
                 <div className="text-center mb-4">
-                  <h3 className="text-2xl font-bold text-navy mb-2">Solo Sidekick</h3>
+                  <h3 className="text-2xl font-bold text-navy mb-2">Sidekick Solo</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$99</div>
                   <p className="text-lg text-black">One-week transformation</p>
                 </div>
                 
-                <ul className="space-y-2 text-lg text-black mb-6">
+                <ul className="space-y-2 text-lg text-black mb-6 flex-grow">
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
                     <span>7 daily email + video lessons</span>
@@ -300,10 +300,10 @@ export default function Sidekick() {
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 mt-auto"
                   onClick={() => handleStripeCheckout('solo')}
                 >
-                  Purchase Solo Sidekick
+                  Purchase Sidekick Solo
                 </Button>
               </Card>
             </motion.div>
@@ -314,7 +314,7 @@ export default function Sidekick() {
               whileHover={{ scale: 1.03, y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal relative transition-all">
+              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal relative transition-all flex flex-col">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-teal text-white px-4 py-1 rounded-full text-sm font-semibold">
                   Most Popular
                 </div>
@@ -324,8 +324,8 @@ export default function Sidekick() {
                   <p className="text-lg text-black">Extra hand-holding</p>
                 </div>
                 
-                <div className="mb-6">
-                  <p className="text-lg font-semibold text-black mb-2">Everything in Solo, plus:</p>
+                <div className="mb-6 flex-grow">
+                  <p className="text-lg font-semibold text-black mb-2">Everything in Sidekick Solo, plus:</p>
                   <ul className="space-y-2 text-lg text-black">
                     <li className="flex items-start">
                       <span className="text-teal mr-2">✓</span>
@@ -344,7 +344,7 @@ export default function Sidekick() {
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-navy hover:bg-navy/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-navy hover:bg-navy/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 mt-auto"
                   onClick={() => handleStripeCheckout('plus')}
                 >
                   Purchase Sidekick Plus
@@ -358,14 +358,14 @@ export default function Sidekick() {
               whileHover={{ scale: 1.03, y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all">
+              <Card className="p-6 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all flex flex-col">
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Family Pack</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$249</div>
                   <p className="text-lg text-black">2 Sidekick Plus seats</p>
                 </div>
                 
-                <ul className="space-y-2 text-lg text-black mb-6">
+                <ul className="space-y-2 text-lg text-black mb-6 flex-grow">
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
                     <span>Everything in Sidekick Plus</span>
@@ -382,7 +382,7 @@ export default function Sidekick() {
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 mt-auto"
                   onClick={() => handleStripeCheckout('family')}
                 >
                   Purchase Family Pack
