@@ -55,10 +55,9 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link href="/sidekick" className="block group hover:opacity-90 transition-opacity">
+          <Link href="/sidekick" className="block hover:opacity-90 transition-opacity">
             <p className="text-white font-semibold text-lg md:text-xl">
-              🎁 <span className="underline decoration-2 underline-offset-2 group-hover:decoration-white/70">New Holiday Offer:</span> AI Sidekick Starter Kit for Parents • 
-              <span className="ml-2 font-bold">Learn More →</span>
+              🎁 New Holiday Offer: AI Sidekick Starter Kit for Parents →
             </p>
           </Link>
         </motion.div>
