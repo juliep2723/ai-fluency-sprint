@@ -102,8 +102,8 @@ export default function Sidekick() {
           <motion.div className="grid md:grid-cols-2 gap-4 mb-8" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
-                <h3 className="text-xl font-bold text-navy">Spot scams before they click</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Spot scams before they click</h3>
+                <p className="text-lg text-black mt-1">
                   Forward weird texts, emails, and "urgent" notices to their sidekick for a safety check.
                 </p>
               </Card>
@@ -111,8 +111,8 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
-                <h3 className="text-xl font-bold text-navy">Translate gobbledygook</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Translate gobbledygook</h3>
+                <p className="text-lg text-black mt-1">
                   Turn medical, legal, and financial jargon into plain English they can actually act on.
                 </p>
               </Card>
@@ -120,8 +120,8 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
-                <h3 className="text-xl font-bold text-navy">Write tough emails</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Write tough emails</h3>
+                <p className="text-lg text-black mt-1">
                   To HOAs, contractors, customer service, even family – firm, clear, and kind.
                 </p>
               </Card>
@@ -129,8 +129,8 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
-                <h3 className="text-xl font-bold text-navy">Fix real-world stuff</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Fix real-world stuff</h3>
+                <p className="text-lg text-black mt-1">
                   Snap a photo of a leaky faucet, mystery plant, or confusing bill and ask, "What do I do about this?"
                 </p>
               </Card>
@@ -392,8 +392,8 @@ export default function Sidekick() {
           <motion.div className="grid md:grid-cols-2 gap-4" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
-                <h3 className="text-xl font-bold text-navy">Respectful</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Respectful</h3>
+                <p className="text-lg text-black mt-1">
                   Assumes they're smart and experienced, because they are. We're just updating the tools.
                 </p>
               </Card>
@@ -401,8 +401,8 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
-                <h3 className="text-xl font-bold text-navy">Outcome-first</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Outcome-first</h3>
+                <p className="text-lg text-black mt-1">
                   We talk about their life (bills, trips, doctor visits), not "learning a new platform."
                 </p>
               </Card>
@@ -410,8 +410,8 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
-                <h3 className="text-xl font-bold text-navy">Superpower-framed</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Superpower-framed</h3>
+                <p className="text-lg text-black mt-1">
                   More "magic wand for real life" than "remedial tech course."
                 </p>
               </Card>
@@ -419,8 +419,8 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
-                <h3 className="text-xl font-bold text-navy">Confidence-building</h3>
-                <p className="text-lg text-black">
+                <h3 className="text-xl font-bold text-navy leading-tight">Confidence-building</h3>
+                <p className="text-lg text-black mt-1">
                   They rediscover how capable they already are, with a 24/7 sidekick on call.
                 </p>
               </Card>
