@@ -151,4 +151,8 @@
   .bg-teal {
     background-color: var(--teal);
   }
+  
+  .bg-off-white {
+    background-color: var(--off-white);
+  }
 }

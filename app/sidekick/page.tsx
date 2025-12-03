@@ -55,7 +55,7 @@ export default function Sidekick() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - Navy Background */}
-      <section className="py-24 px-6 bg-navy text-white pt-32">
+      <section className="py-16 px-6 bg-navy text-white pt-32">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
           initial="hidden"
@@ -63,20 +63,20 @@ export default function Sidekick() {
           variants={fadeInUp}
         >
           <div className="inline-block bg-teal/20 px-4 py-2 rounded-full mb-6">
-            <p className="text-sm font-semibold text-teal">🎁 Limited Time Holiday Offering</p>
+            <p className="text-lg font-semibold text-teal">🎁 Limited Time Holiday Offering</p>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
             For parents who are brilliant at life and baffled by AI.
           </p>
-          <p className="text-xl text-gray-400 italic max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."
           </p>
         </motion.div>
       </section>
 
       {/* What They'll Get - White Background */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-16 px-6 bg-white">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -85,20 +85,20 @@ export default function Sidekick() {
           variants={staggerContainer}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-navy text-center mb-8"
             variants={fadeInUp}
           >
             What They'll Actually Get Out of This
           </motion.h2>
           
           <motion.p 
-            className="text-xl text-gray-700 text-center mb-8"
+            className="text-xl text-gray-700 text-center mb-6"
             variants={fadeInUp}
           >
             By the end of 7 days, your parents will be able to use AI to:
           </motion.p>
 
-          <motion.div className="grid md:grid-cols-2 gap-6 mb-12" variants={staggerContainer}>
+          <motion.div className="grid md:grid-cols-2 gap-4 mb-8" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
                 <h3 className="text-xl font-bold text-navy mb-3">Spot scams before they click</h3>
@@ -137,10 +137,10 @@ export default function Sidekick() {
           </motion.div>
 
           <motion.div 
-            className="bg-teal/10 p-8 rounded-lg border-l-4 border-teal"
+            className="bg-teal/10 p-6 rounded-lg border-l-4 border-teal"
             variants={fadeInUp}
           >
-            <p className="text-xl text-gray-800 text-center font-semibold">
+            <p className="text-2xl text-gray-800 text-center font-semibold">
               They're not "learning AI."<br />
               They're learning <span className="text-teal">how to get help with the life stuff that usually ends up on your plate.</span>
             </p>
@@ -149,7 +149,7 @@ export default function Sidekick() {
       </section>
 
       {/* How It Works - Off-White Background */}
-      <section className="py-24 px-6 bg-off-white">
+      <section className="py-16 px-6 bg-off-white">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -158,13 +158,13 @@ export default function Sidekick() {
           variants={staggerContainer}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-navy text-center mb-8"
             variants={fadeInUp}
           >
             How the 7-Day Sprint Works
           </motion.h2>
 
-          <motion.div className="grid md:grid-cols-2 gap-8 mb-12" variants={staggerContainer}>
+          <motion.div className="grid md:grid-cols-2 gap-6 mb-8" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-8 h-full shadow-lg border-0 bg-white">
                 <h3 className="text-2xl font-bold text-navy mb-6">Each Day, They Get:</h3>
@@ -191,7 +191,7 @@ export default function Sidekick() {
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>Wallet Card (physical)</strong> – a cheat sheet of "when X happens, ask AI this" they can keep in a wallet or by the computer.</span>
+                    <span><strong>Printable Wallet Card</strong> – a cheat sheet of "when X happens, ask AI this" they can keep in a wallet or by the computer.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
@@ -211,10 +211,10 @@ export default function Sidekick() {
           </motion.div>
 
           <motion.div 
-            className="bg-navy text-white p-8 rounded-lg text-center"
+            className="bg-navy text-white p-6 rounded-lg text-center"
             variants={fadeInUp}
           >
-            <p className="text-xl italic">
+            <p className="text-xl">
               Format: more advent calendar than online course. One small door to open per day, not a library they'll never log into.
             </p>
           </motion.div>
@@ -222,7 +222,7 @@ export default function Sidekick() {
       </section>
 
       {/* Pricing - White Background */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-16 px-6 bg-white">
         <motion.div 
           className="max-w-5xl mx-auto"
           initial="hidden"
@@ -231,30 +231,30 @@ export default function Sidekick() {
           variants={staggerContainer}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-navy text-center mb-8"
             variants={fadeInUp}
           >
             Pricing
           </motion.h2>
 
-          <motion.div className="grid md:grid-cols-3 gap-8 mb-12" variants={staggerContainer}>
+          <motion.div className="grid md:grid-cols-3 gap-6 mb-8" variants={staggerContainer}>
             {/* Solo Sidekick */}
             <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-xl border-2 border-gray-200 hover:border-teal transition-all">
-                <div className="text-center mb-6">
+              <Card className="p-6 h-full shadow-xl border-2 border-gray-200 hover:border-teal transition-all">
+                <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Solo Sidekick</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$99</div>
                   <p className="text-gray-600">One-week transformation</p>
                 </div>
                 
-                <ul className="space-y-3 text-lg text-gray-700 mb-8">
+                <ul className="space-y-2 text-lg text-gray-700 mb-4">
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
                     <span>7 daily email + video lessons</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
-                    <span>Wallet Card</span>
+                    <span>Printable Wallet Card</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
@@ -262,7 +262,7 @@ export default function Sidekick() {
                   </li>
                 </ul>
 
-                <p className="text-sm text-gray-600 text-center mb-6 italic">
+                <p className="text-base text-gray-600 text-center mb-4">
                   Perfect when you're buying for one parent or caregiver.
                 </p>
 
@@ -278,19 +278,19 @@ export default function Sidekick() {
 
             {/* Sidekick Plus */}
             <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-xl border-2 border-teal relative">
+              <Card className="p-6 h-full shadow-xl border-2 border-teal relative">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-teal text-white px-4 py-1 rounded-full text-sm font-semibold">
                   Most Popular
                 </div>
-                <div className="text-center mb-6">
+                <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Sidekick Plus</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$149</div>
                   <p className="text-gray-600">Extra hand-holding & staying power</p>
                 </div>
                 
                 <div className="mb-4">
-                  <p className="text-sm font-semibold text-gray-700 mb-2">Everything in Solo, plus:</p>
-                  <ul className="space-y-3 text-lg text-gray-700">
+                  <p className="text-base font-semibold text-gray-700 mb-2">Everything in Solo, plus:</p>
+                  <ul className="space-y-2 text-lg text-gray-700">
                     <li className="flex items-start">
                       <span className="text-teal mr-2">✓</span>
                       <span>Email support during the week</span>
@@ -318,14 +318,14 @@ export default function Sidekick() {
 
             {/* Family Pack */}
             <motion.div variants={scaleIn}>
-              <Card className="p-8 h-full shadow-xl border-2 border-gray-200 hover:border-teal transition-all">
-                <div className="text-center mb-6">
+              <Card className="p-6 h-full shadow-xl border-2 border-gray-200 hover:border-teal transition-all">
+                <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Family Pack</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$249</div>
                   <p className="text-gray-600">2 Sidekick Plus seats</p>
                 </div>
                 
-                <ul className="space-y-3 text-lg text-gray-700 mb-8">
+                <ul className="space-y-2 text-lg text-gray-700 mb-4">
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
                     <span>Everything in Sidekick Plus</span>
@@ -340,7 +340,7 @@ export default function Sidekick() {
                   </li>
                 </ul>
 
-                <p className="text-sm text-gray-600 text-center mb-6 italic">
+                <p className="text-base text-gray-600 text-center mb-4">
                   Gift to parents and in-laws and save on both.
                 </p>
 
@@ -356,17 +356,17 @@ export default function Sidekick() {
           </motion.div>
 
           <motion.div 
-            className="text-center text-gray-600 text-lg"
+            className="text-center text-gray-700 text-lg"
             variants={fadeInUp}
           >
-            <p className="mb-2">🎁 Choose delivery date between Dec 15 - Dec 26</p>
-            <p className="text-sm">(Selection made during checkout)</p>
+            <p className="mb-1">🎁 Choose delivery date between Dec 15 - Dec 26</p>
+            <p className="text-base">(Selection made during checkout)</p>
           </motion.div>
         </motion.div>
       </section>
 
       {/* Why Parents Like This - Light Gray Background */}
-      <section className="py-24 px-6 bg-light-gray">
+      <section className="py-16 px-6 bg-light-gray">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -375,23 +375,23 @@ export default function Sidekick() {
           variants={staggerContainer}
         >
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
+            className="text-4xl md:text-5xl font-bold text-navy text-center mb-8"
             variants={fadeInUp}
           >
             Why Parents Actually Like This
           </motion.h2>
 
           <motion.p 
-            className="text-xl text-gray-700 text-center mb-8 italic"
+            className="text-xl text-gray-700 text-center mb-6"
             variants={fadeInUp}
           >
             This isn't "back to school." It's:
           </motion.p>
 
-          <motion.div className="grid md:grid-cols-2 gap-6" variants={staggerContainer}>
+          <motion.div className="grid md:grid-cols-2 gap-4" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Respectful</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white">
+                <h3 className="text-xl font-bold text-navy mb-1">Respectful</h3>
                 <p className="text-lg text-gray-700">
                   Assumes they're smart and experienced, because they are. We're just updating the tools.
                 </p>
@@ -399,8 +399,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Outcome-first</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white">
+                <h3 className="text-xl font-bold text-navy mb-1">Outcome-first</h3>
                 <p className="text-lg text-gray-700">
                   We talk about their life (bills, trips, doctor visits), not "learning a new platform."
                 </p>
@@ -408,8 +408,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Superpower-framed</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white">
+                <h3 className="text-xl font-bold text-navy mb-1">Superpower-framed</h3>
                 <p className="text-lg text-gray-700">
                   More "magic wand for real life" than "remedial tech course."
                 </p>
@@ -417,8 +417,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Confidence-building</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white">
+                <h3 className="text-xl font-bold text-navy mb-1">Confidence-building</h3>
                 <p className="text-lg text-gray-700">
                   They rediscover how capable they already are, with a 24/7 sidekick on call.
                 </p>
@@ -429,7 +429,7 @@ export default function Sidekick() {
       </section>
 
       {/* Guarantee - White Background */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-16 px-6 bg-white">
         <motion.div 
           className="max-w-3xl mx-auto"
           initial="hidden"
@@ -437,17 +437,17 @@ export default function Sidekick() {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <Card className="p-10 bg-teal/10 border-l-8 border-teal shadow-xl">
-            <h2 className="text-3xl font-bold text-navy text-center mb-6">
+          <Card className="p-8 bg-teal/10 border-l-8 border-teal shadow-xl">
+            <h2 className="text-3xl font-bold text-navy text-center mb-4">
               100% "I Can Do This" Guarantee
             </h2>
-            <p className="text-xl text-gray-800 text-center mb-4 leading-relaxed">
+            <p className="text-xl text-gray-800 text-center mb-3 leading-relaxed">
               If they don't have at least one "Oh wow, I can handle this myself" moment in the first 3 days, we'll refund you in full. No forms, no awkward questions.
             </p>
             <p className="text-xl text-gray-800 text-center font-semibold">
               You get your money back.
             </p>
-            <p className="text-xl text-gray-800 text-center mt-4 italic">
+            <p className="text-xl text-gray-800 text-center mt-3">
               They still get the message: <span className="text-teal font-bold">"I believe in you."</span>
             </p>
           </Card>
