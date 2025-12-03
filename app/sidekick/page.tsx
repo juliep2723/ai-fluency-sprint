@@ -231,7 +231,7 @@ export default function Sidekick() {
             variants={fadeInUp}
           >
             <p className="text-xl">
-              Format: more advent calendar than online course. One small door to open per day, not a library they'll never log into.
+              Format: A snack-sized series, not a full-course meal. Just enough each day to feel smarter and more capable, never stuffed or overwhelmed.
             </p>
           </motion.div>
         </motion.div>
