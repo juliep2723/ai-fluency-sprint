@@ -64,9 +64,17 @@ export default function Sidekick() {
         >
           <p className="text-xl text-teal font-bold mb-4">Limited Time Holiday Offering</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
-          <p className="text-2xl text-gray-200 max-w-3xl mx-auto">
+          <p className="text-2xl text-gray-200 max-w-3xl mx-auto mb-8">
             For parents who are brilliant at life and baffled by AI.
           </p>
+          <a href="#gift-options">
+            <Button 
+              size="lg" 
+              className="bg-teal hover:bg-teal/90 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+            >
+              Pick Your Gift
+            </Button>
+          </a>
         </motion.div>
       </section>
 
@@ -138,13 +146,24 @@ export default function Sidekick() {
           </motion.div>
 
           <motion.div 
-            className="bg-teal/10 p-6 rounded-lg border-l-4 border-teal"
+            className="bg-teal/10 p-6 rounded-lg border-l-4 border-teal mb-8"
             variants={fadeInUp}
           >
             <p className="text-2xl text-black text-center font-semibold">
               They're not "learning AI."<br />
               They're learning <span className="text-teal">how to get help with the life stuff that usually ends up on your plate.</span>
             </p>
+          </motion.div>
+          
+          <motion.div className="text-center" variants={fadeInUp}>
+            <a href="#gift-options">
+              <Button 
+                size="lg" 
+                className="bg-teal hover:bg-teal/90 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                Pick Your Gift
+              </Button>
+            </a>
           </motion.div>
         </motion.div>
       </section>
@@ -202,10 +221,6 @@ export default function Sidekick() {
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
                     <span><strong>Done-for-you gift message templates</strong> – so this feels like a love letter, not a "you're bad at computers" intervention.</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>Gentle troubleshooting support</strong> – if they get stuck, they email us, not you.</span>
-                  </li>
                 </ul>
               </Card>
             </motion.div>
@@ -222,8 +237,8 @@ export default function Sidekick() {
         </motion.div>
       </section>
 
-      {/* Pricing - White Background */}
-      <section className="py-16 px-6 bg-white">
+      {/* Gift Options - White Background */}
+      <section id="gift-options" className="py-16 px-6 bg-white">
         <motion.div 
           className="max-w-5xl mx-auto"
           initial="hidden"
@@ -235,20 +250,20 @@ export default function Sidekick() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-8"
             variants={fadeInUp}
           >
-            Pricing
+            Gift Options
           </motion.h2>
 
           <motion.div className="grid md:grid-cols-3 gap-6 mb-8" variants={staggerContainer}>
             {/* Solo Sidekick */}
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-xl border-2 border-gray-200 hover:border-teal transition-all">
+              <Card className="p-6 h-full shadow-xl border-2 border-teal transition-all">
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Solo Sidekick</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$99</div>
                   <p className="text-lg text-black">One-week transformation</p>
                 </div>
                 
-                <ul className="space-y-2 text-lg text-black mb-4">
+                <ul className="space-y-2 text-lg text-black mb-6">
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
                     <span>7 daily email + video lessons</span>
@@ -262,10 +277,6 @@ export default function Sidekick() {
                     <span>"50 Ways Your AI Sidekick Can Help" guide</span>
                   </li>
                 </ul>
-
-                <p className="text-lg text-black text-center mb-4">
-                  Perfect when you're buying for one parent or caregiver.
-                </p>
 
                 <Button 
                   size="lg" 
@@ -289,7 +300,7 @@ export default function Sidekick() {
                   <p className="text-lg text-black">Extra hand-holding & staying power</p>
                 </div>
                 
-                <div className="mb-4">
+                <div className="mb-6">
                   <p className="text-lg font-semibold text-black mb-2">Everything in Solo, plus:</p>
                   <ul className="space-y-2 text-lg text-black">
                     <li className="flex items-start">
@@ -319,14 +330,14 @@ export default function Sidekick() {
 
             {/* Family Pack */}
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-xl border-2 border-gray-200 hover:border-teal transition-all">
+              <Card className="p-6 h-full shadow-xl border-2 border-teal transition-all">
                 <div className="text-center mb-4">
                   <h3 className="text-2xl font-bold text-navy mb-2">Family Pack</h3>
                   <div className="text-4xl font-bold text-teal mb-1">$249</div>
                   <p className="text-lg text-black">2 Sidekick Plus seats</p>
                 </div>
                 
-                <ul className="space-y-2 text-lg text-black mb-4">
+                <ul className="space-y-2 text-lg text-black mb-6">
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
                     <span>Everything in Sidekick Plus</span>
@@ -337,13 +348,9 @@ export default function Sidekick() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
-                    <span>Perfect for parents & in-laws</span>
+                    <span>Save vs. buying separately</span>
                   </li>
                 </ul>
-
-                <p className="text-lg text-black text-center mb-4">
-                  Gift to parents and in-laws and save on both.
-                </p>
 
                 <Button 
                   size="lg" 
