@@ -65,8 +65,7 @@ export default function Sidekick() {
           <p className="text-xl text-teal font-semibold mb-4">🎁 Limited Time Holiday Offering</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
           <p className="text-2xl text-gray-200 max-w-3xl mx-auto">
-            For parents who are brilliant at life and baffled by AI.<br />
-            <span className="text-xl text-gray-300">Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."</span>
+            For parents who are brilliant at life and baffled by AI.
           </p>
         </motion.div>
       </section>
@@ -88,7 +87,13 @@ export default function Sidekick() {
           </motion.h2>
           
           <motion.p 
-            className="text-xl text-gray-700 text-center mb-6"
+            className="text-xl text-gray-700 text-center mb-2"
+            variants={fadeInUp}
+          >
+            Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."
+          </motion.p>
+          <motion.p 
+            className="text-lg text-gray-600 text-center mb-6"
             variants={fadeInUp}
           >
             By the end of 7 days, your parents will be able to use AI to:
@@ -96,8 +101,8 @@ export default function Sidekick() {
 
           <motion.div className="grid md:grid-cols-2 gap-4 mb-8" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-1">Spot scams before they click</h3>
+              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+                <h3 className="text-xl font-bold text-navy">Spot scams before they click</h3>
                 <p className="text-lg text-gray-700">
                   Forward weird texts, emails, and "urgent" notices to their sidekick for a safety check.
                 </p>
@@ -105,8 +110,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-1">Translate gobbledygook</h3>
+              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+                <h3 className="text-xl font-bold text-navy">Translate gobbledygook</h3>
                 <p className="text-lg text-gray-700">
                   Turn medical, legal, and financial jargon into plain English they can actually act on.
                 </p>
@@ -114,8 +119,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-1">Write tough emails</h3>
+              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+                <h3 className="text-xl font-bold text-navy">Write tough emails</h3>
                 <p className="text-lg text-gray-700">
                   To HOAs, contractors, customer service, even family – firm, clear, and kind.
                 </p>
@@ -123,8 +128,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-1">Fix real-world stuff</h3>
+              <Card className="p-6 h-full shadow-lg border-l-4 border-teal text-center">
+                <h3 className="text-xl font-bold text-navy">Fix real-world stuff</h3>
                 <p className="text-lg text-gray-700">
                   Snap a photo of a leaky faucet, mystery plant, or confusing bill and ask, "What do I do about this?"
                 </p>
@@ -386,8 +391,8 @@ export default function Sidekick() {
 
           <motion.div className="grid md:grid-cols-2 gap-4" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-1">Respectful</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+                <h3 className="text-xl font-bold text-navy">Respectful</h3>
                 <p className="text-lg text-gray-700">
                   Assumes they're smart and experienced, because they are. We're just updating the tools.
                 </p>
@@ -395,8 +400,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-1">Outcome-first</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+                <h3 className="text-xl font-bold text-navy">Outcome-first</h3>
                 <p className="text-lg text-gray-700">
                   We talk about their life (bills, trips, doctor visits), not "learning a new platform."
                 </p>
@@ -404,8 +409,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-1">Superpower-framed</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+                <h3 className="text-xl font-bold text-navy">Superpower-framed</h3>
                 <p className="text-lg text-gray-700">
                   More "magic wand for real life" than "remedial tech course."
                 </p>
@@ -413,8 +418,8 @@ export default function Sidekick() {
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <Card className="p-5 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-1">Confidence-building</h3>
+              <Card className="p-5 h-full shadow-lg border-0 bg-white text-center">
+                <h3 className="text-xl font-bold text-navy">Confidence-building</h3>
                 <p className="text-lg text-gray-700">
                   They rediscover how capable they already are, with a 24/7 sidekick on call.
                 </p>
