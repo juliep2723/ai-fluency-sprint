@@ -395,8 +395,7 @@ export default function Sidekick() {
             className="text-center text-black text-xl"
             variants={fadeInUp}
           >
-            <p className="mb-1">Choose delivery date between Dec 15 - Dec 26</p>
-            <p className="text-lg">(Selection made during checkout)</p>
+            <p>Choose delivery date between Dec 15 - Dec 26</p>
           </motion.div>
         </motion.div>
       </section>
