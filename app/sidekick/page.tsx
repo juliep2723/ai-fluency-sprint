@@ -458,7 +458,7 @@ export default function Sidekick() {
               <Card className="p-5 h-full shadow-lg hover:shadow-xl border-0 bg-white text-center transition-shadow">
                 <h3 className="text-xl font-bold text-navy leading-tight">Superpower-framed</h3>
                 <p className="text-lg text-black mt-1">
-                  More "magic wand for real life" than "remedial tech course."
+                  More "magic wand for real life" than "boring computer class."
                 </p>
               </Card>
             </motion.div>
@@ -488,7 +488,7 @@ export default function Sidekick() {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <Card className="p-8 bg-teal/10 border-l-8 border-teal shadow-xl">
+          <Card className="p-8 bg-teal/10 border-l-8 border-teal shadow-xl mb-8">
             <h2 className="text-3xl font-bold text-navy text-center mb-4">
               100% "I Can Do This" Guarantee
             </h2>
@@ -502,6 +502,17 @@ export default function Sidekick() {
               They still get the message: <span className="text-teal font-bold">"I believe in you."</span>
             </p>
           </Card>
+          
+          <div className="text-center">
+            <a href="#gift-options">
+              <Button 
+                size="lg" 
+                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                Pick Your Gift
+              </Button>
+            </a>
+          </div>
         </motion.div>
       </section>
     </main>
