@@ -62,7 +62,7 @@ export default function Sidekick() {
           animate="visible"
           variants={fadeInUp}
         >
-          <p className="text-xl text-teal font-semibold mb-4">🎁 Limited Time Holiday Offering</p>
+          <p className="text-xl text-teal font-bold mb-4">Limited Time Holiday Offering</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
           <p className="text-2xl text-gray-200 max-w-3xl mx-auto">
             For parents who are brilliant at life and baffled by AI.
@@ -360,7 +360,7 @@ export default function Sidekick() {
             className="text-center text-black text-xl"
             variants={fadeInUp}
           >
-            <p className="mb-1">🎁 Choose delivery date between Dec 15 - Dec 26</p>
+            <p className="mb-1">Choose delivery date between Dec 15 - Dec 26</p>
             <p className="text-lg">(Selection made during checkout)</p>
           </motion.div>
         </motion.div>
