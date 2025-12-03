@@ -97,7 +97,7 @@ export default function Sidekick() {
           <motion.div className="grid md:grid-cols-2 gap-4 mb-8" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-3">Spot scams before they click</h3>
+                <h3 className="text-xl font-bold text-navy mb-1">Spot scams before they click</h3>
                 <p className="text-lg text-gray-700">
                   Forward weird texts, emails, and "urgent" notices to their sidekick for a safety check.
                 </p>
@@ -106,7 +106,7 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-3">Translate gobbledygook</h3>
+                <h3 className="text-xl font-bold text-navy mb-1">Translate gobbledygook</h3>
                 <p className="text-lg text-gray-700">
                   Turn medical, legal, and financial jargon into plain English they can actually act on.
                 </p>
@@ -115,7 +115,7 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-3">Write tough emails</h3>
+                <h3 className="text-xl font-bold text-navy mb-1">Write tough emails</h3>
                 <p className="text-lg text-gray-700">
                   To HOAs, contractors, customer service, even family – firm, clear, and kind.
                 </p>
@@ -124,7 +124,7 @@ export default function Sidekick() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-3">Fix real-world stuff</h3>
+                <h3 className="text-xl font-bold text-navy mb-1">Fix real-world stuff</h3>
                 <p className="text-lg text-gray-700">
                   Snap a photo of a leaky faucet, mystery plant, or confusing bill and ask, "What do I do about this?"
                 </p>
