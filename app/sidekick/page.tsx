@@ -91,7 +91,7 @@ function SuccessModal({ productType, onClose }: { productType: string; onClose: 
         </h2>
         
         <p className="text-lg text-gray-700 text-center mb-8 leading-relaxed">
-          We'll email you shortly with everything you need to deliver your parents' AI Sidekick Starter Kit ({productName}). If it's not in your inbox, please check your Spam/Promotions folder.
+          We'll email you shortly with everything you need to deliver your AI Sidekick Starter Kit ({productName}). If it's not in your inbox, please check your Spam/Promotions folder.
         </p>
         
         {/* Close button */}
