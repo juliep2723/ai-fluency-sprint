@@ -238,3 +238,4 @@ export function trackAllPageViews() {
   // Google Analytics page views are handled automatically by the base script
 }
 
+

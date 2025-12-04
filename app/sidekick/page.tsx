@@ -386,11 +386,6 @@ function SidekickContent() {
                     <span>"50 Ways Your AI Sidekick Can Help" guide</span>
                   </li>
                 </ul>
-
-                <p className="text-base text-black text-center mb-6">
-                  Perfect when you're buying for one parent or caregiver.
-                </p>
-
                 <Button 
                   size="lg" 
                   className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 mt-auto"
@@ -472,11 +467,6 @@ function SidekickContent() {
                     <span>Save vs. buying separately</span>
                   </li>
                 </ul>
-
-                <p className="text-base text-black text-center mb-6">
-                  Gift to parents and in-laws and save on both.
-                </p>
-
                 <Button 
                   size="lg" 
                   className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 mt-auto"
