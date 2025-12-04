@@ -400,7 +400,7 @@ export default function Sidekick() {
             className="mt-10"
             variants={fadeInUp}
           >
-            <div className="flex justify-center items-center gap-6 flex-wrap">
+            <div className="flex justify-center items-center gap-6 flex-wrap bg-white rounded-xl border border-teal/30 shadow-md px-8 py-5 mx-auto w-fit">
               <span className="text-black text-base font-bold">Share:</span>
               {/* Email */}
               <a 
