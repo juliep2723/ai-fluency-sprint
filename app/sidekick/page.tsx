@@ -404,7 +404,7 @@ export default function Sidekick() {
               <span className="text-gray-600 text-base">Share:</span>
               {/* Email */}
               <a 
-                href="mailto:?subject=Gift Idea: AI Sidekick Starter Kit&body=I found this perfect gift for parents who want to learn AI: https://www.aistrategyllc.com/sidekick"
+                href="mailto:?subject=Gift Idea: AI Sidekick Starter Kit&body=I found this perfect gift for parents who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
                 className="flex flex-col items-center gap-1 text-gray-600 hover:text-teal transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -429,7 +429,7 @@ export default function Sidekick() {
 
               {/* Text/SMS */}
               <a 
-                href="sms:?body=I found this perfect gift for parents who want to learn AI: https://www.aistrategyllc.com/sidekick"
+                href="sms:?body=I found this perfect gift for parents who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
                 className="flex flex-col items-center gap-1 text-gray-600 hover:text-teal transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -453,7 +453,7 @@ export default function Sidekick() {
 
               {/* WhatsApp */}
               <a 
-                href="https://wa.me/?text=I found this perfect gift for parents who want to learn AI: https://www.aistrategyllc.com/sidekick"
+                href="https://wa.me/?text=I found this perfect gift for parents who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-1 text-gray-600 hover:text-teal transition-colors"
