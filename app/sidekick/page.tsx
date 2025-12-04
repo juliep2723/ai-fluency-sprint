@@ -175,9 +175,17 @@ function SidekickContent() {
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
             For parents who are brilliant at life and baffled by AI.
           </p>
-          <p className="text-xl text-gray-400 italic max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 italic max-w-2xl mx-auto mb-8">
             Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."
           </p>
+          <a href="#gift-options">
+            <Button 
+              size="lg" 
+              className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+            >
+              Pick Your Gift
+            </Button>
+          </a>
         </motion.div>
       </section>
 
@@ -243,13 +251,24 @@ function SidekickContent() {
           </motion.div>
 
           <motion.div 
-            className="bg-teal/10 p-8 rounded-lg border-l-4 border-teal"
+            className="bg-teal/10 p-8 rounded-lg border-l-4 border-teal mb-8"
             variants={fadeInUp}
           >
             <p className="text-xl text-gray-800 text-center font-semibold">
               They're not "learning AI."<br />
-              They're learning <span className="text-teal">how to get help with the life stuff that usually ends up on your plate.</span>
+              They're learning <span className="text-teal">to get help with life stuff that usually ends up on your plate.</span>
             </p>
+          </motion.div>
+          
+          <motion.div className="text-center" variants={fadeInUp}>
+            <a href="#gift-options">
+              <Button 
+                size="lg" 
+                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                Pick Your Gift
+              </Button>
+            </a>
           </motion.div>
         </motion.div>
       </section>
@@ -307,10 +326,6 @@ function SidekickContent() {
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
                     <span><strong>Done-for-you gift message templates</strong> – so this feels like a love letter, not a "you're bad at computers" intervention.</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>Gentle troubleshooting support</strong> – if they get stuck, they email us, not you.</span>
-                  </li>
                 </ul>
               </Card>
             </motion.div>
@@ -320,8 +335,8 @@ function SidekickContent() {
             className="bg-navy text-white p-8 rounded-lg text-center"
             variants={fadeInUp}
           >
-            <p className="text-xl italic">
-              Format: more advent calendar than online course. One small door to open per day, not a library they'll never log into.
+            <p className="text-xl">
+              Format: A snack-sized series, not a full-course meal. Just enough each day to feel smarter and more capable, never stuffed or overwhelmed.
             </p>
           </motion.div>
         </motion.div>
@@ -598,7 +613,7 @@ function SidekickContent() {
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
                 <h3 className="text-xl font-bold text-navy mb-3">Superpower-framed</h3>
                 <p className="text-lg text-gray-700">
-                  More "magic wand for real life" than "remedial tech course."
+                  More "magic wand for real life" than "boring computer class."
                 </p>
               </Card>
             </motion.div>
@@ -624,7 +639,7 @@ function SidekickContent() {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <Card className="p-10 bg-teal/10 border-l-8 border-teal shadow-xl">
+          <Card className="p-10 bg-teal/10 border-l-8 border-teal shadow-xl mb-8">
             <h2 className="text-3xl font-bold text-navy text-center mb-6">
               100% "I Can Do This" Guarantee
             </h2>
@@ -634,10 +649,21 @@ function SidekickContent() {
             <p className="text-xl text-gray-800 text-center font-semibold">
               You get your money back.
             </p>
-            <p className="text-xl text-gray-800 text-center mt-4 italic">
+            <p className="text-xl text-gray-800 text-center mt-4">
               They still get the message: <span className="text-teal font-bold">"I believe in you."</span>
             </p>
           </Card>
+          
+          <div className="text-center">
+            <a href="#gift-options">
+              <Button 
+                size="lg" 
+                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                Pick Your Gift
+              </Button>
+            </a>
+          </div>
         </motion.div>
       </section>
     </main>
