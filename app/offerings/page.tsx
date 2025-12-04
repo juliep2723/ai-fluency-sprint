@@ -256,7 +256,7 @@ export default function Offerings() {
 
               <Button 
                 size="lg" 
-                className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="w-full bg-teal hover:bg-teal/90 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={handleStripeCheckout}
               >
                 Begin Your Sprint Today
@@ -348,7 +348,7 @@ export default function Offerings() {
             <a href="mailto:michele@aistrategyllc.com?subject=Team%20Program%20Consultation">
               <Button 
                 size="lg" 
-                className="bg-navy hover:bg-navy/90 hover:scale-105 text-white px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+                className="bg-navy hover:bg-navy/90 text-white px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
               >
                 Schedule a Consultation
               </Button>
@@ -440,7 +440,7 @@ export default function Offerings() {
             <a href="mailto:michele@aistrategyllc.com?subject=AI%20Readiness%20Assessment">
               <Button 
                 size="lg" 
-                className="bg-navy hover:bg-navy/90 hover:scale-105 text-white px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+                className="bg-navy hover:bg-navy/90 text-white px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
               >
                 Schedule Assessment Discussion
               </Button>

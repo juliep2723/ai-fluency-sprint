@@ -41,7 +41,7 @@ export default function Success() {
         </p>
 
         <Link href="/">
-          <Button className="bg-navy hover:bg-navy/90 hover:scale-105 text-white">
+          <Button className="bg-navy hover:bg-navy/90 text-white">
             Return to Homepage
           </Button>
         </Link>

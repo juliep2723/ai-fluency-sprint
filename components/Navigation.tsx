@@ -28,7 +28,7 @@ export default function Navigation() {
           
           {/* CTA Button */}
           <Link href="/offerings">
-            <Button className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-6 py-2 shadow-md hover:shadow-lg transition-all duration-300">
+            <Button className="bg-teal hover:bg-teal/90 text-white px-6 py-2 shadow-md hover:shadow-lg transition-all duration-300">
               Explore Offerings
             </Button>
           </Link>

@@ -48,16 +48,17 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Holiday Banner - Top of Page */}
-      <section className="pt-24 pb-3 px-6" style={{ backgroundColor: '#14B8A6' }}>
+      <section className="bg-gradient-to-r from-teal via-teal/90 to-teal pt-24 pb-3 px-6">
         <motion.div 
           className="max-w-6xl mx-auto text-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link href="/sidekick" className="block hover:opacity-90 transition-opacity">
-            <p className="text-white font-bold text-xl md:text-2xl">
-              New Holiday Offer: AI Sidekick Starter Kit for Parents
+          <Link href="/sidekick" className="block group hover:opacity-90 transition-opacity">
+            <p className="text-white font-semibold text-lg md:text-xl">
+              🎁 <span className="underline decoration-2 underline-offset-2 group-hover:decoration-white/70">New Holiday Offer:</span> AI Sidekick Starter Kit for Parents • 
+              <span className="ml-2 font-bold">Learn More →</span>
             </p>
           </Link>
         </motion.div>
@@ -92,7 +93,7 @@ export default function Home() {
             <Link href="/offerings">
               <Button 
                 size="lg" 
-                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="bg-teal hover:bg-teal/90 text-white px-10 py-7 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
                 Start Your Transformation →
               </Button>
@@ -391,7 +392,7 @@ export default function Home() {
             <Link href="/offerings">
               <Button 
                 size="lg" 
-                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-12 py-8 text-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+                className="bg-teal hover:bg-teal/90 text-white px-12 py-8 text-xl shadow-xl hover:shadow-2xl transition-all duration-300"
               >
                 Explore Our Offerings →
               </Button>
