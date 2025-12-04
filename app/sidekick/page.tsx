@@ -397,11 +397,11 @@ export default function Sidekick() {
 
           {/* Share Links */}
           <motion.div 
-            className="text-center mt-10 pt-8 border-t border-gray-200"
+            className="mt-10 pt-8 border-t border-gray-200"
             variants={fadeInUp}
           >
-            <p className="text-gray-600 text-base mb-4">Know someone who'd love this? Share it with them:</p>
-            <div className="flex justify-center gap-6 flex-wrap">
+            <div className="flex justify-center items-center gap-6 flex-wrap">
+              <span className="text-gray-600 text-base">Share:</span>
               {/* Email */}
               <a 
                 href="mailto:?subject=Gift Idea: AI Sidekick Starter Kit&body=I found this perfect gift for parents who want to learn AI: https://www.aistrategyllc.com/sidekick"
