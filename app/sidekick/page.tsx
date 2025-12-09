@@ -286,7 +286,7 @@ function SidekickContent() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
             variants={fadeInUp}
           >
-            How the 7-Day Sprint Works
+            How the 7-Day Course Works
           </motion.h2>
 
           <motion.div className="grid md:grid-cols-2 gap-8 mb-12" variants={staggerContainer}>
@@ -316,7 +316,7 @@ function SidekickContent() {
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>Wallet Card (physical)</strong> – a cheat sheet of "when X happens, ask AI this" they can keep in a wallet or by the computer.</span>
+                    <span><strong>Wallet Card</strong> – a cheat sheet of "when X happens, ask AI this" they can keep in a wallet or by the computer.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
@@ -478,15 +478,9 @@ function SidekickContent() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
-            className="text-center text-black text-lg mb-10"
-            variants={fadeInUp}
-          >
-            <p>🎁 Choose delivery date between Dec 15 - Dec 26</p>
-          </motion.div>
-
           {/* Share Links */}
           <motion.div 
+            className="mt-6"
             variants={fadeInUp}
           >
             <div className="flex justify-center items-center gap-6 flex-wrap bg-white rounded-xl border border-teal/30 shadow-md px-8 py-5 mx-auto w-fit">
