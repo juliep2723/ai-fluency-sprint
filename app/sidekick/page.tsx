@@ -478,9 +478,16 @@ function SidekickContent() {
             </motion.div>
           </motion.div>
 
+          {/* Delivery Date Note */}
+          <motion.div 
+            className="text-center text-black text-lg mt-8 mb-4"
+            variants={fadeInUp}
+          >
+            Choose delivery date between December 25th - January 1st
+          </motion.div>
+
           {/* Share Links */}
           <motion.div 
-            className="mt-6"
             variants={fadeInUp}
           >
             <div className="flex justify-center items-center gap-6 flex-wrap bg-white rounded-xl border border-teal/30 shadow-md px-8 py-5 mx-auto w-fit">
