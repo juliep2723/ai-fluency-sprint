@@ -173,7 +173,7 @@ function SidekickContent() {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
-            For parents who are brilliant at life and baffled by AI.
+            For your parents who are brilliant at life and baffled by AI.
           </p>
           <p className="text-xl text-gray-400 italic max-w-2xl mx-auto mb-8">
             Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."
