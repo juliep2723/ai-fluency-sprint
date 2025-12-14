@@ -75,52 +75,52 @@ export default function GiftPrompt() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-16 px-6 bg-navy text-white pt-28">
+      <section className="py-8 px-6 bg-navy text-white">
         <motion.div 
           className="max-w-3xl mx-auto text-center"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
         >
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">🎁 Gift Shopping Prompt</h1>
-          <p className="text-xl text-gray-300">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">🎁 Gift Shopping Prompt</h1>
+          <p className="text-lg text-gray-300">
             Your AI-powered gift brainstorming sidekick
           </p>
         </motion.div>
       </section>
 
       {/* Instructions */}
-      <section className="py-12 px-6 bg-white">
+      <section className="py-8 px-6 bg-white">
         <motion.div 
           className="max-w-3xl mx-auto"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
         >
-          <div className="bg-teal/10 border-l-4 border-teal p-6 rounded-r-lg mb-8">
-            <h2 className="text-xl font-bold text-navy mb-4">How to Use This Prompt</h2>
-            <ol className="space-y-3 text-lg text-gray-800">
+          <div className="bg-teal/10 p-5 rounded-lg mb-6">
+            <h2 className="text-lg font-bold text-navy mb-3">How to Use This Prompt</h2>
+            <ol className="space-y-2 text-base text-gray-800">
               <li className="flex items-start">
-                <span className="font-bold text-teal mr-3">1.</span>
+                <span className="font-bold text-teal mr-2">1.</span>
                 <span><strong>Copy</strong> the prompt below using the button</span>
               </li>
               <li className="flex items-start">
-                <span className="font-bold text-teal mr-3">2.</span>
+                <span className="font-bold text-teal mr-2">2.</span>
                 <span><strong>Paste</strong> it into your Notes app or text editor</span>
               </li>
               <li className="flex items-start">
-                <span className="font-bold text-teal mr-3">3.</span>
-                <span><strong>Fill in</strong> the <span className="bg-yellow-200 px-1">highlighted sections</span> with your details</span>
+                <span className="font-bold text-teal mr-2">3.</span>
+                <span><strong>Personalize</strong> the <span className="bg-yellow-200 px-1">highlighted sections</span> for your recipient</span>
               </li>
               <li className="flex items-start">
-                <span className="font-bold text-teal mr-3">4.</span>
+                <span className="font-bold text-teal mr-2">4.</span>
                 <span><strong>Paste</strong> the completed prompt into ChatGPT (or your favorite AI)</span>
               </li>
             </ol>
           </div>
 
           {/* Copy Button - Top */}
-          <div className="flex justify-end mb-4">
+          <div className="flex justify-end mb-3">
             <Button
               onClick={handleCopy}
               className={`${copied ? 'bg-green-600' : 'bg-teal'} hover:bg-teal/90 text-white px-6 py-3 text-lg shadow-lg transition-all duration-300`}
@@ -173,7 +173,7 @@ export default function GiftPrompt() {
           </div>
 
           {/* Copy Button - Bottom */}
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center mt-6">
             <Button
               onClick={handleCopy}
               className={`${copied ? 'bg-green-600' : 'bg-teal'} hover:bg-teal/90 text-white px-8 py-4 text-lg shadow-lg transition-all duration-300`}
@@ -185,7 +185,7 @@ export default function GiftPrompt() {
       </section>
 
       {/* CTA to Sidekick */}
-      <section className="py-16 px-6 bg-light-gray">
+      <section className="py-10 px-6 bg-light-gray">
         <motion.div 
           className="max-w-3xl mx-auto text-center"
           initial="hidden"

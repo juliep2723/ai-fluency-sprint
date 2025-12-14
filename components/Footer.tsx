@@ -1,6 +1,16 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname()
+  
+  // Hide footer on giftprompt page
+  if (pathname === '/sidekick/giftprompt') {
+    return null
+  }
+  
   return (
     <footer className="bg-primary text-white py-12 px-6">
       <div className="max-w-6xl mx-auto">

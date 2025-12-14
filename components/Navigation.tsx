@@ -1,7 +1,17 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
 export default function Navigation() {
+  const pathname = usePathname()
+  
+  // Hide navigation on giftprompt page
+  if (pathname === '/sidekick/giftprompt') {
+    return null
+  }
+  
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
