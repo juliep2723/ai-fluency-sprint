@@ -296,7 +296,7 @@ function SidekickContent() {
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>One 3–5 minute video:</strong> no jargon, no fluff, one real-life "magic trick" to try immediately.</span>
+                    <span><strong>One 5–7 minute video:</strong> no jargon, no fluff, one real-life "magic trick" to try immediately.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
