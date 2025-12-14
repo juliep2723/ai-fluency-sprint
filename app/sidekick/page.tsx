@@ -483,7 +483,7 @@ function SidekickContent() {
             className="text-center text-black text-lg mt-8 mb-4"
             variants={fadeInUp}
           >
-            Choose delivery date between December 25th - January 1st
+            Choose delivery date between December 25th - January 3rd
           </motion.div>
 
           {/* Share Links */}
