@@ -483,7 +483,7 @@ function SidekickContent() {
             className="text-center text-black text-lg mt-8 mb-4"
             variants={fadeInUp}
           >
-            Custom course start date, anytime after Dec 25th.
+            Custom start date – anytime after Dec 25th.
           </motion.div>
 
           {/* Share Links */}
