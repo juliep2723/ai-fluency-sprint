@@ -169,7 +169,7 @@ function SidekickContent() {
           variants={fadeInUp}
         >
           <div className="inline-block bg-teal/20 px-4 py-2 rounded-full mb-6">
-            <p className="text-sm font-semibold text-teal">🎁 Course delivery available starting January 12</p>
+            <p className="text-sm font-semibold text-teal">🎁 Course available starting Jan 12</p>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -186,7 +186,7 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* What They'll Get - White Background */}
+      {/* What You'll Get - White Background */}
       <section className="py-24 px-6 bg-white">
         <motion.div 
           className="max-w-4xl mx-auto"
@@ -199,22 +199,22 @@ function SidekickContent() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
             variants={fadeInUp}
           >
-            What They'll Actually Get Out of This
+            What You'll Actually Get Out of This
           </motion.h2>
           
           <motion.p 
             className="text-xl text-gray-700 text-center mb-8"
             variants={fadeInUp}
           >
-            By the end of 7 days, they'll be able to use AI to:
+            By the end of 7 days, you'll be able to use AI to:
           </motion.p>
 
           <motion.div className="grid md:grid-cols-2 gap-6 mb-12" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-3">Spot scams before they click</h3>
+                <h3 className="text-xl font-bold text-navy mb-3">Spot scams before you click</h3>
                 <p className="text-lg text-gray-700">
-                  Forward weird texts, emails, and "urgent" notices to their sidekick for a safety check.
+                  Forward weird texts, emails, and "urgent" notices to your sidekick for a safety check.
                 </p>
               </Card>
             </motion.div>
@@ -223,7 +223,7 @@ function SidekickContent() {
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
                 <h3 className="text-xl font-bold text-navy mb-3">Translate gobbledygook</h3>
                 <p className="text-lg text-gray-700">
-                  Turn medical, legal, and financial jargon into plain English they can actually act on.
+                  Turn medical, legal, and financial jargon into plain English you can actually act on.
                 </p>
               </Card>
             </motion.div>
@@ -252,8 +252,8 @@ function SidekickContent() {
             variants={fadeInUp}
           >
             <p className="text-xl text-gray-800 text-center font-semibold">
-              They're not "learning AI."<br />
-              They're learning <span className="text-teal">to get help with life stuff that usually ends up on your plate.</span>
+              You're not "learning AI."<br />
+              You're learning <span className="text-teal">to get help with life stuff.</span>
             </p>
           </motion.div>
           
@@ -289,7 +289,7 @@ function SidekickContent() {
           <motion.div className="grid md:grid-cols-2 gap-8 mb-12" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-8 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-2xl font-bold text-navy mb-6">Each Day, They Get:</h3>
+                <h3 className="text-2xl font-bold text-navy mb-6">Each Day, You Get:</h3>
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
@@ -297,11 +297,11 @@ function SidekickContent() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>A tiny challenge:</strong> something they already need to do—decode a bill, draft an email, plan a small trip.</span>
+                    <span><strong>A tiny challenge:</strong> something you already need to do—decode a bill, draft an email, plan a small trip.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>"If this goes weird…" safety notes</strong> so they don't panic if something looks off.</span>
+                    <span><strong>"If this goes weird…" safety notes</strong> so you don't panic if something looks off.</span>
                   </li>
                 </ul>
               </Card>
@@ -313,11 +313,11 @@ function SidekickContent() {
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>Wallet Card</strong> – a cheat sheet of "when X happens, ask AI this" they can keep in a wallet or by the computer.</span>
+                    <span><strong>Wallet Card</strong> – a cheat sheet of "when X happens, ask AI this" you can keep in a wallet or by the computer.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>"50 Ways Your AI Sidekick Can Help" guide</strong> – the menu of problems they can hand off to AI, from Medicare comparison to gift ideas for grandkids.</span>
+                    <span><strong>"50 Ways Your AI Sidekick Can Help" guide</strong> – the menu of problems you can hand off to AI, from comparison shopping to event planning.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
@@ -583,7 +583,7 @@ function SidekickContent() {
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
                 <h3 className="text-xl font-bold text-navy mb-3">Respectful</h3>
                 <p className="text-lg text-gray-700">
-                  Assumes they're smart and experienced, because they are. We're just updating the tools.
+                  Assumes you're smart and experienced, because you are. We're just updating the tools.
                 </p>
               </Card>
             </motion.div>
@@ -592,7 +592,7 @@ function SidekickContent() {
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
                 <h3 className="text-xl font-bold text-navy mb-3">Outcome-first</h3>
                 <p className="text-lg text-gray-700">
-                  We talk about their life (bills, trips, doctor visits), not "learning a new platform."
+                  We talk about your life (bills, trips, doctor visits), not "learning a new platform."
                 </p>
               </Card>
             </motion.div>
@@ -610,7 +610,7 @@ function SidekickContent() {
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
                 <h3 className="text-xl font-bold text-navy mb-3">Confidence-building</h3>
                 <p className="text-lg text-gray-700">
-                  They rediscover how capable they already are, with a 24/7 sidekick on call.
+                  You rediscover how capable you already are, with a 24/7 sidekick on call.
                 </p>
               </Card>
             </motion.div>
@@ -632,13 +632,13 @@ function SidekickContent() {
               100% "I Can Do This" Guarantee
             </h2>
             <p className="text-xl text-gray-800 text-center mb-4 leading-relaxed">
-              If they don't have at least one "Oh wow, I can handle this myself" moment in the first 3 days, we'll refund you in full. No forms, no awkward questions.
+              If you don't have at least one "Oh wow, I can handle this myself" moment in the first 3 days, we'll refund you in full. No forms, no awkward questions.
             </p>
             <p className="text-xl text-gray-800 text-center font-semibold">
               You get your money back.
             </p>
             <p className="text-xl text-gray-800 text-center mt-4">
-              They still get the message: <span className="text-teal font-bold">"I believe in you."</span>
+              You still get the message: <span className="text-teal font-bold">"I believe in you."</span>
             </p>
           </Card>
           
