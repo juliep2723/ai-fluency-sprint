@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gift Your Parents AI Confidence in 7 Days",
-  description: "Give parents who are brilliant at life and baffled by AI a week to turn 'Can you look at this for me?' into 'Don't worry, I already handled it.'",
+  title: "AI Starter Kit: AI Confidence in 7 Days",
+  description: "For those who are brilliant at life, but baffled by AI. Gain AI confidence in just 7 days.",
 };
 
 export default function SidekickLayout({

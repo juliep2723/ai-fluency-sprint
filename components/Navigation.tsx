@@ -29,7 +29,7 @@ export default function Navigation() {
               Offerings
             </Link>
             <Link href="/sidekick" className="text-gray-700 hover:text-navy font-medium transition-colors">
-              Holiday Offer
+              Starter Kit
             </Link>
             <a href="mailto:michele@aistrategyllc.com" className="text-gray-700 hover:text-navy font-medium transition-colors">
               Contact

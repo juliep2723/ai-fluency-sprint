@@ -87,11 +87,11 @@ function SuccessModal({ productType, onClose }: { productType: string; onClose: 
         
         {/* Message */}
         <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-4">
-          Payment received, gift unlocked!
+          Payment received!
         </h2>
         
         <p className="text-lg text-gray-700 text-center mb-8 leading-relaxed">
-          We'll email you shortly with everything you need to deliver your AI Sidekick Starter Kit ({productName}). If it's not in your inbox, please check your Spam/Promotions folder.
+          We'll email you shortly with everything you need to get started with your AI Sidekick Starter Kit ({productName}). If it's not in your inbox, please check your Spam/Promotions folder.
         </p>
         
         {/* Close button */}
@@ -169,21 +169,18 @@ function SidekickContent() {
           variants={fadeInUp}
         >
           <div className="inline-block bg-teal/20 px-4 py-2 rounded-full mb-6">
-            <p className="text-sm font-semibold text-teal">🎁 Limited Time Holiday Offering</p>
+            <p className="text-sm font-semibold text-teal">🎁 Course delivery available starting January 12</p>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
-            For your parents who are brilliant at life and baffled by AI.
-          </p>
-          <p className="text-xl text-gray-400 italic max-w-2xl mx-auto mb-8">
-            Give them a week to turn "Can you look at this for me?" into "Don't worry, I already handled it."
+          <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+            For those who are brilliant at life, but baffled by AI.
           </p>
           <a href="#gift-options">
             <Button 
               size="lg" 
               className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
             >
-              Pick Your Gift
+              Pick Your Starter Kit
             </Button>
           </a>
         </motion.div>
@@ -209,7 +206,7 @@ function SidekickContent() {
             className="text-xl text-gray-700 text-center mb-8"
             variants={fadeInUp}
           >
-            By the end of 7 days, your parents will be able to use AI to:
+            By the end of 7 days, they'll be able to use AI to:
           </motion.p>
 
           <motion.div className="grid md:grid-cols-2 gap-6 mb-12" variants={staggerContainer}>
@@ -266,7 +263,7 @@ function SidekickContent() {
                 size="lg" 
                 className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                Pick Your Gift
+                Pick Your Starter Kit
               </Button>
             </a>
           </motion.div>
@@ -342,7 +339,7 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Gift Options - White Background */}
+      {/* Options - White Background */}
       <section id="gift-options" className="py-24 px-6 bg-white">
         <motion.div 
           className="max-w-5xl mx-auto"
@@ -355,7 +352,7 @@ function SidekickContent() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
             variants={fadeInUp}
           >
-            Gift Options
+            Options
           </motion.h2>
 
           <motion.div className="grid md:grid-cols-3 gap-8 mb-12" variants={staggerContainer}>
@@ -483,7 +480,7 @@ function SidekickContent() {
             className="text-center text-black text-lg mt-8 mb-4"
             variants={fadeInUp}
           >
-            Custom start date – anytime after Dec 25th.
+            Custom start date – anytime after Jan 12th.
           </motion.div>
 
           {/* Share Links */}
@@ -494,7 +491,7 @@ function SidekickContent() {
               <span className="text-black text-base font-bold">Share:</span>
               {/* Email */}
               <a 
-                href="mailto:?subject=Gift Idea: AI Sidekick Starter Kit&body=I found this perfect gift for parents who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
+                href="mailto:?subject=Check out this AI Sidekick Starter Kit&body=I found this AI starter kit for people who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
                 className="flex flex-col items-center gap-1 text-black hover:text-teal transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -519,7 +516,7 @@ function SidekickContent() {
 
               {/* Text/SMS */}
               <a 
-                href="sms:?body=I found this perfect gift for parents who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
+                href="sms:?body=I found this AI starter kit for people who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
                 className="flex flex-col items-center gap-1 text-black hover:text-teal transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -543,7 +540,7 @@ function SidekickContent() {
 
               {/* WhatsApp */}
               <a 
-                href="https://wa.me/?text=I found this perfect gift for parents who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
+                href="https://wa.me/?text=I found this AI starter kit for people who are brilliant at life and baffled by AI: https://www.aistrategyllc.com/sidekick"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-1 text-black hover:text-teal transition-colors"
@@ -558,7 +555,7 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Why Parents Like This - Light Gray Background */}
+      {/* Why People Like This - Light Gray Background */}
       <section className="py-24 px-6 bg-light-gray">
         <motion.div 
           className="max-w-4xl mx-auto"
@@ -571,7 +568,7 @@ function SidekickContent() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
             variants={fadeInUp}
           >
-            Why Parents Actually Like This
+            Why People Like This
           </motion.h2>
 
           <motion.p 
@@ -651,7 +648,7 @@ function SidekickContent() {
                 size="lg" 
                 className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                Pick Your Gift
+                Pick Your Starter Kit
               </Button>
             </a>
           </div>
