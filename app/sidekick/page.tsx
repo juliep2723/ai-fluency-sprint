@@ -364,24 +364,34 @@ function SidekickContent() {
           </motion.div>
 
           <motion.div 
-            className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70"
+            className="flex flex-wrap justify-center items-center gap-10 md:gap-16"
             variants={fadeInUp}
           >
-            <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Accenture</p>
-            </div>
-            <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Oracle</p>
-            </div>
-            <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Fidelity</p>
-            </div>
-            <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Wharton</p>
-            </div>
-            <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Harvard</p>
-            </div>
+            <img 
+              src="/accenture-logo.png" 
+              alt="Accenture" 
+              className="h-8 md:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img 
+              src="/oracle-logo.png" 
+              alt="Oracle" 
+              className="h-8 md:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img 
+              src="/fidelity-logo.png" 
+              alt="Fidelity Investments" 
+              className="h-10 md:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img 
+              src="/wharton-logo.png" 
+              alt="Wharton School" 
+              className="h-10 md:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img 
+              src="/harvard-logo.png" 
+              alt="Harvard Business School" 
+              className="h-12 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
           </motion.div>
         </motion.div>
       </section>
