@@ -396,8 +396,8 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Options - Off-White Background */}
-      <section id="gift-options" className="py-24 px-6 bg-off-white">
+      {/* Options - White Background */}
+      <section id="gift-options" className="py-24 px-6 bg-white">
         <motion.div 
           className="max-w-5xl mx-auto"
           initial="hidden"
