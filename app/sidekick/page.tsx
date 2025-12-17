@@ -338,8 +338,8 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Taught By Section - White Background */}
-      <section className="py-24 px-6 bg-white">
+      {/* Taught By Section - Navy Background */}
+      <section className="py-24 px-6 bg-navy">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -348,14 +348,14 @@ function SidekickContent() {
           variants={staggerContainer}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-navy text-center mb-8"
+            className="text-3xl md:text-4xl font-bold text-white text-center mb-8"
             variants={fadeInUp}
           >
-            Taught by Tech Veterans & Moms, Not "Tech Bros"
+            Taught by Tech Veteran Moms, Not "Tech Bros"
           </motion.h2>
           
           <motion.div 
-            className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-300 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
             <p className="mb-4">Julie made complicated tech feel easy (and even fun) for millions.</p>
@@ -364,33 +364,33 @@ function SidekickContent() {
           </motion.div>
 
           <motion.div 
-            className="flex flex-wrap justify-center items-center gap-10 md:gap-16"
+            className="flex flex-wrap justify-center items-center gap-10 md:gap-16 bg-white/10 rounded-xl py-6 px-8"
             variants={fadeInUp}
           >
             <img 
               src="/accenture-logo.png" 
               alt="Accenture" 
-              className="h-8 md:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
             />
             <img 
               src="/oracle-logo.png" 
               alt="Oracle" 
-              className="h-8 md:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
             />
             <img 
               src="/fidelity-logo.png" 
               alt="Fidelity Investments" 
-              className="h-10 md:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              className="h-10 md:h-12 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
             />
             <img 
               src="/wharton-logo.png" 
               alt="Wharton School" 
-              className="h-10 md:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              className="h-10 md:h-12 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
             />
             <img 
               src="/harvard-logo.png" 
               alt="Harvard Business School" 
-              className="h-12 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              className="h-12 md:h-14 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
             />
           </motion.div>
         </motion.div>
