@@ -338,6 +338,52 @@ function SidekickContent() {
         </motion.div>
       </section>
 
+      {/* Taught By Section - White Background */}
+      <section className="py-24 px-6 bg-white">
+        <motion.div 
+          className="max-w-4xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+        >
+          <motion.h2 
+            className="text-3xl md:text-4xl font-bold text-navy text-center mb-8"
+            variants={fadeInUp}
+          >
+            Taught by Tech Veterans & Moms, Not "Tech Bros"
+          </motion.h2>
+          
+          <motion.p 
+            className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
+            variants={fadeInUp}
+          >
+            Julie made complicated tech feel easy (and even fun) for millions. Michele's been decoding AI for smart, skeptical humans since it hit the scene. We don't do jargon. We do "finally makes sense."
+          </motion.p>
+
+          <motion.div 
+            className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70"
+            variants={fadeInUp}
+          >
+            <div className="text-center">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Harvard Business School</p>
+            </div>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Wharton School</p>
+            </div>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Fidelity Investments</p>
+            </div>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Oracle</p>
+            </div>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Accenture</p>
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
+
       {/* Options - White Background */}
       <section id="gift-options" className="py-24 px-6 bg-white">
         <motion.div 
@@ -554,7 +600,7 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Why People Like This - Light Gray Background */}
+      {/* What Makes This Different - Light Gray Background */}
       <section className="py-24 px-6 bg-light-gray">
         <motion.div 
           className="max-w-4xl mx-auto"
@@ -567,49 +613,42 @@ function SidekickContent() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
             variants={fadeInUp}
           >
-            Why People Like This
+            What Makes This Different
           </motion.h2>
-
-          <motion.p 
-            className="text-xl text-gray-700 text-center mb-8 italic"
-            variants={fadeInUp}
-          >
-            This isn't "back to school." It's:
-          </motion.p>
 
           <motion.div className="grid md:grid-cols-2 gap-6" variants={staggerContainer}>
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Respectful</h3>
+                <h3 className="text-xl font-bold text-navy mb-3">Snack-sized, not stuffed</h3>
                 <p className="text-lg text-gray-700">
-                  Assumes you're smart and experienced, because you are. We're just updating the tools.
+                  5-7 minutes a day, not hours of homework.
                 </p>
               </Card>
             </motion.div>
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Outcome-first</h3>
+                <h3 className="text-xl font-bold text-navy mb-3">Real life assignments</h3>
                 <p className="text-lg text-gray-700">
-                  We talk about your life (bills, trips, doctor visits), not "learning a new platform."
+                  Your actual bills, emails, and confusing documents—not fake exercises.
                 </p>
               </Card>
             </motion.div>
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Superpower-framed</h3>
+                <h3 className="text-xl font-bold text-navy mb-3">Plain English, always</h3>
                 <p className="text-lg text-gray-700">
-                  More "magic wand for real life" than "boring computer class."
+                  Zero jargon, zero condescension.
                 </p>
               </Card>
             </motion.div>
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-0 bg-white">
-                <h3 className="text-xl font-bold text-navy mb-3">Confidence-building</h3>
+                <h3 className="text-xl font-bold text-navy mb-3">Magic wand, not textbook</h3>
                 <p className="text-lg text-gray-700">
-                  You rediscover how capable you already are, with a 24/7 sidekick on call.
+                  You'll feel like you gained a superpower, not sat through a lecture.
                 </p>
               </Card>
             </motion.div>
@@ -628,16 +667,10 @@ function SidekickContent() {
         >
           <Card className="p-10 bg-teal/10 border-l-8 border-teal shadow-xl mb-8">
             <h2 className="text-3xl font-bold text-navy text-center mb-6">
-              100% "I Can Do This" Guarantee
+              100% "Wow, I Can Do That?" Guarantee
             </h2>
-            <p className="text-xl text-gray-800 text-center mb-4 leading-relaxed">
-              If you don't have at least one "Oh wow, I can handle this myself" moment in the first 3 days, we'll refund you in full. No forms, no awkward questions.
-            </p>
-            <p className="text-xl text-gray-800 text-center font-semibold">
-              You get your money back.
-            </p>
-            <p className="text-xl text-gray-800 text-center mt-4">
-              You still get the message: <span className="text-teal font-bold">"I believe in you."</span>
+            <p className="text-xl text-gray-800 text-center leading-relaxed">
+              If you don't have at least one "Wow, who knew AI could do that?" moment in the first 3 days, we'll refund you in full. No forms, no awkward questions.
             </p>
           </Card>
           
