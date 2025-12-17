@@ -338,8 +338,8 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Taught By Section - Light Gray Background */}
-      <section className="py-24 px-6 bg-light-gray">
+      {/* Taught By Section - White Background */}
+      <section className="py-24 px-6 bg-white">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -396,8 +396,8 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Options - White Background */}
-      <section id="gift-options" className="py-24 px-6 bg-white">
+      {/* Options - Off-White Background */}
+      <section id="gift-options" className="py-24 px-6 bg-off-white">
         <motion.div 
           className="max-w-5xl mx-auto"
           initial="hidden"
