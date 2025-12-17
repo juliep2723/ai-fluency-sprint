@@ -252,8 +252,7 @@ function SidekickContent() {
             variants={fadeInUp}
           >
             <p className="text-xl text-gray-800 text-center font-semibold">
-              You're not "learning AI."<br />
-              You're learning <span className="text-teal">to get help with life stuff.</span>
+              You're not "learning AI." You're learning <span className="text-teal">how to finally get some help with... everything.</span>
             </p>
           </motion.div>
           
