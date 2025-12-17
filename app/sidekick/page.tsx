@@ -338,8 +338,8 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Taught By Section - White Background */}
-      <section className="py-24 px-6 bg-white">
+      {/* Taught By Section - Light Gray Background */}
+      <section className="py-24 px-6 bg-light-gray">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -354,31 +354,33 @@ function SidekickContent() {
             Taught by Tech Veterans & Moms, Not "Tech Bros"
           </motion.h2>
           
-          <motion.p 
+          <motion.div 
             className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
             variants={fadeInUp}
           >
-            Julie made complicated tech feel easy (and even fun) for millions. Michele's been decoding AI for smart, skeptical humans since it hit the scene. We don't do jargon. We do "finally makes sense."
-          </motion.p>
+            <p className="mb-4">Julie made complicated tech feel easy (and even fun) for millions.</p>
+            <p className="mb-4">Michele's been decoding AI for smart, skeptical humans since it hit the scene.</p>
+            <p>We don't do jargon. We do "finally makes sense."</p>
+          </motion.div>
 
           <motion.div 
             className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70"
             variants={fadeInUp}
           >
             <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Harvard Business School</p>
-            </div>
-            <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Wharton School</p>
-            </div>
-            <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Fidelity Investments</p>
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Accenture</p>
             </div>
             <div className="text-center">
               <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Oracle</p>
             </div>
             <div className="text-center">
-              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Accenture</p>
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Fidelity</p>
+            </div>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Wharton</p>
+            </div>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Harvard</p>
             </div>
           </motion.div>
         </motion.div>
