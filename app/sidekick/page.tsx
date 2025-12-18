@@ -365,6 +365,59 @@ function SidekickContent() {
         </motion.div>
       </section>
 
+      {/* Bonus: See an Advanced Prompt - Off-White Background */}
+      <section className="py-16 px-6 bg-off-white">
+        <motion.div 
+          className="max-w-4xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+        >
+          <motion.h2 
+            className="text-3xl md:text-4xl font-bold text-navy text-center mb-4"
+            variants={fadeInUp}
+          >
+            Bonus: See an Advanced Prompt in Action
+          </motion.h2>
+          
+          <motion.p 
+            className="text-lg text-gray-700 text-center mb-8 max-w-2xl mx-auto"
+            variants={fadeInUp}
+          >
+            This is one of our longer, fancier prompts. The daily lessons? Much gentler—5-7 minutes of plain-English basics. But here's what's waiting when you're ready to level up.
+          </motion.p>
+
+          {/* Video */}
+          <motion.div 
+            className="mb-8 rounded-xl overflow-hidden shadow-xl"
+            variants={scaleIn}
+          >
+            <video 
+              className="w-full"
+              controls
+              preload="metadata"
+              poster=""
+            >
+              <source src="/Gift_shopping_prompt.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
+
+          {/* CTA */}
+          <motion.div className="text-center" variants={fadeInUp}>
+            <Link href="/sidekick/giftprompt">
+              <Button 
+                size="lg" 
+                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Try This Prompt Free →
+              </Button>
+            </Link>
+          </motion.div>
+        </motion.div>
+      </section>
+
       {/* Options - White Background */}
       <section id="gift-options" className="py-24 px-6 bg-white">
         <motion.div 

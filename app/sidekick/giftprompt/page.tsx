@@ -89,8 +89,32 @@ export default function GiftPrompt() {
         </motion.div>
       </section>
 
-      {/* Instructions */}
+      {/* Video Demo */}
       <section className="py-8 px-6 bg-white">
+        <motion.div 
+          className="max-w-3xl mx-auto"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+        >
+          <div className="rounded-xl overflow-hidden shadow-lg mb-6">
+            <video 
+              className="w-full"
+              controls
+              preload="metadata"
+            >
+              <source src="/Gift_shopping_prompt.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p className="text-center text-gray-600 mb-8 text-sm">
+            Watch Julie use this prompt to find the perfect gift for someone "impossible" to shop for.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Instructions */}
+      <section className="py-6 px-6 bg-white">
         <motion.div 
           className="max-w-3xl mx-auto"
           initial="hidden"
@@ -194,10 +218,10 @@ export default function GiftPrompt() {
           variants={fadeInUp}
         >
           <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
-            Want to Give Your Parents an AI Sidekick?
+            Want More Prompts Like This?
           </h2>
           <p className="text-lg text-gray-700 mb-8">
-            Help them discover how AI can simplify their everyday life.
+            Our 7-day course teaches you to use AI for everyday life—starting way simpler than this.
           </p>
           <Link href="/sidekick">
             <Button 
