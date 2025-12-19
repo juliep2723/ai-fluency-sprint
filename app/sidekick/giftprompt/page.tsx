@@ -97,17 +97,18 @@ export default function GiftPrompt() {
           animate="visible"
           variants={fadeInUp}
         >
-          <div className="flex justify-center mb-6">
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{ maxWidth: '350px' }}>
+          <div className="flex justify-center mb-6 px-4">
+            <div 
+              className="rounded-xl overflow-hidden shadow-lg w-full"
+              style={{ maxWidth: '350px', aspectRatio: '9/16' }}
+            >
               <iframe
-                width="350"
-                height="622"
-                src="https://www.youtube.com/embed/NwkaYIPR87A"
+                src="https://www.youtube.com/embed/NwkaYIPR87A?rel=0&modestbranding=1"
                 title="Gift Shopping Prompt Demo"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="block"
+                className="w-full h-full block"
               ></iframe>
             </div>
           </div>

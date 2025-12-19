@@ -388,21 +388,22 @@ function SidekickContent() {
             This is one of our longer, fancier prompts. The daily lessons? Much gentler—5-7 minutes of plain-English basics. But here's what's waiting when you're ready to level up.
           </motion.p>
 
-          {/* Video */}
+          {/* Video - Responsive vertical video */}
           <motion.div 
-            className="mb-8 flex justify-center"
+            className="mb-8 flex justify-center px-4"
             variants={scaleIn}
           >
-            <div className="rounded-xl overflow-hidden shadow-xl" style={{ maxWidth: '350px' }}>
+            <div 
+              className="rounded-xl overflow-hidden shadow-xl w-full"
+              style={{ maxWidth: '350px', aspectRatio: '9/16' }}
+            >
               <iframe
-                width="350"
-                height="622"
-                src="https://www.youtube.com/embed/NwkaYIPR87A"
+                src="https://www.youtube.com/embed/NwkaYIPR87A?rel=0&modestbranding=1"
                 title="Gift Shopping Prompt Demo"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="block"
+                className="w-full h-full block"
               ></iframe>
             </div>
           </motion.div>
