@@ -491,7 +491,7 @@ function SidekickContent() {
                     <span className="text-2xl text-gray-400 line-through">$149</span>
                     <span className="text-4xl font-bold text-teal">$99</span>
                   </div>
-                  <p className="text-sm text-teal font-semibold">Holiday Price • Ends Jan 1</p>
+                  <p className="text-base text-teal font-semibold">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <ul className="space-y-3 text-lg text-black mb-6 flex-grow">
@@ -534,7 +534,7 @@ function SidekickContent() {
                     <span className="text-2xl text-gray-400 line-through">$199</span>
                     <span className="text-4xl font-bold text-teal">$149</span>
                   </div>
-                  <p className="text-sm text-teal font-semibold">Holiday Price • Ends Jan 1</p>
+                  <p className="text-base text-teal font-semibold">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <div className="mb-6 flex-grow">
@@ -578,7 +578,7 @@ function SidekickContent() {
                     <span className="text-2xl text-gray-400 line-through">$349</span>
                     <span className="text-4xl font-bold text-teal">$249</span>
                   </div>
-                  <p className="text-sm text-teal font-semibold">Holiday Price • Ends Jan 1</p>
+                  <p className="text-base text-teal font-semibold">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <ul className="space-y-3 text-lg text-black mb-6 flex-grow">
