@@ -186,6 +186,71 @@ function SidekickContent() {
         </motion.div>
       </section>
 
+      {/* Watch: The AI Gift Hack - Off-White Background */}
+      <section className="py-16 px-6 bg-off-white">
+        <motion.div 
+          className="max-w-4xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+        >
+          <motion.h2 
+            className="text-3xl md:text-4xl font-bold text-navy text-center mb-4"
+            variants={fadeInUp}
+          >
+            Watch: The AI Gift Hack
+          </motion.h2>
+          
+          <motion.p 
+            className="text-lg text-gray-700 text-center mb-8 max-w-2xl mx-auto"
+            variants={fadeInUp}
+          >
+            This is one of our longer, fancier prompts. The daily lessons? Much gentler—5-7 minutes of plain-English basics. But here's what's waiting when you're ready to level up.
+          </motion.p>
+
+          {/* Video Carousel - Currently 1 video, ready for more */}
+          <motion.div 
+            className="mb-8 flex justify-center px-4"
+            variants={scaleIn}
+          >
+            <div 
+              className="rounded-xl overflow-hidden shadow-xl w-full"
+              style={{ maxWidth: '350px', aspectRatio: '9/16' }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/NwkaYIPR87A?rel=0&modestbranding=1"
+                title="Gift Shopping Prompt Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full block"
+              ></iframe>
+            </div>
+          </motion.div>
+
+          {/* Two CTAs */}
+          <motion.div className="flex flex-col sm:flex-row gap-4 justify-center items-center" variants={fadeInUp}>
+            <Link href="/sidekick/giftprompt">
+              <Button 
+                size="lg" 
+                className="bg-white border-2 border-teal text-teal hover:bg-teal hover:text-white hover:scale-105 px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Try This Prompt Free →
+              </Button>
+            </Link>
+            <a href="#gift-options">
+              <Button 
+                size="lg" 
+                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Pick Your Starter Kit
+              </Button>
+            </a>
+          </motion.div>
+        </motion.div>
+      </section>
+
       {/* What You'll Get - White Background */}
       <section className="py-24 px-6 bg-white">
         <motion.div 
@@ -254,6 +319,40 @@ function SidekickContent() {
             <p className="text-xl text-gray-800 text-center font-semibold">
               You're not "learning AI." You're learning <span className="text-teal">how to finally get some help with... everything.</span>
             </p>
+          </motion.div>
+
+          {/* 50+ Scenarios List */}
+          <motion.div 
+            className="mb-10"
+            variants={fadeInUp}
+          >
+            <p className="text-lg font-semibold text-navy mb-4 text-center">And 50+ specific scenarios it could help with, including:</p>
+            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2 max-w-2xl mx-auto text-lg text-gray-700">
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Doctor Visit Question Prep</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Firm-but-kind letter</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Shopping Assistant</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Video help with my broken appliance</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Advice about my tricky relative</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Recipe Recommender</span>
+              </li>
+            </ul>
           </motion.div>
           
           <motion.div className="text-center" variants={fadeInUp}>
@@ -365,62 +464,6 @@ function SidekickContent() {
         </motion.div>
       </section>
 
-      {/* Bonus: See an Advanced Prompt - Off-White Background */}
-      <section className="py-16 px-6 bg-off-white">
-        <motion.div 
-          className="max-w-4xl mx-auto"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={staggerContainer}
-        >
-          <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-navy text-center mb-4"
-            variants={fadeInUp}
-          >
-            Bonus: See an Advanced Prompt in Action
-          </motion.h2>
-          
-          <motion.p 
-            className="text-lg text-gray-700 text-center mb-8 max-w-2xl mx-auto"
-            variants={fadeInUp}
-          >
-            This is one of our longer, fancier prompts. The daily lessons? Much gentler—5-7 minutes of plain-English basics. But here's what's waiting when you're ready to level up.
-          </motion.p>
-
-          {/* Video - Responsive vertical video */}
-          <motion.div 
-            className="mb-8 flex justify-center px-4"
-            variants={scaleIn}
-          >
-            <div 
-              className="rounded-xl overflow-hidden shadow-xl w-full"
-              style={{ maxWidth: '350px', aspectRatio: '9/16' }}
-            >
-              <iframe
-                src="https://www.youtube.com/embed/NwkaYIPR87A?rel=0&modestbranding=1"
-                title="Gift Shopping Prompt Demo"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full block"
-              ></iframe>
-            </div>
-          </motion.div>
-
-          {/* CTA */}
-          <motion.div className="text-center" variants={fadeInUp}>
-            <Link href="/sidekick/giftprompt">
-              <Button 
-                size="lg" 
-                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Try This Prompt Free →
-              </Button>
-            </Link>
-          </motion.div>
-        </motion.div>
-      </section>
 
       {/* Options - White Background */}
       <section id="gift-options" className="py-24 px-6 bg-white">
@@ -448,8 +491,11 @@ function SidekickContent() {
               <Card className="p-8 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all flex flex-col">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-navy mb-2">Sidekick Solo</h3>
-                  <div className="text-4xl font-bold text-teal mb-1">$99</div>
-                  <p className="text-lg text-black">One-week transformation</p>
+                  <div className="flex items-center justify-center gap-3 mb-1">
+                    <span className="text-2xl text-gray-400 line-through">$129</span>
+                    <span className="text-4xl font-bold text-teal">$99</span>
+                  </div>
+                  <p className="text-sm text-teal font-semibold">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <ul className="space-y-3 text-lg text-black mb-6 flex-grow">
@@ -488,8 +534,11 @@ function SidekickContent() {
                 </div>
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-navy mb-2">Sidekick Plus</h3>
-                  <div className="text-4xl font-bold text-teal mb-1">$149</div>
-                  <p className="text-lg text-black">Extra hand-holding</p>
+                  <div className="flex items-center justify-center gap-3 mb-1">
+                    <span className="text-2xl text-gray-400 line-through">$179</span>
+                    <span className="text-4xl font-bold text-teal">$149</span>
+                  </div>
+                  <p className="text-sm text-teal font-semibold">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <div className="mb-6 flex-grow">
@@ -529,8 +578,11 @@ function SidekickContent() {
               <Card className="p-8 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all flex flex-col">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-navy mb-2">Family Pack</h3>
-                  <div className="text-4xl font-bold text-teal mb-1">$249</div>
-                  <p className="text-lg text-black">2 Sidekick Plus seats</p>
+                  <div className="flex items-center justify-center gap-3 mb-1">
+                    <span className="text-2xl text-gray-400 line-through">$299</span>
+                    <span className="text-4xl font-bold text-teal">$249</span>
+                  </div>
+                  <p className="text-sm text-teal font-semibold">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <ul className="space-y-3 text-lg text-black mb-6 flex-grow">
