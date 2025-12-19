@@ -97,15 +97,19 @@ export default function GiftPrompt() {
           animate="visible"
           variants={fadeInUp}
         >
-          <div className="rounded-xl overflow-hidden shadow-lg mb-6">
-            <video 
-              className="w-full"
-              controls
-              preload="metadata"
-            >
-              <source src="/Gift_shopping_prompt.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="flex justify-center mb-6">
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{ maxWidth: '350px' }}>
+              <iframe
+                width="350"
+                height="622"
+                src="https://www.youtube.com/embed/NwkaYIPR87A"
+                title="Gift Shopping Prompt Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="block"
+              ></iframe>
+            </div>
           </div>
           <p className="text-center text-gray-600 mb-8 text-sm">
             Watch Julie use this prompt to find the perfect gift for someone "impossible" to shop for.

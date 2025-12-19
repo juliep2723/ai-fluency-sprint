@@ -390,18 +390,21 @@ function SidekickContent() {
 
           {/* Video */}
           <motion.div 
-            className="mb-8 rounded-xl overflow-hidden shadow-xl"
+            className="mb-8 flex justify-center"
             variants={scaleIn}
           >
-            <video 
-              className="w-full"
-              controls
-              preload="metadata"
-              poster=""
-            >
-              <source src="/Gift_shopping_prompt.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="rounded-xl overflow-hidden shadow-xl" style={{ maxWidth: '350px' }}>
+              <iframe
+                width="350"
+                height="622"
+                src="https://www.youtube.com/embed/NwkaYIPR87A"
+                title="Gift Shopping Prompt Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="block"
+              ></iframe>
+            </div>
           </motion.div>
 
           {/* CTA */}
