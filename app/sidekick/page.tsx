@@ -264,7 +264,7 @@ function SidekickContent() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
             variants={fadeInUp}
           >
-            What You'll Actually Get Out of This
+            Starter Kit Benefits
           </motion.h2>
           
           <motion.p 
