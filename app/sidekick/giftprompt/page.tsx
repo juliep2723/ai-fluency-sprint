@@ -233,7 +233,7 @@ export default function GiftPrompt() {
               size="lg" 
               className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
             >
-              Learn About AI Sidekick Starter Kit →
+              ← Back to AI Sidekick Starter Kit
             </Button>
           </Link>
         </motion.div>
