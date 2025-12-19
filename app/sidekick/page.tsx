@@ -312,21 +312,12 @@ function SidekickContent() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
-            className="bg-teal/10 p-8 rounded-lg border-l-4 border-teal mb-8"
-            variants={fadeInUp}
-          >
-            <p className="text-xl text-gray-800 text-center font-semibold">
-              You're not "learning AI." You're learning <span className="text-teal">how to finally get some help with... everything.</span>
-            </p>
-          </motion.div>
-
-          {/* 50+ Scenarios List */}
+          {/* Dozens More Ideas */}
           <motion.div 
             className="bg-teal/10 p-8 rounded-lg border-l-4 border-teal mb-10"
             variants={fadeInUp}
           >
-            <p className="text-lg font-semibold text-navy mb-4 text-center">And 50+ specific scenarios AI could help with, including:</p>
+            <p className="text-lg font-semibold text-navy mb-4 text-center">+ dozens more ideas in the full course, including:</p>
             <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2 max-w-2xl mx-auto text-lg text-gray-700">
               <li className="flex items-start">
                 <span className="text-teal mr-2">•</span>
