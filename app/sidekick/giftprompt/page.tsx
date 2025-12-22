@@ -89,35 +89,6 @@ export default function GiftPrompt() {
         </motion.div>
       </section>
 
-      {/* Video Demo */}
-      <section className="py-8 px-6 bg-white">
-        <motion.div 
-          className="max-w-3xl mx-auto"
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-        >
-          <div className="flex justify-center mb-6 px-4">
-            <div 
-              className="rounded-xl overflow-hidden shadow-lg w-full"
-              style={{ maxWidth: '350px', aspectRatio: '9/16' }}
-            >
-              <iframe
-                src="https://www.youtube.com/embed/NwkaYIPR87A?rel=0&modestbranding=1"
-                title="Gift Shopping Prompt Demo"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full block"
-              ></iframe>
-            </div>
-          </div>
-          <p className="text-center text-gray-600 mb-8 text-sm">
-            Watch Julie use this prompt to find the perfect gift for someone "impossible" to shop for.
-          </p>
-        </motion.div>
-      </section>
-
       {/* Instructions */}
       <section className="py-6 px-6 bg-white">
         <motion.div 
@@ -233,7 +204,7 @@ export default function GiftPrompt() {
               size="lg" 
               className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
             >
-              ← Back to AI Sidekick Starter Kit
+              Learn About AI Sidekick Starter Kit →
             </Button>
           </Link>
         </motion.div>

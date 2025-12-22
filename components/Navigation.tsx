@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button'
 export default function Navigation() {
   const pathname = usePathname()
   
-  // Hide navigation on giftprompt page
-  if (pathname === '/sidekick/giftprompt') {
+  // Hide navigation on sidekick pages
+  if (pathname === '/sidekick' || pathname === '/sidekick/giftprompt') {
     return null
   }
   
