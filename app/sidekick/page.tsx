@@ -354,7 +354,7 @@ function SidekickContent() {
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>Wallet Card</strong> – a cheat sheet of "when X happens, ask AI this" you can keep in a wallet or by the computer.</span>
+                    <span><strong>Quick-Start Cheat Sheet</strong> – "when X happens, ask AI this" you can keep by the computer.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
@@ -524,7 +524,7 @@ function SidekickContent() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
-                    <span>Printable Wallet Card</span>
+                    <span>Quick-Start Cheat Sheet</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal mr-2">✓</span>
