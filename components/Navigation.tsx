@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
@@ -14,9 +15,15 @@ export default function Navigation() {
   
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-navy">
-          AI Strategy
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+        <Link href="/">
+          <Image 
+            src="/Logo_transparent_backround.png" 
+            alt="AI Strategy" 
+            width={180} 
+            height={50} 
+            className="h-12 w-auto object-contain"
+          />
         </Link>
         
         <div className="flex items-center gap-8">

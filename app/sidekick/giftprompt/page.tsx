@@ -74,8 +74,18 @@ export default function GiftPrompt() {
 
   return (
     <main className="min-h-screen bg-white">
+      {/* Back Button */}
+      <div className="fixed top-0 left-0 z-50 p-4">
+        <Link 
+          href="/sidekick" 
+          className="inline-flex items-center gap-2 text-navy bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 font-medium"
+        >
+          ← Back to Starter Kit
+        </Link>
+      </div>
+
       {/* Header */}
-      <section className="py-8 px-6 bg-navy text-white">
+      <section className="py-8 px-6 bg-navy text-white pt-16">
         <motion.div 
           className="max-w-3xl mx-auto text-center"
           initial="hidden"
