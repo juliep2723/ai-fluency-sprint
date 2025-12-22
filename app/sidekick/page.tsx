@@ -183,7 +183,7 @@ function SidekickContent() {
           variants={fadeInUp}
         >
           <div className="inline-block bg-teal/20 px-4 py-2 rounded-full mb-6">
-            <p className="text-sm font-semibold text-teal">🎁 Course available starting Jan 12</p>
+            <p className="text-base md:text-lg font-semibold text-teal">🎁 Course available starting Jan 12</p>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
