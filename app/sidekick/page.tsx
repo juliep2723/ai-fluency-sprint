@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { Suspense, useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
@@ -162,8 +163,14 @@ function SidekickContent() {
 
       {/* Logo Header Bar */}
       <div className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-end">
-          <span className="text-2xl font-bold text-navy">AI Strategy</span>
+        <div className="max-w-6xl mx-auto px-6 py-2 flex justify-end">
+          <Image 
+            src="/Logo_transparent_backround.png" 
+            alt="AI Strategy" 
+            width={120} 
+            height={40} 
+            className="h-10 w-auto object-contain"
+          />
         </div>
       </div>
 
@@ -182,7 +189,7 @@ function SidekickContent() {
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
             Finally feel confident using AI in 7 days (5–7 minutes/day).
           </p>
-          <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
             A short, self-paced video + email course for people who are brilliant at life, but baffled by AI.
           </p>
           <a href="#how-it-works">
@@ -266,27 +273,27 @@ function SidekickContent() {
             <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2 max-w-2xl mx-auto text-lg text-gray-700">
               <li className="flex items-start">
                 <span className="text-teal mr-2">•</span>
-                <span>Planning trips and outings</span>
+                <span>Doctor visit question prep</span>
               </li>
               <li className="flex items-start">
                 <span className="text-teal mr-2">•</span>
-                <span>Comparison shopping for big purchases</span>
+                <span>Firm-but-kind letter</span>
               </li>
               <li className="flex items-start">
                 <span className="text-teal mr-2">•</span>
-                <span>Brainstorming gift ideas</span>
+                <span>Shopping assistant</span>
               </li>
               <li className="flex items-start">
                 <span className="text-teal mr-2">•</span>
-                <span>Explaining tech to grandkids</span>
+                <span>Video help with my broken appliance</span>
               </li>
               <li className="flex items-start">
                 <span className="text-teal mr-2">•</span>
-                <span>Creating personalized meal plans</span>
+                <span>Advice about my tricky relative</span>
               </li>
               <li className="flex items-start">
                 <span className="text-teal mr-2">•</span>
-                <span>Understanding Medicare options</span>
+                <span>Recipe recommender</span>
               </li>
             </ul>
           </motion.div>
@@ -384,6 +391,31 @@ function SidekickContent() {
           >
             Taught by Tech Veteran Moms, Not "Tech Bros"
           </motion.h2>
+          
+          {/* Photos */}
+          <motion.div 
+            className="flex justify-center gap-8 mb-8"
+            variants={fadeInUp}
+          >
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-teal">
+              <Image
+                src="/michele.png"
+                alt="Michele Chambliss"
+                width={96}
+                height={96}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-teal">
+              <Image
+                src="/julie.png"
+                alt="Julie Price"
+                width={96}
+                height={96}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
           
           <motion.div 
             className="text-xl text-gray-300 text-center max-w-3xl mx-auto leading-relaxed"

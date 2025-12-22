@@ -57,7 +57,7 @@ export default function Home() {
         >
           <Link href="/sidekick" className="block group hover:opacity-90 transition-opacity">
             <p className="text-white font-bold text-xl md:text-2xl">
-              🎁 New Holiday / New Years Offer: AI Sidekick Starter Kit
+              🎁 Holiday / New Year's Offer: AI Sidekick Starter Kit
             </p>
           </Link>
         </motion.div>
