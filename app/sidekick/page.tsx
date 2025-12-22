@@ -160,8 +160,15 @@ function SidekickContent() {
         )}
       </AnimatePresence>
 
+      {/* Logo Header Bar */}
+      <div className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-end">
+          <span className="text-2xl font-bold text-navy">AI Strategy</span>
+        </div>
+      </div>
+
       {/* Hero Section - Navy Background */}
-      <section className="py-24 px-6 bg-navy text-white pt-32">
+      <section className="py-24 px-6 bg-navy text-white pt-28">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
           initial="hidden"
@@ -172,15 +179,18 @@ function SidekickContent() {
             <p className="text-sm font-semibold text-teal">🎁 Course available starting Jan 12</p>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Sidekick Starter Kit</h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-            For those who are brilliant at life, but baffled by AI.
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-4">
+            Finally feel confident using AI in 7 days (5–7 minutes/day).
           </p>
-          <a href="#gift-options">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
+            A short, self-paced video + email course for people who are brilliant at life, but baffled by AI.
+          </p>
+          <a href="#how-it-works">
             <Button 
               size="lg" 
               className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-10 py-6 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
             >
-              Pick Your Starter Kit
+              See How the 7 Days Work
             </Button>
           </a>
         </motion.div>
@@ -199,7 +209,7 @@ function SidekickContent() {
             className="text-4xl md:text-5xl font-bold text-navy text-center mb-12"
             variants={fadeInUp}
           >
-            What You'll Actually Get Out of This
+            Starter Kit Benefits
           </motion.h2>
           
           <motion.p 
@@ -247,13 +257,38 @@ function SidekickContent() {
             </motion.div>
           </motion.div>
 
+          {/* Dozens More Ideas */}
           <motion.div 
-            className="bg-teal/10 p-8 rounded-lg border-l-4 border-teal mb-8"
+            className="bg-teal/10 p-6 rounded-lg border-l-4 border-teal mb-8"
             variants={fadeInUp}
           >
-            <p className="text-xl text-gray-800 text-center font-semibold">
-              You're not "learning AI." You're learning <span className="text-teal">how to finally get some help with... everything.</span>
-            </p>
+            <p className="text-lg font-semibold text-navy mb-4 text-center">+ dozens more ideas in the full course, including:</p>
+            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2 max-w-2xl mx-auto text-lg text-gray-700">
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Planning trips and outings</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Comparison shopping for big purchases</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Brainstorming gift ideas</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Explaining tech to grandkids</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Creating personalized meal plans</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal mr-2">•</span>
+                <span>Understanding Medicare options</span>
+              </li>
+            </ul>
           </motion.div>
           
           <motion.div className="text-center" variants={fadeInUp}>
@@ -270,7 +305,7 @@ function SidekickContent() {
       </section>
 
       {/* How It Works - Off-White Background */}
-      <section className="py-24 px-6 bg-off-white">
+      <section id="how-it-works" className="py-24 px-6 bg-off-white">
         <motion.div 
           className="max-w-4xl mx-auto"
           initial="hidden"
@@ -317,10 +352,6 @@ function SidekickContent() {
                   <li className="flex items-start">
                     <span className="text-teal mr-3 text-xl font-bold">✓</span>
                     <span><strong>"50 Ways Your AI Sidekick Can Help" guide</strong> – the menu of problems you can hand off to AI, from comparison shopping to event planning.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-teal mr-3 text-xl font-bold">✓</span>
-                    <span><strong>Done-for-you gift message templates</strong> – so this feels like a love letter, not a "you're bad at computers" intervention.</span>
                   </li>
                 </ul>
               </Card>
@@ -385,7 +416,7 @@ function SidekickContent() {
             className="text-lg text-gray-700 text-center mb-8 max-w-2xl mx-auto"
             variants={fadeInUp}
           >
-            This is one of our longer, fancier prompts. The daily lessons? Much gentler—5-7 minutes of plain-English basics. But here's what's waiting when you're ready to level up.
+            This is one of our longer, fancier prompts. Daily lessons are gentler 5-7 minutes of plain-English basics.
           </motion.p>
 
           {/* Video - Responsive vertical video */}
@@ -448,8 +479,10 @@ function SidekickContent() {
               <Card className="p-8 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all flex flex-col">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-navy mb-2">Sidekick Solo</h3>
-                  <div className="text-4xl font-bold text-teal mb-1">$99</div>
-                  <p className="text-lg text-black">One-week transformation</p>
+                  <div className="text-4xl font-bold text-teal mb-1">
+                    <span className="line-through text-gray-400 text-2xl mr-2">$149</span>$99
+                  </div>
+                  <p className="text-base font-semibold text-teal">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <ul className="space-y-3 text-lg text-black mb-6 flex-grow">
@@ -488,8 +521,10 @@ function SidekickContent() {
                 </div>
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-navy mb-2">Sidekick Plus</h3>
-                  <div className="text-4xl font-bold text-teal mb-1">$149</div>
-                  <p className="text-lg text-black">Extra hand-holding</p>
+                  <div className="text-4xl font-bold text-teal mb-1">
+                    <span className="line-through text-gray-400 text-2xl mr-2">$199</span>$149
+                  </div>
+                  <p className="text-base font-semibold text-teal">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <div className="mb-6 flex-grow">
@@ -529,8 +564,10 @@ function SidekickContent() {
               <Card className="p-8 h-full shadow-xl hover:shadow-2xl border-2 border-teal transition-all flex flex-col">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-navy mb-2">Family Pack</h3>
-                  <div className="text-4xl font-bold text-teal mb-1">$249</div>
-                  <p className="text-lg text-black">2 Sidekick Plus seats</p>
+                  <div className="text-4xl font-bold text-teal mb-1">
+                    <span className="line-through text-gray-400 text-2xl mr-2">$349</span>$249
+                  </div>
+                  <p className="text-base font-semibold text-teal">Holiday Price • Ends Jan 1</p>
                 </div>
                 
                 <ul className="space-y-3 text-lg text-black mb-6 flex-grow">
