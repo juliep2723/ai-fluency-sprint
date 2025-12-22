@@ -167,9 +167,9 @@ function SidekickContent() {
           <Image 
             src="/Logo_transparent_backround.png" 
             alt="AI Strategy" 
-            width={200} 
-            height={60} 
-            className="h-12 md:h-14 w-auto object-contain"
+            width={280} 
+            height={80} 
+            className="h-14 md:h-16 w-auto object-contain"
           />
         </div>
       </div>
@@ -579,7 +579,7 @@ function SidekickContent() {
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-navy hover:bg-navy/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 mt-auto"
+                  className="w-full bg-teal hover:bg-teal/90 hover:scale-105 text-white py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 mt-auto"
                   onClick={() => handleStripeCheckout('plus')}
                 >
                   Purchase Sidekick Plus
