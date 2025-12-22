@@ -423,7 +423,7 @@ function SidekickContent() {
           >
             <p className="mb-4">Julie made complicated tech feel easy (and even fun) for millions.</p>
             <p className="mb-4">Michele's been decoding AI for smart, skeptical humans since it hit the scene.</p>
-            <p>We don't do jargon. We do "finally makes sense."</p>
+            <p>We don't do jargon. We speak plain English.</p>
           </motion.div>
         </motion.div>
       </section>
