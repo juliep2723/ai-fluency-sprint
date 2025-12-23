@@ -423,7 +423,10 @@ function SidekickContent() {
           >
             <p className="mb-4">Julie made complicated tech feel easy (and even fun) for millions.</p>
             <p className="mb-4">Michele's been decoding AI for smart, skeptical humans since it hit the scene.</p>
-            <p>We don't do jargon. We speak plain English.</p>
+            <p className="mb-2">We don't do jargon. We speak plain English.</p>
+            <p className="text-base md:text-lg text-gray-300">
+              Harvard Business School, Wharton, Accenture, Fidelity, Oracle, plus countless startups.
+            </p>
           </motion.div>
         </motion.div>
       </section>
