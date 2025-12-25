@@ -238,7 +238,7 @@ function SidekickContent() {
 
             <motion.div variants={scaleIn}>
               <Card className="p-6 h-full shadow-lg border-l-4 border-teal">
-                <h3 className="text-xl font-bold text-navy mb-3">Translate gobbledygook</h3>
+                <h3 className="text-xl font-bold text-navy mb-3">Translate confusing lingo</h3>
                 <p className="text-lg text-gray-700">
                   Turn medical, legal, and financial jargon into plain English you can actually act on.
                 </p>
