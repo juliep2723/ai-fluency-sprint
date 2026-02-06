@@ -95,19 +95,12 @@ export default function ThankYouPage() {
                         variants={fadeInUp}
                     >
                         <h2 className="text-2xl font-bold mb-4">What&apos;s Next?</h2>
-                        <p className="text-lg text-gray-300 mb-4">
-                            Want more than just one cheat sheet? The full <strong>&quot;Real Life&quot; AI Rescue System</strong> has 50+ prompts covering everything from doctor visit prep to neighbor drama scripts.
+                        <p className="text-lg text-gray-300 mb-6">
+                            You&apos;re on the waitlist for the <strong>Real Life AI Reset</strong> class that covers everything from doctor visit prep to neighbor drama scripts: 7 Days, 1 Video/Day, Zero Overwhelm, Over 50 prompts.
                         </p>
 
-                        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 text-base text-gray-200 mb-6 font-medium">
-                            <div className="flex items-center justify-center gap-2"><span className="text-xl">🗓️</span> 7 Days</div>
-                            <div className="flex items-center justify-center gap-2"><span className="text-xl">💡</span> 1 Video/Day</div>
-                            <div className="flex items-center justify-center gap-2"><span className="text-xl">🧠</span> Zero Overwhelm</div>
-                            <div className="flex items-center justify-center gap-2"><span className="text-xl">☕</span> Watch w/ Coffee</div>
-                        </div>
-
                         <p className="text-teal font-semibold">
-                            You&apos;re on the waitlist. We&apos;ll notify you when it&apos;s ready.
+                            We&apos;ll notify you when it&apos;s ready.
                         </p>
                     </motion.div>
                 </motion.div>
