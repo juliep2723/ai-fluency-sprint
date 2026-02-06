@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -27,7 +27,7 @@ const scaleIn = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
 }
 
-export default function SidekickInsp2Page() {
+function Insp2Content() {
     const router = useRouter()
     const searchParams = useSearchParams()
     const [email, setEmail] = useState('')
@@ -423,5 +423,13 @@ export default function SidekickInsp2Page() {
                 </div>
             </footer>
         </main>
+    )
+}
+
+export default function SidekickInsp2Page() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Insp2Content />
+        </Suspense>
     )
 }

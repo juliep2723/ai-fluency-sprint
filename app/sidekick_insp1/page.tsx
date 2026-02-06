@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -38,7 +38,7 @@ const scaleIn = {
     }
 }
 
-export default function SidekickInsp1Page() {
+function Insp1Content() {
     const router = useRouter()
     const searchParams = useSearchParams()
     const [email, setEmail] = useState('')
@@ -460,5 +460,13 @@ export default function SidekickInsp1Page() {
                 </div>
             </footer>
         </main>
+    )
+}
+
+export default function SidekickInsp1Page() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Insp1Content />
+        </Suspense>
     )
 }
