@@ -8,8 +8,8 @@ import { Button } from '@/components/ui/button'
 export default function Navigation() {
   const pathname = usePathname()
 
-  // Hide navigation on sidekick and sidekick_insp1 pages
-  if (pathname === '/sidekick' || pathname === '/sidekick/giftprompt' || pathname?.startsWith('/sidekick_insp1')) {
+  // Hide navigation on sidekick and sidekick_insp1/insp2 pages
+  if (pathname === '/sidekick' || pathname === '/sidekick/giftprompt' || pathname?.startsWith('/sidekick_insp')) {
     return null
   }
 

@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation'
 export default function Footer() {
   const pathname = usePathname()
 
-  // Hide footer on giftprompt and sidekick_insp1 pages (they have custom footers)
-  if (pathname === '/sidekick/giftprompt' || pathname?.startsWith('/sidekick_insp1')) {
+  // Hide footer on giftprompt and sidekick_insp1/insp2 pages (they have custom footers)
+  if (pathname === '/sidekick/giftprompt' || pathname?.startsWith('/sidekick_insp')) {
     return null
   }
 
