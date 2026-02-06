@@ -100,7 +100,7 @@ export default function SidekickInsp2Page() {
                         className="text-4xl md:text-6xl font-extrabold mb-6 text-white drop-shadow-lg tracking-tight"
                         variants={fadeInUp}
                     >
-                        🎁 The <span className="text-teal">5-Minute Relief</span> Cheat Sheet
+                        The <span className="text-teal">5-Minute Relief</span> Cheat Sheet
                     </motion.h1>
 
                     <motion.p
@@ -309,11 +309,11 @@ export default function SidekickInsp2Page() {
                         You&apos;ll want the <strong className="text-white text-xl">Real Life AI Reset</strong>.
                     </motion.p>
 
-                    <motion.div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 text-center">
-                        <div className="bg-white/10 p-4 rounded-lg">🗓️ 7 Days</div>
-                        <div className="bg-white/10 p-4 rounded-lg">💡 1 Video/Day</div>
-                        <div className="bg-white/10 p-4 rounded-lg">🧠 Zero Overwhelm</div>
-                        <div className="bg-white/10 p-4 rounded-lg">☕ Use w/ Coffee</div>
+                    <motion.div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12 text-lg text-gray-200 mb-10 font-medium" variants={fadeInUp}>
+                        <div className="flex items-center justify-center gap-2"><span className="text-2xl">🗓️</span> 7 Days</div>
+                        <div className="flex items-center justify-center gap-2"><span className="text-2xl">💡</span> 1 Video/Day</div>
+                        <div className="flex items-center justify-center gap-2"><span className="text-2xl">🧠</span> Zero Overwhelm</div>
+                        <div className="flex items-center justify-center gap-2"><span className="text-2xl">☕</span> Use w/ Coffee</div>
                     </motion.div>
 
                     <motion.p
@@ -345,11 +345,17 @@ export default function SidekickInsp2Page() {
                     variants={staggerContainer}
                 >
                     <motion.h2
-                        className="text-4xl md:text-5xl font-bold text-navy mb-6 tracking-tight"
+                        className="text-4xl md:text-5xl font-bold text-navy mb-4 tracking-tight"
                         variants={fadeInUp}
                     >
-                        You&apos;re not behind. <br />You&apos;re just solving a different level of life than everyone else.
+                        You&apos;re not behind.
                     </motion.h2>
+                    <motion.p
+                        className="text-2xl md:text-3xl text-navy/80 font-medium mb-10"
+                        variants={fadeInUp}
+                    >
+                        You&apos;re just solving a different level of life than everyone else.
+                    </motion.p>
 
                     <motion.p
                         className="text-lg text-gray-600 mb-10"
