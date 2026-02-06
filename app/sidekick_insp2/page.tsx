@@ -326,7 +326,7 @@ function Insp2Content() {
                         <div className="flex items-center justify-center gap-2"><span className="text-2xl">🗓️</span> 7 Days</div>
                         <div className="flex items-center justify-center gap-2"><span className="text-2xl">💡</span> 1 Video/Day</div>
                         <div className="flex items-center justify-center gap-2"><span className="text-2xl">🧠</span> Zero Overwhelm</div>
-                        <div className="flex items-center justify-center gap-2"><span className="text-2xl">☕</span> Use w/ Coffee</div>
+                        <div className="flex items-center justify-center gap-2"><span className="text-2xl">☕</span> Watch before your morning Coffee</div>
                     </motion.div>
 
                     <motion.p
