@@ -5,12 +5,12 @@ import { usePathname } from 'next/navigation'
 
 export default function Footer() {
   const pathname = usePathname()
-  
-  // Hide footer on giftprompt page
-  if (pathname === '/sidekick/giftprompt') {
+
+  // Hide footer on giftprompt and sidekick_insp1 pages (they have custom footers)
+  if (pathname === '/sidekick/giftprompt' || pathname?.startsWith('/sidekick_insp1')) {
     return null
   }
-  
+
   return (
     <footer className="bg-primary text-white py-12 px-6">
       <div className="max-w-6xl mx-auto">
@@ -20,7 +20,7 @@ export default function Footer() {
             <p className="text-xl font-semibold mb-2">AI Strategy LLC</p>
             <p className="text-base opacity-80">From AI-Curious to AI-Confident</p>
           </div>
-          
+
           {/* Navigation */}
           <div>
             <h4 className="font-semibold mb-3">Navigation</h4>
@@ -30,7 +30,7 @@ export default function Footer() {
               <Link href="/sidekick" className="hover:opacity-100">Starter Kit</Link>
             </div>
           </div>
-          
+
           {/* Offerings */}
           <div>
             <h4 className="font-semibold mb-3">Ready to begin?</h4>
@@ -40,7 +40,7 @@ export default function Footer() {
               <Link href="/offerings" className="hover:opacity-100">Readiness Assessment</Link>
             </div>
           </div>
-          
+
           {/* Legal & Contact */}
           <div>
             <h4 className="font-semibold mb-3">Contact & Legal</h4>
@@ -53,7 +53,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-white/20 text-center text-base opacity-60">
           © 2025 AI Strategy LLC. All rights reserved.
         </div>

@@ -7,25 +7,25 @@ import { Button } from '@/components/ui/button'
 
 export default function Navigation() {
   const pathname = usePathname()
-  
-  // Hide navigation on sidekick pages
-  if (pathname === '/sidekick' || pathname === '/sidekick/giftprompt') {
+
+  // Hide navigation on sidekick and sidekick_insp1 pages
+  if (pathname === '/sidekick' || pathname === '/sidekick/giftprompt' || pathname?.startsWith('/sidekick_insp1')) {
     return null
   }
-  
+
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link href="/">
-          <Image 
-            src="/Logo_transparent_backround.png" 
-            alt="AI Strategy" 
-            width={180} 
-            height={50} 
+          <Image
+            src="/Logo_transparent_backround.png"
+            alt="AI Strategy"
+            width={180}
+            height={50}
             className="h-12 w-auto object-contain"
           />
         </Link>
-        
+
         <div className="flex items-center gap-8">
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-6">
@@ -42,7 +42,7 @@ export default function Navigation() {
               Contact
             </a>
           </div>
-          
+
           {/* CTA Button */}
           <Link href="/offerings">
             <Button className="bg-teal hover:bg-teal/90 text-white px-6 py-2 shadow-md hover:shadow-lg transition-all duration-300">
