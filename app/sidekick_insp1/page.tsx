@@ -87,14 +87,14 @@ export default function SidekickInsp1Page() {
             </div>
 
             {/* HERO SECTION - Messy Desk Background */}
-            <section id="hero-capture" className="relative min-h-[90vh] flex items-center justify-center py-20 px-6 overflow-hidden">
-                {/* Background Image with Overlay */}
+            <section id="hero-capture" className="relative min-h-[75vh] flex items-center justify-center py-20 px-6 overflow-hidden">
+                {/* Background Image with Overlay - Cropped */}
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/hero-messy-desk.png"
                         alt="Messy Desk Background"
                         fill
-                        className="object-cover"
+                        className="object-cover object-bottom" // Focus on bottom/center clutter
                         priority
                     />
                     <div className="absolute inset-0 bg-navy/80 mix-blend-multiply" /> {/* Darken for text readability */}
@@ -102,36 +102,16 @@ export default function SidekickInsp1Page() {
                 </div>
 
                 <motion.div
-                    className="relative z-10 max-w-4xl mx-auto text-center w-full"
+                    className="relative z-10 max-w-4xl mx-auto text-center w-full mt-10"
                     initial="hidden"
                     animate="visible"
                     variants={staggerContainer}
                 >
-                    {/* Floating Product Image */}
-                    <motion.div
-                        className="mb-8 flex justify-center"
-                        variants={fadeInUp}
-                    >
-                        <div className="relative w-48 h-64 md:w-64 md:h-80 drop-shadow-[0_20px_50px_rgba(20,184,166,0.3)] transform -rotate-3 hover:rotate-0 transition-transform duration-500">
-                            <Image
-                                src="/cheat-sheet-glow.png"
-                                alt="Glowing Cheat Sheet"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                    </motion.div>
-
                     <motion.h1
                         className="text-4xl md:text-6xl font-extrabold mb-6 text-white drop-shadow-lg tracking-tight"
                         variants={fadeInUp}
                     >
-                        The <span className="text-teal relative inline-block">
-                            &quot;Cheat Codes&quot;
-                            <svg className="absolute w-full h-3 -bottom-1 left-0 text-teal opacity-60" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-                            </svg>
-                        </span> for Real Life.
+                        The <span className="text-teal">&quot;Cheat Codes&quot;</span> for Real Life.
                     </motion.h1>
 
                     <motion.p
@@ -166,7 +146,7 @@ export default function SidekickInsp1Page() {
                     </motion.form>
 
                     <motion.p
-                        className="text-sm text-gray-300 font-medium"
+                        className="text-lg md:text-xl text-gray-200 font-bold tracking-wide"
                         variants={fadeInUp}
                     >
                         🔒 Free PDF • Arrives faster than a toddler meltdown
@@ -185,22 +165,6 @@ export default function SidekickInsp1Page() {
                     viewport={{ once: true }}
                     variants={staggerContainer}
                 >
-                    {/* Sticky Note Quote */}
-                    <motion.div
-                        className="absolute -top-10 -right-4 md:-right-20 transform rotate-6 z-10 hidden md:block"
-                        variants={scaleIn}
-                        whileHover={{ scale: 1.1, rotate: 8 }}
-                    >
-                        <div className="w-48 h-48 relative drop-shadow-xl">
-                            <Image
-                                src="/sticky-note-testimonial.png"
-                                alt="I felt like Liam Neeson"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                    </motion.div>
-
                     <motion.h2
                         className="text-3xl md:text-5xl font-bold text-navy mb-8 leading-tight"
                         variants={fadeInUp}
@@ -383,14 +347,21 @@ export default function SidekickInsp1Page() {
                         className="text-2xl md:text-3xl font-bold mb-6"
                         variants={fadeInUp}
                     >
-                        This is part of the &quot;Real Life&quot; AI Rescue System.
+                        What Happens When the Cheat Sheet Isn&apos;t Enough?
                     </motion.h2>
 
                     <motion.p
                         className="text-lg text-gray-300 mb-8"
                         variants={fadeInUp}
                     >
-                        Most AI courses want to teach you how to &quot;code the future.&quot; We just want to help you unsubscribe from a gym membership.
+                        You&apos;ll want the <strong className="text-white text-xl">Real Life AI Reset</strong>.
+                    </motion.p>
+
+                    <motion.p
+                        className="text-lg text-gray-300 mb-8"
+                        variants={fadeInUp}
+                    >
+                        We aren&apos;t futurists. We&apos;re normal people who were tired of drowning in admin. We created this system to clear your plate—so you can stop reacting to life and start managing it.
                     </motion.p>
 
                     <motion.div
@@ -418,7 +389,7 @@ export default function SidekickInsp1Page() {
                         className="text-4xl md:text-5xl font-bold text-navy mb-6 tracking-tight"
                         variants={fadeInUp}
                     >
-                        Stop reacting. Start <span className="underline decoration-teal decoration-4 underline-offset-4">&quot;Lawyering Up.&quot;</span>
+                        Stop reacting. Start &quot;Lawyering Up.&quot;
                     </motion.h2>
 
                     <motion.p
@@ -453,7 +424,7 @@ export default function SidekickInsp1Page() {
                     </motion.form>
 
                     <motion.p
-                        className="text-sm text-gray-500 font-medium"
+                        className="text-lg md:text-xl text-gray-500 font-bold"
                         variants={fadeInUp}
                     >
                         No credit card. No spam. Just relief.
@@ -465,13 +436,15 @@ export default function SidekickInsp1Page() {
             <footer className="bg-navy text-white py-12 px-6 border-t border-white/10">
                 <div className="max-w-6xl mx-auto text-center">
                     <p className="text-xl font-bold mb-4 tracking-wider">AI STRATEGY LLC</p>
-                    <div className="flex justify-center gap-8 text-sm opacity-60 font-medium tracking-wide uppercase">
+                    <div className="flex justify-center gap-8 text-sm opacity-60 font-medium tracking-wide uppercase mb-8">
                         <Link href="/privacy" className="hover:opacity-100 transition-opacity hover:text-teal">Privacy</Link>
                         <Link href="/terms" className="hover:opacity-100 transition-opacity hover:text-teal">Terms</Link>
                     </div>
+                    <p className="text-sm opacity-50">
+                        Contact: <a href="mailto:michele@aistrategyllc.com" className="hover:text-teal transition-colors">michele@aistrategyllc.com</a>
+                    </p>
                 </div>
             </footer>
         </main>
     )
 }
-
