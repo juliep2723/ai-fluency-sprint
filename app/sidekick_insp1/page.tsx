@@ -149,7 +149,7 @@ export default function SidekickInsp1Page() {
                         className="text-lg md:text-xl text-gray-200 font-bold tracking-wide"
                         variants={fadeInUp}
                     >
-                        🔒 Free PDF • Arrives faster than a toddler meltdown
+                        📄 Free PDF • Arrives faster than a toddler meltdown
                     </motion.p>
                 </motion.div>
             </section>
