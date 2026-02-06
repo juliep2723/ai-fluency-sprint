@@ -87,12 +87,7 @@ export default function ThankYouPage() {
                         </a>
                     </motion.div>
 
-                    <motion.p
-                        className="text-sm text-gray-400 mt-6"
-                        variants={fadeInUp}
-                    >
-                        Also check your inbox—we sent you a copy just in case.
-                    </motion.p>
+
 
                     {/* What's Next Section */}
                     <motion.div
@@ -104,7 +99,7 @@ export default function ThankYouPage() {
                             Want more than just one cheat sheet? The full <strong>&quot;Real Life&quot; AI Rescue System</strong> has 50+ prompts covering everything from doctor visit prep to neighbor drama scripts.
                         </p>
                         <p className="text-teal font-semibold">
-                            Early Adopter Price: $99 (normally $149)
+                            You&apos;re on the waitlist. We&apos;ll notify you when it&apos;s ready.
                         </p>
                     </motion.div>
                 </motion.div>
