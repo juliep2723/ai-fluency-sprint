@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(request: NextRequest) {
     try {
-        const { email, source } = await request.json()
+        const { email, source, utmSource, utmMedium, utmCampaign, utmContent } = await request.json()
 
         if (!email) {
             return NextResponse.json(
@@ -13,7 +13,13 @@ export async function POST(request: NextRequest) {
 
         // For now, we'll log the email and source
         // In production, you'd want to integrate with an email service
-        console.log(`New email capture from ${source}: ${email}`)
+        console.log(`New email capture:
+        Email: ${email}
+        Source: ${source}
+        UTM Source: ${utmSource || 'N/A'}
+        UTM Medium: ${utmMedium || 'N/A'}
+        UTM Campaign: ${utmCampaign || 'N/A'}
+        UTM Content: ${utmContent || 'N/A'}`)
 
         // Send email notification to michele@aistrategyllc.com
         // Using a simple mailto approach for now - in production you'd use

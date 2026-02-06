@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { motion } from 'framer-motion'
@@ -40,6 +40,7 @@ const scaleIn = {
 
 export default function SidekickInsp1Page() {
     const router = useRouter()
+    const searchParams = useSearchParams()
     const [email, setEmail] = useState('')
     const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -49,10 +50,23 @@ export default function SidekickInsp1Page() {
 
         setIsSubmitting(true)
         try {
+            // SOURCE TRACKING: sidekick_insp1 + UTMs
+            const utmSource = searchParams.get('utm_source')
+            const utmMedium = searchParams.get('utm_medium')
+            const utmCampaign = searchParams.get('utm_campaign')
+            const utmContent = searchParams.get('utm_content')
+
             const response = await fetch('/api/capture-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, source: 'sidekick_insp1' })
+                body: JSON.stringify({
+                    email,
+                    source: 'sidekick_insp1',
+                    utmSource,
+                    utmMedium,
+                    utmCampaign,
+                    utmContent
+                })
             })
 
             if (response.ok) {
