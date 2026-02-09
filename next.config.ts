@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: '/sidekick_insp1',
         permanent: true,
       },
+      {
+        source: '/cheatsheet',
+        destination: '/sidekick_insp2',
+        permanent: true,
+      },
     ]
   },
 };
