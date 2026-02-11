@@ -387,7 +387,7 @@ function Insp1Content() {
                         variants={fadeInUp}
                     >
                         <p className="text-xl">
-                            <strong>The Investment:</strong> Public enrollment is $149.<br />
+                            <strong>Public enrollment is $149.</strong><br />
                             Download the pdf to lock in the <span className="text-teal font-extrabold">$99 &quot;Early Adopter&quot; rate</span>.
                         </p>
                     </motion.div>
