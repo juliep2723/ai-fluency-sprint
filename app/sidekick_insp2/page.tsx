@@ -345,7 +345,7 @@ function Insp2Content() {
                         variants={fadeInUp}
                     >
                         <p className="text-xl">
-                            <strong>Public Price:</strong> $149.<br />
+                            Public Price: $149.<br />
                             Earlybird Rate: <span className="text-teal font-extrabold">$99</span>.
                         </p>
                     </motion.div>
