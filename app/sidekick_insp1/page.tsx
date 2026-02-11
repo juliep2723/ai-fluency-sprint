@@ -43,8 +43,9 @@ function Insp1Content() {
     const searchParams = useSearchParams()
     const [email, setEmail] = useState('')
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [interactionSource, setInteractionSource] = useState<string | null>(null)
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent, formLocation: string) => {
         e.preventDefault()
         if (!email || isSubmitting) return
 
@@ -62,6 +63,8 @@ function Insp1Content() {
                 body: JSON.stringify({
                     email,
                     source: 'sidekick_insp1',
+                    formLocation,
+                    interactionSource,
                     utmSource,
                     utmMedium,
                     utmCampaign,
@@ -79,7 +82,8 @@ function Insp1Content() {
         }
     }
 
-    const scrollToCapture = () => {
+    const scrollToCapture = (source: string) => {
+        setInteractionSource(source)
         document.getElementById('hero-capture')?.scrollIntoView({ behavior: 'smooth' })
     }
 
@@ -137,7 +141,7 @@ function Insp1Content() {
 
                     {/* High-Visibility Email Capture Form */}
                     <motion.form
-                        onSubmit={handleSubmit}
+                        onSubmit={(e) => handleSubmit(e, 'hero_top')}
                         className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-6 bg-white/10 p-2 rounded-2xl backdrop-blur-sm border border-white/20 shadow-2xl"
                         variants={fadeInUp}
                     >
@@ -215,9 +219,9 @@ function Insp1Content() {
                         variants={fadeInUp}
                     >
                         <Button
-                            onClick={scrollToCapture}
+                            onClick={() => scrollToCapture('hook_button_middle')}
                             size="lg"
-                            className="bg-white text-navy border-2 border-navy hover:bg-navy hover:text-white px-10 py-6 text-lg font-bold shadow-[4px_4px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all rounded-xl"
+                            className="bg-white text-navy border-2 border-navy hover:bg-[#0F172A] hover:text-white px-10 py-6 text-lg font-bold shadow-[4px_4px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all rounded-xl"
                         >
                             Get The Cheat Sheet →
                         </Button>
@@ -305,7 +309,7 @@ function Insp1Content() {
                         variants={fadeInUp}
                     >
                         <Button
-                            onClick={scrollToCapture}
+                            onClick={() => scrollToCapture('menu_button_bottom')}
                             size="lg"
                             className="bg-teal hover:bg-teal/90 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:scale-105 transition-all"
                         >
@@ -384,7 +388,7 @@ function Insp1Content() {
                     >
                         <p className="text-xl">
                             <strong>The Investment:</strong> Public enrollment is $149.<br />
-                            Join the waitlist today to lock in the <span className="text-teal font-extrabold">$99 &quot;Early Adopter&quot; rate</span>.
+                            Download the pdf to lock in the <span className="text-teal font-extrabold">$99 &quot;Early Adopter&quot; rate</span>.
                         </p>
                     </motion.div>
                 </motion.div>
@@ -415,7 +419,7 @@ function Insp1Content() {
 
                     {/* Second Email Capture Form */}
                     <motion.form
-                        onSubmit={handleSubmit}
+                        onSubmit={(e) => handleSubmit(e, 'footer_bottom')}
                         className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-6 bg-white p-2 rounded-2xl border-2 border-navy shadow-[8px_8px_0px_rgba(15,23,42,0.1)]"
                         variants={fadeInUp}
                     >

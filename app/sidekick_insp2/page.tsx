@@ -32,8 +32,9 @@ function Insp2Content() {
     const searchParams = useSearchParams()
     const [email, setEmail] = useState('')
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [interactionSource, setInteractionSource] = useState<string | null>(null)
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent, formLocation: string) => {
         e.preventDefault()
         if (!email || isSubmitting) return
 
@@ -51,6 +52,8 @@ function Insp2Content() {
                 body: JSON.stringify({
                     email,
                     source: 'sidekick_insp2',
+                    formLocation,
+                    interactionSource,
                     utmSource,
                     utmMedium,
                     utmCampaign,
@@ -68,7 +71,8 @@ function Insp2Content() {
         }
     }
 
-    const scrollToCapture = () => {
+    const scrollToCapture = (source: string) => {
+        setInteractionSource(source)
         document.getElementById('hero-capture')?.scrollIntoView({ behavior: 'smooth' })
     }
 
@@ -131,7 +135,7 @@ function Insp2Content() {
                     </motion.p>
 
                     <motion.form
-                        onSubmit={handleSubmit}
+                        onSubmit={(e) => handleSubmit(e, 'hero_top')}
                         className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-6 bg-white/10 p-2 rounded-2xl backdrop-blur-sm border border-white/20 shadow-2xl"
                         variants={fadeInUp}
                     >
@@ -195,7 +199,7 @@ function Insp2Content() {
                         variants={fadeInUp}
                     >
                         <Button
-                            onClick={scrollToCapture}
+                            onClick={() => scrollToCapture('hook_button_middle')}
                             size="lg"
                             className="bg-navy text-white hover:bg-navy/90 px-10 py-6 text-lg font-bold shadow-lg hover:translate-y-[-2px] transition-all rounded-xl"
                         >
@@ -342,7 +346,7 @@ function Insp2Content() {
                     >
                         <p className="text-xl">
                             <strong>Public Price:</strong> $149.<br />
-                            Waitlist Rate: <span className="text-teal font-extrabold">$99</span>.
+                            Earlybird Rate: <span className="text-teal font-extrabold">$99</span>.
                         </p>
                     </motion.div>
                 </motion.div>
@@ -378,7 +382,7 @@ function Insp2Content() {
                     </motion.p>
 
                     <motion.form
-                        onSubmit={handleSubmit}
+                        onSubmit={(e) => handleSubmit(e, 'footer_bottom')}
                         className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-6 bg-white p-2 rounded-2xl border-2 border-navy shadow-[8px_8px_0px_rgba(15,23,42,0.1)]"
                         variants={fadeInUp}
                     >
