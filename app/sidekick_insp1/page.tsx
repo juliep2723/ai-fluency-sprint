@@ -136,7 +136,7 @@ function Insp1Content() {
                         className="text-xl md:text-2xl text-gray-100 mb-10 max-w-2xl mx-auto font-medium shadow-black drop-shadow-md leading-relaxed"
                         variants={fadeInUp}
                     >
-                        Stop fighting your life. Start managing it like a passive-aggressive genius.
+                        Stop fighting your life. Fix it in 5 minutes like a passive-aggressive genius.
                     </motion.p>
 
                     {/* High-Visibility Email Capture Form */}
