@@ -104,23 +104,23 @@ function Insp1Content() {
                 </div>
             </div>
 
-            {/* HERO SECTION - Messy Desk Background */}
-            <section id="hero-capture" className="relative min-h-[75vh] flex items-center justify-center py-20 px-6 overflow-hidden">
-                {/* Background Image with Overlay - Cropped */}
+            {/* HERO SECTION - Vault Background */}
+            <section id="hero-capture" className="relative min-h-[60vh] md:min-h-[75vh] flex flex-col justify-start pt-32 pb-8 px-6 overflow-hidden">
+                {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/hero-messy-desk.png"
-                        alt="Messy Desk Background"
+                        src="/hero_bg_vault.png"
+                        alt="Vault Background"
                         fill
-                        className="object-cover object-bottom" // Focus on bottom/center clutter
+                        className="object-cover object-center"
                         priority
                     />
-                    <div className="absolute inset-0 bg-navy/80 mix-blend-multiply" /> {/* Darken for text readability */}
+                    <div className="absolute inset-0 bg-navy/60 mix-blend-multiply" /> {/* Darken for text readability */}
                     <div className="absolute inset-0 bg-black/40" />
                 </div>
 
                 <motion.div
-                    className="relative z-10 max-w-4xl mx-auto text-center w-full mt-10"
+                    className="relative z-10 max-w-4xl mx-auto text-center w-full"
                     initial="hidden"
                     animate="visible"
                     variants={staggerContainer}
@@ -129,14 +129,14 @@ function Insp1Content() {
                         className="text-4xl md:text-6xl font-extrabold mb-6 text-white drop-shadow-lg tracking-tight"
                         variants={fadeInUp}
                     >
-                        The <span className="text-teal">&quot;Cheat Codes&quot;</span> for Real Life.
+                        <span className="text-teal">&quot;Cheat Codes&quot;</span> for Real Life
                     </motion.h1>
 
                     <motion.p
                         className="text-xl md:text-2xl text-gray-100 mb-10 max-w-2xl mx-auto font-medium shadow-black drop-shadow-md leading-relaxed"
                         variants={fadeInUp}
                     >
-                        Stop fighting your life. Fix it in 5 minutes like a passive-aggressive genius.
+                        Copy these into any chatbot to get relief from your landlord, your boss, and your toddler.
                     </motion.p>
 
                     {/* High-Visibility Email Capture Form */}
@@ -173,7 +173,7 @@ function Insp1Content() {
             </section>
 
             {/* THE HOOK SECTION - Paper Texture */}
-            <section className="py-24 px-6 relative overflow-hidden">
+            <section className="pt-12 pb-0 px-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-teal/5 rounded-full blur-3xl -z-10"></div>
 
                 <motion.div
@@ -230,7 +230,7 @@ function Insp1Content() {
             </section>
 
             {/* THE MENU SECTION - Scattered Papers */}
-            <section className="py-24 px-6 bg-gray-50">
+            <section className="py-12 px-6 bg-gray-50">
                 <motion.div
                     className="max-w-5xl mx-auto"
                     initial="hidden"
@@ -320,7 +320,7 @@ function Insp1Content() {
             </section>
 
             {/* TESTIMONIALS - Sticky Notes */}
-            <section className="py-20 px-6 bg-[url('/chaos-texture.png')]">
+            <section className="py-12 px-6 bg-[url('/chaos-texture.png')]">
                 <motion.div
                     className="max-w-4xl mx-auto"
                     initial="hidden"
@@ -353,7 +353,7 @@ function Insp1Content() {
             </section>
 
             {/* CONTEXT SECTION */}
-            <section className="py-24 px-6 bg-navy text-white">
+            <section className="py-12 px-6 bg-navy text-white">
                 <motion.div
                     className="max-w-3xl mx-auto text-center"
                     initial="hidden"
@@ -395,7 +395,7 @@ function Insp1Content() {
             </section>
 
             {/* FINAL CTA SECTION */}
-            <section className="py-24 px-6 bg-[#FDFCF8]">
+            <section className="py-12 px-6 bg-[#FDFCF8]">
                 <motion.div
                     className="max-w-3xl mx-auto text-center"
                     initial="hidden"
