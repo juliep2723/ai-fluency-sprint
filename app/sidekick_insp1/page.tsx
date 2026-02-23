@@ -105,7 +105,7 @@ function Insp1Content() {
             </div>
 
             {/* HERO SECTION - Vault Background */}
-            <section id="hero-capture" className="relative min-h-[60vh] md:min-h-[75vh] flex flex-col justify-start pt-32 pb-8 px-6 overflow-hidden">
+            <section id="hero-capture" className="relative min-h-[60vh] md:min-h-[55vh] flex flex-col justify-start pt-32 pb-8 px-6 overflow-hidden">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
