@@ -104,13 +104,13 @@ function Insp1Content() {
                 </div>
             </div>
 
-            {/* HERO SECTION - Vault Background */}
+            {/* HERO SECTION - Arcade Background */}
             <section id="hero-capture" className="relative min-h-[60vh] md:min-h-[55vh] flex flex-col justify-start pt-32 pb-8 px-6 overflow-hidden">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/hero_bg_vault.png"
-                        alt="Vault Background"
+                        src="/hero_bg_arcade.png"
+                        alt="Arcade Joystick Background"
                         fill
                         className="object-cover object-center"
                         priority
