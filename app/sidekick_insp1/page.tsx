@@ -115,8 +115,8 @@ function Insp1Content() {
                         className="object-cover object-center"
                         priority
                     />
-                    <div className="absolute inset-0 bg-navy/60 mix-blend-multiply" /> {/* Darken for text readability */}
-                    <div className="absolute inset-0 bg-black/40" />
+                    <div className="absolute inset-0 bg-navy/80 mix-blend-multiply" /> {/* Darken for text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80" />
                 </div>
 
                 <motion.div
