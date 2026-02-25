@@ -159,7 +159,7 @@ function Insp1Content() {
                             disabled={isSubmitting}
                             className="bg-teal hover:bg-teal/90 text-white px-8 py-5 text-xl font-bold rounded-xl shadow-[0_4px_0_rgb(15,23,42)] hover:shadow-[0_2px_0_rgb(15,23,42)] hover:translate-y-[2px] transition-all whitespace-nowrap"
                         >
-                            {isSubmitting ? 'Sending...' : 'Send It'}
+                            {isSubmitting ? 'Sending...' : 'Download Now'}
                         </Button>
                     </motion.form>
 
@@ -437,7 +437,7 @@ function Insp1Content() {
                             disabled={isSubmitting}
                             className="bg-navy hover:bg-navy/90 text-white px-10 py-4 text-xl font-bold rounded-xl transition-all whitespace-nowrap"
                         >
-                            {isSubmitting ? 'Sending...' : 'Send It'}
+                            {isSubmitting ? 'Sending...' : 'Download Now'}
                         </Button>
                     </motion.form>
 
