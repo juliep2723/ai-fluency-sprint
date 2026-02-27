@@ -142,43 +142,30 @@ function Insp4Content() {
                                 Your pushy neighbor just texted asking for another huge favor...
                             </h2>
                             {isRevealed ? (
-                                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-                                    <p className="text-xl md:text-2xl font-bold text-teal mb-4 pl-4 border-l-4 border-teal italic shadow-sm bg-navy/20 p-4 rounded-r-lg leading-relaxed">
-                                        &quot;...Paste it. &apos;I need to set a boundary. Write a short text that&apos;s warm but unmistakably firm. No apologies. No over-explaining.&apos;&quot;
-                                    </p>
-                                    <p className="text-xl text-gray-200 mt-6 font-bold">
-                                        That&apos;s Cheat Code #4. There are 6 more inside.
+                                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-4">
+                                    <div className="font-mono text-base md:text-lg text-teal p-6 bg-navy/50 rounded-xl border border-teal/30 shadow-inner whitespace-pre-wrap leading-relaxed">
+                                        <span className="text-white font-bold opacity-50 uppercase tracking-widest text-xs mb-2 block min-w-full">Prompt:</span>
+                                        I need to set a boundary with [DESCRIBE THE PERSON AND SITUATION].<br />
+                                        I want to say no to [WHAT THEY&apos;RE ASKING/DOING] without being rude, but also without leaving any wiggle room for them to push back.<br />
+                                        Write me a short message [SPECIFY DESIRED FORMAT: TEXT, EMAIL, OR IN-PERSON SCRIPT] that&apos;s warm but unmistakably firm.<br />
+                                        No apologies. No over-explaining. Just clear.
+                                    </div>
+                                    <p className="text-xl md:text-2xl text-white mt-4 font-bold drop-shadow-sm">
+                                        That&apos;s Cheat Code #4. There are 6 more:
                                     </p>
                                 </motion.div>
                             ) : (
-                                <div className="mt-12 relative h-16 md:h-20 bg-navy/80 border-2 border-teal/40 rounded-full flex items-center px-2 shadow-inner">
-                                    <input
-                                        type="range"
-                                        min="0"
-                                        max="100"
-                                        value={sliderValue}
-                                        onChange={handleSliderChange}
-                                        className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
-                                    />
-                                    {/* Progress track */}
-                                    <div
-                                        className="absolute h-full top-0 left-0 bg-teal/30 rounded-full z-0 transition-all duration-75"
-                                        style={{ width: `${sliderValue}%` }}
-                                    ></div>
-                                    <div
-                                        className="w-12 h-12 md:w-16 md:h-16 bg-teal rounded-full flex items-center justify-center shadow-lg z-10 transition-transform pointer-events-none"
-                                        style={{
-                                            // Make sure the thumb doesn't overflow
-                                            transform: `translateX(calc(${sliderValue} * (100% - 3rem) / 100))`,
-                                            // Handle offset difference on md screens and up (md:w-16 = 4rem) 
-                                            // But standardizing roughly works, standard css logic handles basic percent translation nicely
-                                        }}
+                                <div className="mt-10 flex justify-center">
+                                    <Button
+                                        onClick={() => setIsRevealed(true)}
+                                        size="lg"
+                                        className="bg-[#0F172A] hover:bg-[#1E293B] text-white border-2 border-teal/50 hover:border-teal px-8 py-8 text-xl md:text-2xl font-bold rounded-2xl shadow-xl transition-all group w-full flex items-center justify-center gap-4"
                                     >
-                                        <span className="text-navy text-2xl md:text-3xl font-extrabold">&rarr;</span>
-                                    </div>
-                                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 pl-8 text-white/80 font-bold tracking-wider uppercase text-sm md:text-lg">
-                                        Slide to unlock Cheat Code #4
-                                    </div>
+                                        Tap to unlock Cheat Code #4
+                                        <span className="bg-teal text-navy w-8 h-8 rounded-full flex items-center justify-center transform group-hover:translate-x-1 transition-transform">
+                                            &rarr;
+                                        </span>
+                                    </Button>
                                 </div>
                             )}
                         </div>
@@ -200,7 +187,7 @@ function Insp4Content() {
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="Enter your email to get the PDF"
+                                    placeholder="Enter your email to get all 7 cheat code prompts"
                                     required
                                     className="flex-1 px-6 py-5 rounded-xl text-navy text-lg font-medium placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-teal/50 shadow-inner bg-white"
                                 />
@@ -218,7 +205,7 @@ function Insp4Content() {
                                 className="text-lg md:text-xl text-gray-200 font-bold tracking-wide"
                                 variants={fadeInUp}
                             >
-                                📄 Free PDF • Arrives faster than a toddler meltdown
+                                📄 Free PDF • Arrives instantly
                             </motion.p>
                         </motion.div>
                     )}

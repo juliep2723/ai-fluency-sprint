@@ -181,9 +181,9 @@ function Insp3Content() {
                             className="w-full"
                         >
                             <p className="text-xl md:text-2xl text-teal font-bold mb-6 drop-shadow-md">
-                                {selectedDisaster === 'document' && "Great, Cheat Code #1 fixes exactly that. Where should we send it?"}
-                                {selectedDisaster === 'spreadsheet' && "Great, Cheat Code #7 fixes exactly that. Where should we send it?"}
-                                {selectedDisaster === 'neighbor' && "Great, Cheat Code #4 fixes exactly that. Where should we send it?"}
+                                {selectedDisaster === 'document' && "Great, prompt #1 in the Cheat Codes fixes exactly that!"}
+                                {selectedDisaster === 'spreadsheet' && "Great, prompt #7 in the Cheat Codes fixes exactly that!"}
+                                {selectedDisaster === 'neighbor' && "Great, prompt #4 in the Cheat Codes fixes exactly that!"}
                             </p>
 
                             {/* High-Visibility Email Capture Form */}
@@ -196,7 +196,7 @@ function Insp3Content() {
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="Enter your email to get the PDF"
+                                    placeholder="Enter your email to get all 7 cheat code prompts"
                                     required
                                     className="flex-1 px-6 py-5 rounded-xl text-navy text-lg font-medium placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-teal/50 shadow-inner bg-white"
                                 />
