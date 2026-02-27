@@ -143,15 +143,42 @@ function Insp4Content() {
                             </h2>
                             {isRevealed ? (
                                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-4">
-                                    <div className="font-mono text-base md:text-lg text-teal p-6 bg-navy/50 rounded-xl border border-teal/30 shadow-inner whitespace-pre-wrap leading-relaxed">
-                                        <span className="text-white font-bold opacity-50 uppercase tracking-widest text-xs mb-2 block min-w-full">Prompt:</span>
+                                    <div className="font-mono text-lg md:text-xl text-teal p-6 bg-navy rounded-xl border-2 border-teal shadow-2xl whitespace-pre-wrap leading-relaxed">
+                                        <span className="text-white font-bold uppercase tracking-widest text-sm mb-3 block min-w-full">PROMPT:</span>
                                         I need to set a boundary with [DESCRIBE THE PERSON AND SITUATION].<br />
                                         I want to say no to [WHAT THEY&apos;RE ASKING/DOING] without being rude, but also without leaving any wiggle room for them to push back.<br />
                                         Write me a short message [SPECIFY DESIRED FORMAT: TEXT, EMAIL, OR IN-PERSON SCRIPT] that&apos;s warm but unmistakably firm.<br />
                                         No apologies. No over-explaining. Just clear.
                                     </div>
-                                    <p className="text-xl md:text-2xl text-white mt-4 font-bold drop-shadow-sm">
+                                    <p className="text-2xl md:text-3xl text-white mt-6 font-bold drop-shadow-sm self-center text-center">
                                         That&apos;s Cheat Code #4. There are 6 more:
+                                    </p>
+
+                                    {/* Embedded High-Visibility Email Capture Form */}
+                                    <motion.form
+                                        initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
+                                        onSubmit={(e) => handleSubmit(e, 'hero_top_slider_revealed')}
+                                        className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto w-full mt-4 bg-white/10 p-3 rounded-2xl backdrop-blur-sm border border-white/20 shadow-2xl"
+                                    >
+                                        <input
+                                            type="email"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            placeholder="Enter your email to get all 7 cheat code prompts"
+                                            required
+                                            className="flex-1 px-6 py-5 rounded-xl text-navy text-lg font-medium placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-teal/50 shadow-inner bg-white"
+                                        />
+                                        <Button
+                                            type="submit"
+                                            size="lg"
+                                            disabled={isSubmitting}
+                                            className="bg-teal hover:bg-teal/90 text-white px-8 py-5 text-xl font-bold rounded-xl shadow-[0_4px_0_rgb(15,23,42)] hover:shadow-[0_2px_0_rgb(15,23,42)] hover:translate-y-[2px] transition-all whitespace-nowrap"
+                                        >
+                                            {isSubmitting ? 'Sending...' : 'Download Now'}
+                                        </Button>
+                                    </motion.form>
+                                    <p className="text-center text-lg md:text-xl text-gray-200 font-bold tracking-wide mt-2">
+                                        📄 Free PDF • Arrives instantly
                                     </p>
                                 </motion.div>
                             ) : (
@@ -171,44 +198,6 @@ function Insp4Content() {
                         </div>
                     </motion.div>
 
-                    {/* High-Visibility Email Capture Form - Only shows after revealed */}
-                    {isRevealed && (
-                        <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            className="w-full"
-                        >
-                            <motion.form
-                                onSubmit={(e) => handleSubmit(e, 'hero_top_slider_revealed')}
-                                className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-6 bg-white/10 p-2 rounded-2xl backdrop-blur-sm border border-white/20 shadow-2xl"
-                                variants={fadeInUp}
-                            >
-                                <input
-                                    type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="Enter your email to get all 7 cheat code prompts"
-                                    required
-                                    className="flex-1 px-6 py-5 rounded-xl text-navy text-lg font-medium placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-teal/50 shadow-inner bg-white"
-                                />
-                                <Button
-                                    type="submit"
-                                    size="lg"
-                                    disabled={isSubmitting}
-                                    className="bg-teal hover:bg-teal/90 text-white px-8 py-5 text-xl font-bold rounded-xl shadow-[0_4px_0_rgb(15,23,42)] hover:shadow-[0_2px_0_rgb(15,23,42)] hover:translate-y-[2px] transition-all whitespace-nowrap"
-                                >
-                                    {isSubmitting ? 'Sending...' : 'Download Now'}
-                                </Button>
-                            </motion.form>
-
-                            <motion.p
-                                className="text-lg md:text-xl text-gray-200 font-bold tracking-wide"
-                                variants={fadeInUp}
-                            >
-                                📄 Free PDF • Arrives instantly
-                            </motion.p>
-                        </motion.div>
-                    )}
                 </motion.div>
             </section>
 
