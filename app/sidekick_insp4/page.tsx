@@ -164,7 +164,7 @@ function Insp4Content() {
                                             type="email"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
-                                            placeholder="Enter your email to get all 7 cheat code prompts"
+                                            placeholder="Enter your email for all 7 prompts"
                                             required
                                             className="flex-1 px-6 py-5 rounded-xl text-navy text-lg font-medium placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-teal/50 shadow-inner bg-white"
                                         />
