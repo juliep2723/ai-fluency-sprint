@@ -101,7 +101,7 @@ function Insp4Content() {
     return (
         <main className="min-h-screen bg-[#FDFCF8]"> {/* Off-white paper background */}
             {/* Logo Header Bar - No navigation */}
-            <div className="fixed top-0 left-0 right-0 z-50 p-4 pointer-events-none">
+            <div className="absolute top-0 left-0 right-0 z-50 p-4 pointer-events-none">
                 <div className="max-w-6xl mx-auto flex justify-end">
                     <div className="bg-white/90 backdrop-blur-md shadow-sm rounded-full px-6 py-2 pointer-events-auto">
                         <Image
@@ -186,10 +186,10 @@ function Insp4Content() {
                                     <Button
                                         onClick={() => setIsRevealed(true)}
                                         size="lg"
-                                        className="bg-[#0F172A] hover:bg-[#1E293B] text-white border-2 border-teal/50 hover:border-teal px-8 py-8 text-xl md:text-2xl font-bold rounded-2xl shadow-xl transition-all group w-full flex items-center justify-center gap-4"
+                                        className="bg-[#0F172A] hover:bg-[#1E293B] text-white border-2 border-teal/50 hover:border-teal px-4 sm:px-8 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold rounded-2xl shadow-xl transition-all group w-full flex items-center justify-between sm:justify-center gap-3 h-auto whitespace-normal text-left sm:text-center shrink-0"
                                     >
-                                        Tap to unlock Cheat Code #4
-                                        <span className="bg-teal text-navy w-8 h-8 rounded-full flex items-center justify-center transform group-hover:translate-x-1 transition-transform">
+                                        <span className="flex-1">Tap to unlock Cheat Code #4</span>
+                                        <span className="bg-teal text-navy w-10 h-10 rounded-full flex items-center justify-center transform group-hover:translate-x-1 transition-transform shrink-0 shadow-md">
                                             &rarr;
                                         </span>
                                     </Button>
