@@ -2,7 +2,7 @@ import Stripe from 'stripe'
 import { headers } from 'next/headers'
 import { NextRequest, NextResponse } from 'next/server'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'dummy_key_for_build')
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!
 
@@ -24,10 +24,10 @@ export async function POST(req: NextRequest) {
   switch (event.type) {
     case 'checkout.session.completed':
       const session = event.data.object as Stripe.Checkout.Session
-      
+
       // Send welcome email
       await sendWelcomeEmail(session)
-      
+
       break
     default:
       console.log(`Unhandled event type ${event.type}`)
@@ -40,7 +40,7 @@ async function sendWelcomeEmail(session: Stripe.Checkout.Session) {
   // Get customer details
   const customerEmail = session.customer_email || session.customer_details?.email
   const customerName = session.customer_details?.name || 'there'
-  
+
   if (!customerEmail) {
     console.error('No customer email found')
     return
@@ -70,7 +70,7 @@ async function sendWelcomeEmail(session: Stripe.Checkout.Session) {
     `
   })
   */
-  
+
   // Option B: Log for now and handle manually
   console.log('New purchase:', {
     email: customerEmail,

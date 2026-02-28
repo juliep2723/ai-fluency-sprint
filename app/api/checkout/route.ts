@@ -1,7 +1,7 @@
 import Stripe from 'stripe'
 import { NextResponse } from 'next/server'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'dummy_key_for_build')
 
 export async function POST() {
   try {
@@ -32,16 +32,16 @@ export async function POST() {
     return NextResponse.json({ url: session.url })
   } catch (error) {
     console.error('Stripe checkout error:', error)
-    
+
     // More detailed error for debugging
     const errorMessage = error instanceof Error ? error.message : 'Unknown error'
     const errorDetails = {
       message: errorMessage,
       type: error instanceof Error ? error.constructor.name : typeof error
     }
-    
+
     console.error('Error details:', errorDetails)
-    
+
     return NextResponse.json(
       { error: 'Failed to create checkout session', details: errorMessage },
       { status: 500 }
