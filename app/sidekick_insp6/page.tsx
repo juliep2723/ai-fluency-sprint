@@ -195,7 +195,7 @@ function Insp6Content() {
                                     No apologies. No over-explaining. Just clear.
                                 </div>
                                 <p className="text-2xl md:text-3xl text-white mt-6 font-bold drop-shadow-sm self-center text-center">
-                                    There are 6 more inside the PDF. Where should we send them?
+                                    There are 6 more inside the PDF.
                                 </p>
 
                                 {/* Embedded High-Visibility Email Capture Form */}
@@ -232,7 +232,7 @@ function Insp6Content() {
             </section>
 
             {/* THE MENU SECTION - Scattered Papers */}
-            <section ref={hookRef} className="pt-24 pb-12 px-6 bg-gray-50">
+            <section ref={hookRef} className="pt-12 pb-12 px-6 bg-gray-50">
                 <motion.div
                     className="max-w-5xl mx-auto"
                     initial="hidden"

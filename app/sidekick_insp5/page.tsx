@@ -261,7 +261,7 @@ function Insp5Content() {
             </section>
 
             {/* THE MENU SECTION - Scattered Papers */}
-            <section ref={hookRef} className="pt-24 pb-12 px-6 bg-gray-50">
+            <section ref={hookRef} className="pt-12 pb-12 px-6 bg-gray-50">
                 <motion.div
                     className="max-w-5xl mx-auto"
                     initial="hidden"
