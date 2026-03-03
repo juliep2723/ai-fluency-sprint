@@ -327,7 +327,7 @@ function Insp5Content() {
                         <Button
                             onClick={() => {
                                 if (typeof window !== 'undefined' && (window as any).gtag) {
-                                    (window as any).gtag('event', 'menu_button_click', { page_source: 'sidekick_insp5' });
+                                    (window as any).gtag('event', 'anchor_click', { page_source: 'sidekick_insp5' });
                                 }
                                 scrollToCapture('menu_button_bottom')
                             }}
