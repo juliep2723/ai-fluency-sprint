@@ -372,7 +372,7 @@ function Insp5Content() {
                         className="text-lg md:text-xl text-gray-500 font-bold"
                         variants={fadeInUp}
                     >
-                        No credit card. No spam. Just relief.
+                        📄 Free PDF • Arrives instantly
                     </motion.p>
                 </motion.div>
             </section>
