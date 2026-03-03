@@ -246,65 +246,8 @@ function Insp5Content() {
                 </motion.div>
             </section>
 
-            {/* THE HOOK SECTION - Paper Texture */}
-            <section ref={hookRef} className="pt-12 pb-0 px-6 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-teal/5 rounded-full blur-3xl -z-10"></div>
-
-                <motion.div
-                    className="max-w-3xl mx-auto relative"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={staggerContainer}
-                >
-                    <motion.h2
-                        className="text-3xl md:text-5xl font-bold text-navy mb-8 leading-tight"
-                        variants={fadeInUp}
-                    >
-                        Rookie Mistake: <span className="bg-yellow-100 px-2 py-1 transform -rotate-1 inline-block">Trying to handle it all</span> with your own tired brain.
-                    </motion.h2>
-
-                    <motion.p
-                        className="text-xl text-gray-700 mb-8 leading-relaxed"
-                        variants={fadeInUp}
-                    >
-                        You just watched the video. You know the vibe. You&apos;re staring at a parking ticket, a crying child, or a passive-aggressive email from &quot;Karen in HR,&quot; and you&apos;re wondering:
-                    </motion.p>
-
-                    <motion.blockquote
-                        className="text-2xl font-bold text-teal mb-10 pl-6 border-l-4 border-teal italic"
-                        variants={fadeInUp}
-                    >
-                        &quot;Is it possible to fake my own death just to get out of this?&quot;
-                    </motion.blockquote>
-
-                    <motion.div
-                        className="bg-navy text-white p-8 rounded-2xl shadow-xl transform rotate-1 mb-12"
-                        variants={fadeInUp}
-                    >
-                        <h3 className="text-2xl font-bold mb-4 text-center">Don&apos;t spiral. Outsource the spiral.</h3>
-                        <p className="text-lg text-gray-300 text-center">
-                            You don&apos;t need a &quot;productivity system.&quot; You need a <strong>Fixer</strong>. You need the specific words to say to make the problem go away so you can go back to eating cheese in peace.
-                        </p>
-                    </motion.div>
-
-                    <motion.div
-                        className="text-center"
-                        variants={fadeInUp}
-                    >
-                        <Button
-                            onClick={() => scrollToCapture('hook_button_middle')}
-                            size="lg"
-                            className="bg-white text-navy border-2 border-navy hover:bg-[#0F172A] hover:text-white px-10 py-6 text-lg font-bold shadow-[4px_4px_0px_rgba(15,23,42,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all rounded-xl"
-                        >
-                            Get The Cheat Sheet →
-                        </Button>
-                    </motion.div>
-                </motion.div>
-            </section>
-
             {/* THE MENU SECTION - Scattered Papers */}
-            <section className="py-12 px-6 bg-gray-50">
+            <section ref={hookRef} className="pt-24 pb-12 px-6 bg-gray-50">
                 <motion.div
                     className="max-w-5xl mx-auto"
                     initial="hidden"
@@ -317,13 +260,13 @@ function Insp5Content() {
                         variants={fadeInUp}
                     >
                         <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4 inline-block relative">
-                            Fix one disaster <em>today</em>.
+                            Fix one disaster <em>today</em> with AI.
                             <svg className="absolute w-full h-4 -bottom-2 left-0 text-yellow-300 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="12" fill="none" />
                             </svg>
                         </h2>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto mt-6">
-                            This isn&apos;t a tech manual. It&apos;s a &quot;Get Out of Jail Free&quot; card for adulthood.
+                            Copy. Paste. Breathe easier.
                         </p>
                     </motion.div>
 
@@ -391,14 +334,14 @@ function Insp5Content() {
                         className="text-4xl md:text-5xl font-bold text-navy mb-6 tracking-tight"
                         variants={fadeInUp}
                     >
-                        Stop reacting. Start &quot;Lawyering Up.&quot;
+                        Don&apos;t spiral. Outsource the spiral.
                     </motion.h2>
 
                     <motion.p
                         className="text-lg text-gray-600 mb-10"
                         variants={fadeInUp}
                     >
-                        (Metaphorically. Please don&apos;t actually sue anyone.)
+                        You don&apos;t need a &quot;productivity system.&quot; You need a Fixer. You need the specific words to say to make the problem go away so you can go back to eating cheese in peace.
                     </motion.p>
 
                     {/* Second Email Capture Form */}
@@ -411,7 +354,7 @@ function Insp5Content() {
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Enter your email"
+                            placeholder="Enter email for the pdf"
                             required
                             className="flex-1 px-6 py-4 rounded-xl text-navy text-lg focus:outline-none focus:ring-2 focus:ring-teal"
                         />
