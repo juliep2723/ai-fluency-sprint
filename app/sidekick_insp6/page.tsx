@@ -85,7 +85,7 @@ function Insp6Content() {
         navigator.clipboard.writeText(promptText);
         setIsCopied(true);
         if (typeof window !== 'undefined' && (window as any).gtag) {
-            (window as any).gtag('event', 'hero_interaction', { page_source: 'sidekick_insp6', interaction_type: 'copy_prompt' });
+            (window as any).gtag('event', 'copy_prompt', { page_source: 'sidekick_insp6' });
         }
         setTimeout(() => setIsCopied(false), 2000);
     }
