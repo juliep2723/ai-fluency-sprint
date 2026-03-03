@@ -183,7 +183,7 @@ function Insp5Content() {
                 >
                     <motion.div className="w-full max-w-3xl mx-auto mb-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 shadow-2xl overflow-hidden" variants={fadeInUp}>
                         <div className="p-8 text-left">
-                            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight drop-shadow-md">
+                            <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-6 leading-tight drop-shadow-md">
                                 Your pushy neighbor just texted asking for another huge favor...
                             </h2>
                             {isRevealed ? (

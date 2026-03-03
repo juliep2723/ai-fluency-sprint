@@ -174,8 +174,8 @@ function Insp6Content() {
                 >
                     <motion.div className="w-full max-w-3xl mx-auto mb-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 shadow-2xl overflow-hidden" variants={fadeInUp}>
                         <div className="p-8 text-left">
-                            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight drop-shadow-md">
-                                Here is Cheat Code #4. You can literally copy-paste it right now to handle that pushy neighbor.
+                            <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-6 leading-tight drop-shadow-md">
+                                Your pushy neighbor just texted asking for another huge favor... Use this prompt.
                             </h2>
                             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-4">
                                 <div className="relative font-mono text-lg md:text-xl text-teal p-6 bg-navy rounded-xl border-2 border-teal shadow-2xl whitespace-pre-wrap leading-relaxed group mt-4">
