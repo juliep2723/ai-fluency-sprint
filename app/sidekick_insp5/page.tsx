@@ -283,7 +283,7 @@ function Insp5Content() {
                         <motion.div variants={scaleIn}>
                             <Card className="p-6 shadow-sm border border-gray-200 bg-white h-full rounded-xl">
                                 <h3 className="text-xl font-bold text-navy mb-2">The Passive-Aggressive Translator</h3>
-                                <p className="text-gray-700 mb-3">Boss said &quot;Let&apos;s circle back.&quot;</p>
+                                <p className="text-gray-700 mb-3">Boss said &quot;Let&apos;s put a pin in it.&quot;</p>
                                 <p className="text-teal font-semibold">The Cheat: A reply that makes you look professional and un-fireable.</p>
                             </Card>
                         </motion.div>
@@ -315,7 +315,7 @@ function Insp5Content() {
                             size="lg"
                             className="bg-teal hover:bg-teal/90 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:scale-105 transition-all"
                         >
-                            Grab The Codes →
+                            Grab The Prompts →
                         </Button>
                     </motion.div>
                 </motion.div>
