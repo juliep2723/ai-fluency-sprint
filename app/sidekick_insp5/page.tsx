@@ -51,9 +51,11 @@ function Insp5Content() {
 
     const hookRef = useRef<HTMLElement>(null)
     const hasFiredScroll = useRef(false)
+    const secondSectionRef = useRef<HTMLElement>(null)
+    const hasFiredSecondScroll = useRef(false)
 
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
+        const observer1 = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting && !hasFiredScroll.current) {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
                     (window as any).gtag('event', 'scroll_past_hero', { page_source: 'sidekick_insp5' });
@@ -62,10 +64,22 @@ function Insp5Content() {
             }
         }, { threshold: 0.1 });
 
-        if (hookRef.current) {
-            observer.observe(hookRef.current);
-        }
-        return () => observer.disconnect();
+        const observer2 = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !hasFiredSecondScroll.current) {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'scroll_past_second_section', { page_source: 'sidekick_insp5' });
+                }
+                hasFiredSecondScroll.current = true;
+            }
+        }, { threshold: 0.1 });
+
+        if (hookRef.current) observer1.observe(hookRef.current);
+        if (secondSectionRef.current) observer2.observe(secondSectionRef.current);
+
+        return () => {
+            observer1.disconnect();
+            observer2.disconnect();
+        };
     }, []);
 
     const handleCopy = () => {
@@ -311,7 +325,12 @@ function Insp5Content() {
                         variants={fadeInUp}
                     >
                         <Button
-                            onClick={() => scrollToCapture('menu_button_bottom')}
+                            onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                    (window as any).gtag('event', 'menu_button_click', { page_source: 'sidekick_insp5' });
+                                }
+                                scrollToCapture('menu_button_bottom')
+                            }}
                             size="lg"
                             className="bg-teal hover:bg-teal/90 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:scale-105 transition-all"
                         >
@@ -322,7 +341,7 @@ function Insp5Content() {
             </section>
 
             {/* FINAL CTA SECTION */}
-            <section className="py-12 px-6 bg-[#FDFCF8]">
+            <section ref={secondSectionRef} className="py-12 px-6 bg-[#FDFCF8]">
                 <motion.div
                     className="max-w-3xl mx-auto text-center"
                     initial="hidden"
