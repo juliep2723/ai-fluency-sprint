@@ -122,6 +122,11 @@ function Insp8Content() {
         document.getElementById('hero-capture')?.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const scrollToBottomCapture = (source: string) => {
+        setInteractionSource(source)
+        document.getElementById('bottom-capture')?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <main className="min-h-screen bg-[#FDFCF8]"> {/* Off-white paper background */}
             {/* Logo Header Bar - No navigation */}
@@ -140,14 +145,14 @@ function Insp8Content() {
             </div>
 
             {/* HERO SECTION - Clean Background */}
-            <section id="hero-capture" className="relative flex flex-col justify-center pt-32 pb-16 px-6 overflow-hidden">
+            <section id="hero-capture" className="relative flex flex-col justify-center pt-32 pb-4 px-6 overflow-hidden">
                 <motion.div
                     className="relative z-10 max-w-4xl mx-auto text-center w-full"
                     initial="hidden"
                     animate="visible"
                     variants={staggerContainer}
                 >
-                    <motion.div className="w-full max-w-3xl mx-auto mb-8 bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden" variants={fadeInUp}>
+                    <motion.div className="w-full max-w-3xl mx-auto mb-2 bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden" variants={fadeInUp}>
                         <div className="p-8 text-left">
                             <h2 className="text-2xl md:text-4xl font-extrabold text-navy mb-6 leading-tight">
                                 Your pushy neighbor just texted asking for another favor...
@@ -197,7 +202,7 @@ function Insp8Content() {
             </section>
 
             {/* THE MENU SECTION - Scattered Papers */}
-            <section ref={hookRef} className="pt-12 pb-12 px-6 bg-gray-50">
+            <section ref={hookRef} className="pt-8 pb-12 px-6 bg-gray-50">
                 <motion.div
                     className="max-w-5xl mx-auto"
                     initial="hidden"
@@ -226,7 +231,7 @@ function Insp8Content() {
                             <Card className="p-8 shadow-lg border-2 border-navy bg-white w-full rounded-tr-[30px] rounded-bl-[30px]">
                                 <div className="text-3xl mb-4">💬</div>
                                 <h3 className="text-2xl font-bold text-navy mb-3">The &quot;Polite but Firm&quot; Email Draft</h3>
-                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> For neighbor drama. Tricky coworkers. Anyone you wish you could ghost. <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_polite_firm', { page_source: 'sidekick_insp8' }); } scrollToCapture('menu_item_1'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
+                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> For neighbor drama. Tricky coworkers. Anyone you wish you could ghost. <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_polite_firm', { page_source: 'sidekick_insp8' }); } scrollToBottomCapture('menu_item_1'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
                             </Card>
                         </motion.div>
 
@@ -235,7 +240,7 @@ function Insp8Content() {
                             <Card className="p-8 shadow-lg border-2 border-navy bg-white w-full rounded-tl-[30px] rounded-br-[30px]">
                                 <div className="text-3xl mb-4">📝</div>
                                 <h3 className="text-2xl font-bold text-navy mb-3">The &quot;School Form → Calendar&quot; Fix</h3>
-                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> Snap a photo of a flyer. Get a ready-to-use calendar event. <em>20 seconds. No app.</em> <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_school_form', { page_source: 'sidekick_insp8' }); } scrollToCapture('menu_item_2'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
+                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> Snap a photo of a flyer. Get a ready-to-use calendar event. <em>20 seconds. No app.</em> <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_school_form', { page_source: 'sidekick_insp8' }); } scrollToBottomCapture('menu_item_2'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
                             </Card>
                         </motion.div>
 
@@ -244,7 +249,7 @@ function Insp8Content() {
                             <Card className="p-8 shadow-lg border-2 border-navy bg-white w-full rounded-xl">
                                 <div className="text-3xl mb-4">🍽️</div>
                                 <h3 className="text-2xl font-bold text-navy mb-3">The &quot;What&apos;s for Dinner?&quot; Lifeline</h3>
-                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> Paste your groceries → Get 3 meal plans. Plus leftovers ideas. Zero mental load. <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_dinner_plan', { page_source: 'sidekick_insp8' }); } scrollToCapture('menu_item_3'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
+                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> Paste your groceries → Get 3 meal plans. Plus leftovers ideas. Zero mental load. <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_dinner_plan', { page_source: 'sidekick_insp8' }); } scrollToBottomCapture('menu_item_3'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
                             </Card>
                         </motion.div>
 
@@ -253,7 +258,7 @@ function Insp8Content() {
                             <Card className="p-8 shadow-lg border-2 border-navy bg-white w-full rounded-tr-[30px]">
                                 <div className="text-3xl mb-4">📊</div>
                                 <h3 className="text-2xl font-bold text-navy mb-3">The &quot;Clean Up This Spreadsheet&quot; Button</h3>
-                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> Messy data? Scattered notes? AI cleans it up like it&apos;s getting paid. <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_spreadsheet', { page_source: 'sidekick_insp8' }); } scrollToCapture('menu_item_4'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
+                                <p className="text-lg text-gray-800"><span className="font-bold">Prompt:</span> Messy data? Scattered notes? AI cleans it up like it&apos;s getting paid. <button onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag) { (window as any).gtag('event', 'anchor_click_menu_spreadsheet', { page_source: 'sidekick_insp8' }); } scrollToBottomCapture('menu_item_4'); }} className="text-teal hover:text-teal/80 hover:underline font-bold ml-1 transition-colors">Get the prompt</button></p>
                             </Card>
                         </motion.div>
                     </motion.div>
@@ -280,7 +285,7 @@ function Insp8Content() {
             </section>
 
             {/* FINAL CTA SECTION */}
-            <section ref={secondSectionRef} className="py-12 px-6 bg-[#FDFCF8]">
+            <section ref={secondSectionRef} id="bottom-capture" className="py-12 px-6 bg-[#FDFCF8]">
                 <motion.div
                     className="max-w-3xl mx-auto text-center"
                     initial="hidden"
