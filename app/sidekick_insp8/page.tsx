@@ -211,7 +211,7 @@ function Insp8Content() {
                     variants={staggerContainer}
                 >
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center mb-12"
                         variants={fadeInUp}
                     >
                         <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4 inline-block relative">
