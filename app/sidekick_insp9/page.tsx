@@ -165,7 +165,7 @@ function Insp9Content() {
                     <motion.div className="w-full max-w-3xl mx-auto mb-2 bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden" variants={fadeInUp}>
                         <div className="p-8 text-left">
                             <h2 className="text-2xl md:text-4xl font-extrabold text-navy mb-6 leading-tight">
-                                You know AI could save you hours... but what do you actually ask it?
+                                You know AI could help you... but what do you actually use it for?
                             </h2>
                             {isRevealed ? (
                                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-4">
@@ -245,7 +245,7 @@ function Insp9Content() {
                         variants={fadeInUp}
                     >
                         <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4 inline-block relative">
-                            Fix one disaster <em>today</em> with AI.
+                            Solve one problem <em>today</em> with AI.
                             <svg className="absolute w-full h-4 -bottom-2 left-0 text-yellow-300 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="12" fill="none" />
                             </svg>
