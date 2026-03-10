@@ -57,7 +57,7 @@ function Insp9Content() {
         const observer1 = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting && !hasFiredScroll.current) {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
-                    (window as any).gtag('event', 'scroll_past_hero', { page_source: 'sidekick_insp7' });
+                    (window as any).gtag('event', 'scroll_past_hero', { page_source: 'sidekick_insp9' });
                 }
                 hasFiredScroll.current = true;
             }
@@ -66,7 +66,7 @@ function Insp9Content() {
         const observer2 = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting && !hasFiredSecondScroll.current) {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
-                    (window as any).gtag('event', 'scroll_past_second_section', { page_source: 'sidekick_insp7' });
+                    (window as any).gtag('event', 'scroll_past_second_section', { page_source: 'sidekick_insp9' });
                 }
                 hasFiredSecondScroll.current = true;
             }
