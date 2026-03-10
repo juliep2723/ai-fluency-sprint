@@ -212,7 +212,7 @@ function Insp7Content() {
                                         onClick={() => {
                                             setIsRevealed(true)
                                             if (typeof window !== 'undefined' && (window as any).gtag) {
-                                                (window as any).gtag('event', 'hero_interaction', { page_source: 'sidekick_insp5', interaction_type: 'tap_to_unlock' });
+                                                (window as any).gtag('event', 'hero_interaction', { page_source: 'sidekick_insp7', interaction_type: 'tap_to_unlock' });
                                             }
                                         }}
                                         size="lg"
