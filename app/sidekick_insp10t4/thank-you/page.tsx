@@ -1,0 +1,91 @@
+'use client'
+
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { motion } from 'framer-motion'
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6 }
+    }
+}
+
+const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.1
+        }
+    }
+}
+
+export default function ThankYouPage() {
+    return (
+        <main className="min-h-screen flex flex-col">
+            <div className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+                <div className="max-w-6xl mx-auto px-6 py-3 flex justify-end">
+                    <Image
+                        src="/Logo_transparent_backround.png"
+                        alt="AI Strategy"
+                        width={280}
+                        height={80}
+                        className="h-14 md:h-16 w-auto object-contain"
+                    />
+                </div>
+            </div>
+
+            <section className="flex-1 flex items-center justify-center py-24 px-6 bg-navy text-white pt-28">
+                <motion.div
+                    className="max-w-2xl mx-auto text-center"
+                    initial="hidden"
+                    animate="visible"
+                    variants={staggerContainer}
+                >
+                    <motion.div className="flex justify-center mb-8" variants={fadeInUp}>
+                        <div className="w-20 h-20 bg-teal rounded-full flex items-center justify-center">
+                            <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                    </motion.div>
+
+                    <motion.h1 className="text-4xl md:text-5xl font-bold mb-6" variants={fadeInUp}>
+                        You&apos;re In!
+                    </motion.h1>
+
+                    <motion.p className="text-xl text-gray-300 mb-8 leading-relaxed" variants={fadeInUp}>
+                        Your <span className="text-teal font-semibold">&quot;Cheat Codes for Real Life&quot;</span> PDF is ready. Go ahead — your chaos management era starts now.
+                    </motion.p>
+
+                    <motion.div variants={fadeInUp}>
+                        <a href="/downloads/cheat-codes-for-real-life.pdf" download>
+                            <Button
+                                size="lg"
+                                className="bg-teal hover:bg-teal/90 hover:scale-105 text-white px-12 py-6 text-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+                            >
+                                Download Your Cheat Codes (PDF)
+                            </Button>
+                        </a>
+                    </motion.div>
+                </motion.div>
+            </section>
+
+            <footer className="bg-navy text-white py-8 px-6 border-t border-white/10">
+                <div className="max-w-6xl mx-auto text-center">
+                    <p className="text-lg font-semibold mb-2">AI Strategy LLC</p>
+                    <div className="flex justify-center gap-6 text-sm opacity-80">
+                        <Link href="/privacy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+                        <Link href="/terms" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
+                    </div>
+                    <p className="text-sm opacity-60 mt-4">&copy; 2026 AI Strategy LLC. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    )
+}
