@@ -167,7 +167,7 @@ function Insp10gContent() {
                     <motion.div className="w-full max-w-3xl mx-auto mb-2 bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden" variants={fadeInUp}>
                         <div className="p-8 text-left">
                             <h2 className="text-2xl md:text-4xl font-extrabold text-navy mb-6 leading-tight">
-                                He&apos;s three eggnogs deep and just said, &quot;You know what the real problem is?&quot;
+                                Your brother is three eggnogs deep and just said, &quot;You know what the real problem is?&quot;
                             </h2>
                             {isRevealed ? (
                                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-4">
@@ -225,13 +225,13 @@ function Insp10gContent() {
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">You, panicking:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
-                                            My toddler just learned the F-word and we&apos;re going into church. Give me an adorable, believable cover story I can deploy instantly if he says it, acting as a Child Psychologist and a PR Crisis Manager.
+                                            My 4-year-old just learned the F-word. Church is in 30 seconds. Give me a cover story I can deploy instantly if he says it, acting as a Child Psychologist and a PR Crisis Manager.
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
                                         <p className="text-sm font-bold text-navy mb-2 uppercase tracking-wider">AI, unbothered:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
-                                            <em>&quot;Oh! He said FORK. He&apos;s really into utensils right now.&quot;</em> Add casually: &quot;Montessori phase. Very culinary.&quot; If needed, mime stabbing with an imaginary fork.
+                                            <em>&quot;Oh! He said FORK. He&apos;s really into utensils right now.&quot;</em> If needed, add: &quot;Montessori phase. Very culinary.&quot;
                                         </p>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@ function Insp10gContent() {
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
                                         <p className="text-sm font-bold text-navy mb-2 uppercase tracking-wider">AI, not judging:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
-                                            98% chance: Boredom. 1%: Mild regret. 1%: Fat fingers. Rookie mistake: responding at all. Keep your dignity.
+                                            98% chance: Boredom. 1%: Mild regret. 1%: Fat fingers. Keep your dignity — don&apos;t respond at all.
                                         </p>
                                     </div>
                                 </div>
@@ -275,7 +275,7 @@ function Insp10gContent() {
                         className="text-3xl md:text-4xl font-bold text-navy mb-4 tracking-tight"
                         variants={fadeInUp}
                     >
-                        7 more. At least one will hit close to home.
+                        7 more. At least one will hit close to home...
                     </motion.h2>
 
                     <motion.p
