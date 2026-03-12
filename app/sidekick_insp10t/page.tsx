@@ -225,13 +225,13 @@ function Insp10tContent() {
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">You, panicking:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
-                                            My brother is three eggnogs deep at dinner and just started a sentence with &quot;You know what the real problem is?&quot; I need an emergency topic change he won&apos;t notice.
+                                            My brother is three eggnogs deep at dinner and just started a sentence with &quot;You know what the real problem is?&quot; <strong>I need an emergency topic change he won&apos;t notice.</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-sm font-bold text-navy mb-2 uppercase tracking-wider">AI, unbothered:</p>
+                                        <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">AI, unbothered:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
-                                            Try saying, <em>&quot;Wait—stop. Does this gravy taste like soap to you?&quot;</em> Nothing kills a political rant faster than the fear of poisoned food.
+                                            Try saying, <strong>&quot;Wait—stop. Does this gravy taste like soap to you?&quot;</strong> Nothing kills a political rant faster than the fear of poisoned food.
                                         </p>
                                     </div>
                                 </div>
@@ -246,13 +246,13 @@ function Insp10tContent() {
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">You, at 2am:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
-                                            My ex just texted &quot;hey&quot; at midnight. I&apos;m staring at it wondering if it&apos;s a meaningful hey, a bored hey, or a drunk hey. You are a Dating Coach and a Statistician. What are the odds this is destiny vs. Wi-Fi and whiskey?
+                                            My ex just texted &quot;hey&quot; at midnight. I&apos;m wondering if it&apos;s a meaningful hey, a bored hey, or a drunk hey. You are a Dating Coach and a Statistician. <strong>What are the odds this is destiny vs. Wi-Fi and whiskey?</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-sm font-bold text-navy mb-2 uppercase tracking-wider">AI, not judging:</p>
+                                        <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">AI, not judging:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
-                                            98% chance: Boredom. 1%: Mild regret. 1%: Fat fingers. Keep your dignity — don&apos;t respond at all.
+                                            98% chance: Boredom. 1%: Mild regret. 1%: Fat fingers. <strong>Keep your dignity — don&apos;t respond at all.</strong>
                                         </p>
                                     </div>
                                 </div>
