@@ -223,13 +223,13 @@ function Insp10tContent() {
                                 <h3 className="text-xl font-bold text-navy mb-4">🍽️ The Topic Changer</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
-                                        <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">You, panicking:</p>
+                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, panicking:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
                                             My brother is three eggnogs deep at dinner and just started a sentence with &quot;You know what the real problem is?&quot; <strong>I need an emergency topic change he won&apos;t notice.</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">AI, unbothered:</p>
+                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, unbothered:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
                                             Try saying, <strong>&quot;Wait—stop. Does this gravy taste like soap to you?&quot;</strong> Nothing kills a political rant faster than the fear of poisoned food.
                                         </p>
@@ -244,13 +244,13 @@ function Insp10tContent() {
                                 <h3 className="text-xl font-bold text-navy mb-4">📱 Midnight Dating Help</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
-                                        <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">You, at 2am:</p>
+                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, at 2am:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
                                             My ex just texted &quot;hey&quot; at midnight. I&apos;m wondering if it&apos;s a meaningful hey, a bored hey, or a drunk hey. You are a Dating Coach and a Statistician. <strong>What are the odds this is destiny vs. Wi-Fi and whiskey?</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-sm font-bold text-teal mb-2 uppercase tracking-wider">AI, not judging:</p>
+                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, not judging:</p>
                                         <p className="text-gray-800 text-base leading-relaxed">
                                             98% chance: Boredom. 1%: Mild regret. 1%: Fat fingers. <strong>Keep your dignity — don&apos;t respond at all.</strong>
                                         </p>
@@ -287,7 +287,7 @@ function Insp10tContent() {
 
                     <motion.form
                         onSubmit={(e) => handleSubmit(e, 'footer_bottom')}
-                        className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-6 bg-white p-2 rounded-2xl border-2 border-navy shadow-[8px_8px_0px_rgba(15,23,42,0.1)]"
+                        className="flex flex-col sm:flex-row sm:items-stretch gap-4 max-w-xl mx-auto mb-6 bg-white p-2 rounded-2xl border-2 border-navy shadow-[8px_8px_0px_rgba(15,23,42,0.1)]"
                         variants={fadeInUp}
                     >
                         <input
