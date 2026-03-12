@@ -220,7 +220,7 @@ function Insp10t4Content() {
                         {/* Card 1: The Topic Changer */}
                         <motion.div variants={scaleIn} className="md:transform md:-rotate-1 flex">
                             <Card className="p-6 shadow-lg border-2 border-navy bg-white w-full rounded-tr-[30px] rounded-bl-[30px]">
-                                <h3 className="text-xl font-bold text-navy mb-4">🍽️ The Topic Changer</h3>
+                                <h3 className="text-2xl font-bold text-navy mb-2">🍽️ The Topic Changer</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, panicking:</p>
@@ -241,7 +241,7 @@ function Insp10t4Content() {
                         {/* Card 2: Midnight Dating Help */}
                         <motion.div variants={scaleIn} className="md:transform md:rotate-1 md:mt-12 flex">
                             <Card className="p-6 shadow-lg border-2 border-navy bg-white w-full rounded-tl-[30px] rounded-br-[30px]">
-                                <h3 className="text-xl font-bold text-navy mb-4">📱 Midnight Dating Help</h3>
+                                <h3 className="text-2xl font-bold text-navy mb-2">📱 Midnight Dating Help</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, at 2am:</p>
@@ -262,7 +262,7 @@ function Insp10t4Content() {
                         {/* Card 3: Operation: Get the Teen to Use Words */}
                         <motion.div variants={scaleIn} className="md:transform md:-rotate-1 flex">
                             <Card className="p-6 shadow-lg border-2 border-navy bg-white w-full rounded-xl">
-                                <h3 className="text-xl font-bold text-navy mb-4">🤐 Operation: Get the Teen to Use Words</h3>
+                                <h3 className="text-2xl font-bold text-navy mb-2">🤐 Operation: Get the Teen to Use Words</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, exasperated:</p>
@@ -283,7 +283,7 @@ function Insp10t4Content() {
                         {/* Card 4: The Grandkid Decoder Ring */}
                         <motion.div variants={scaleIn} className="md:transform md:rotate-2 md:mt-12 flex">
                             <Card className="p-6 shadow-lg border-2 border-navy bg-white w-full rounded-tr-[30px]">
-                                <h3 className="text-xl font-bold text-navy mb-4">👵 The Grandkid Decoder Ring</h3>
+                                <h3 className="text-2xl font-bold text-navy mb-2">👵 The Grandkid Decoder Ring</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, confused:</p>
