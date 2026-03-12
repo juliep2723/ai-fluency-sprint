@@ -329,7 +329,7 @@ function Insp10g4Content() {
 
                     <motion.form
                         onSubmit={(e) => handleSubmit(e, 'footer_bottom')}
-                        className="flex flex-col sm:flex-row sm:items-stretch gap-4 max-w-xl mx-auto mb-6 bg-white p-2 rounded-2xl border-2 border-navy shadow-[8px_8px_0px_rgba(15,23,42,0.1)]"
+                        className="flex flex-col sm:flex-row sm:items-center gap-4 max-w-xl mx-auto mb-6 bg-white p-2 rounded-2xl border-2 border-navy shadow-[8px_8px_0px_rgba(15,23,42,0.1)]"
                         variants={fadeInUp}
                     >
                         <input
