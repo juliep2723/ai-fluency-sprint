@@ -288,7 +288,7 @@ function Insp10g4Content() {
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, confused:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
-                                            <strong>Translate this into Boomer</strong> so I understand what my nephew just texted me: &quot;No cap, the fit has drip. Bet.&quot;
+                                            <strong>Translate this into Boomer</strong> so I understand what my grandson just texted me: &quot;No cap, the fit has drip. Bet.&quot;
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
@@ -346,7 +346,7 @@ function Insp10g4Content() {
                             disabled={isSubmitting}
                             className="bg-navy hover:bg-navy/90 text-white px-10 py-4 text-xl font-bold rounded-xl transition-all whitespace-nowrap"
                         >
-                            {isSubmitting ? 'Sending...' : 'Send Me the PDF'}
+                            {isSubmitting ? 'Sending...' : 'Get the Prompts'}
                         </Button>
                     </motion.form>
 

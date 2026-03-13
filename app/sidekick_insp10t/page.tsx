@@ -304,7 +304,7 @@ function Insp10tContent() {
                             disabled={isSubmitting}
                             className="bg-navy hover:bg-navy/90 text-white px-10 py-4 text-xl font-bold rounded-xl transition-all whitespace-nowrap"
                         >
-                            {isSubmitting ? 'Sending...' : 'Send Me the PDF'}
+                            {isSubmitting ? 'Sending...' : 'Get the Prompts'}
                         </Button>
                     </motion.form>
 
