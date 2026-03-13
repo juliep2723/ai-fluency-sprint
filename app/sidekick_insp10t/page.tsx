@@ -282,7 +282,7 @@ function Insp10tContent() {
                         className="text-xl text-gray-600 mb-8"
                         variants={fadeInUp}
                     >
-                        Enter your email and return to your regularly scheduled chaos.
+                        Get the 7 prompts and return to your regularly scheduled chaos.
                     </motion.p>
 
                     <motion.form
