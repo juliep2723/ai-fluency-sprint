@@ -224,13 +224,13 @@ function Insp10gContent() {
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, panicking:</p>
-                                        <p className="text-gray-800 text-base leading-relaxed">
+                                        <p className="text-gray-800 text-lg leading-normal">
                                             My 4-year-old just learned the F-word. Church is in 30 seconds. <strong>Give me a cover story</strong> if he says it, acting as a Child Psychologist and a PR Crisis Manager.
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, unbothered:</p>
-                                        <p className="text-gray-800 text-base leading-relaxed">
+                                        <p className="text-gray-800 text-lg leading-normal">
                                             Try saying, <strong>&quot;He said FORK. He&apos;s really into utensils right now.&quot;</strong> If needed, add: &quot;Montessori phase. Very culinary.&quot;
                                         </p>
                                     </div>
@@ -245,13 +245,13 @@ function Insp10gContent() {
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, at 2am:</p>
-                                        <p className="text-gray-800 text-base leading-relaxed">
+                                        <p className="text-gray-800 text-lg leading-normal">
                                             My ex just texted &quot;hey&quot; at midnight. I&apos;m wondering if it&apos;s a meaningful hey, a bored hey, or a drunk hey. You are a Dating Coach and a Statistician. <strong>What are the odds this is destiny vs. Wi-Fi and whiskey?</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
                                         <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, not judging:</p>
-                                        <p className="text-gray-800 text-base leading-relaxed">
+                                        <p className="text-gray-800 text-lg leading-normal">
                                             98% chance: Boredom. 1%: Mild regret. 1%: Fat fingers. <strong>Keep your dignity — don&apos;t respond at all.</strong>
                                         </p>
                                     </div>
