@@ -166,7 +166,7 @@ function Insp10t4Content() {
                 >
                     <motion.div className="w-full max-w-3xl mx-auto mb-2 bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden" variants={fadeInUp}>
                         <div className="p-8 text-left">
-                            <h2 className="text-xl md:text-3xl font-extrabold text-navy mb-6 leading-tight">
+                            <h2 className="text-xl md:text-3xl font-extrabold text-navy mb-6 leading-snug">
                                 Your 4-year-old just learned the F-word. Church is in 30 seconds...
                             </h2>
                             {isRevealed ? (
@@ -177,7 +177,7 @@ function Insp10t4Content() {
                                     </div>
                                 </motion.div>
                             ) : (
-                                <div className="mt-10 flex justify-center">
+                                <div className="mt-8 flex justify-center">
                                     <Button
                                         onClick={() => {
                                             setIsRevealed(true);
