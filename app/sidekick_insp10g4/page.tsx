@@ -225,7 +225,7 @@ function Insp10g4Content() {
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
                                         <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, panicking:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
-                                            My 4-year-old just learned the F-word. Church is in 30 seconds. <strong>Give me a cover story</strong> if he says it, acting as a Child Psychologist and a PR Crisis Manager.
+                                            My 4-year-old just learned the F-word and we&apos;re walking into church. <strong>Give me a cover story</strong> if he says it, acting as a Child Psychologist and a PR Crisis Manager.
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
