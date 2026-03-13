@@ -279,7 +279,7 @@ function Insp10tContent() {
                     </motion.h2>
 
                     <motion.p
-                        className="text-lg text-gray-600 mb-8"
+                        className="text-xl text-gray-600 mb-8"
                         variants={fadeInUp}
                     >
                         Enter your email and return to your regularly scheduled chaos.
