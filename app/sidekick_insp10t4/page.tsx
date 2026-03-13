@@ -223,13 +223,13 @@ function Insp10t4Content() {
                                 <h3 className="text-2xl font-bold text-navy mb-2">🍽️ The Topic Changer</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, panicking:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, panicking:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             My brother is three eggnogs deep at dinner and just started a sentence with &quot;You know what the real problem is?&quot; <strong>I need an emergency topic change he won&apos;t notice.</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, unbothered:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">AI, unbothered:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             Try saying, <strong>&quot;Wait—stop. Does this gravy taste like soap to you?&quot;</strong> Nothing kills a political rant faster than the fear of poisoned food.
                                         </p>
@@ -244,13 +244,13 @@ function Insp10t4Content() {
                                 <h3 className="text-2xl font-bold text-navy mb-2">📱 Midnight Dating Help</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, at 2am:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, at 2am:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             My ex just texted &quot;hey&quot; at midnight. I&apos;m wondering if it&apos;s a meaningful hey, a bored hey, or a drunk hey. You are a Dating Coach and a Statistician. <strong>What are the odds this is destiny vs. Wi-Fi and whiskey?</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, not judging:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">AI, not judging:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             98% chance: Boredom. 1%: Mild regret. 1%: Fat fingers. <strong>Keep your dignity — don&apos;t respond at all.</strong>
                                         </p>
@@ -265,13 +265,13 @@ function Insp10t4Content() {
                                 <h3 className="text-2xl font-bold text-navy mb-2">🤐 Operation: Get the Teen to Use Words</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, exasperated:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, exasperated:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             My teen hasn&apos;t said more than one syllable since September. You are an FBI Interrogator and a Teen Anthropologist. <strong>What psychological trick unlocks teen speech?</strong>
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, working the case:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">AI, working the case:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             Use side-by-side interaction (car rides, dishes). Then: <strong>say something wrong on purpose so they have to correct you.</strong> Rookie mistake: direct questions. Teens smell desperation.
                                         </p>
@@ -286,13 +286,13 @@ function Insp10t4Content() {
                                 <h3 className="text-2xl font-bold text-navy mb-2">👵 The Grandkid Decoder Ring</h3>
                                 <div className="space-y-3">
                                     <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">You, confused:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, confused:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             <strong>Translate this into Boomer</strong> so I understand what my nephew just texted me: &quot;No cap, the fit has drip. Bet.&quot;
                                         </p>
                                     </div>
                                     <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
-                                        <p className="text-base font-bold text-teal mb-2 uppercase tracking-wider">AI, fluent in Gen Z:</p>
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">AI, fluent in Gen Z:</p>
                                         <p className="text-gray-800 text-lg leading-normal">
                                             Full sentence in Boomer: <strong>&quot;I&apos;m being serious — your outfit looks really cool. Absolutely.&quot;</strong>
                                         </p>
