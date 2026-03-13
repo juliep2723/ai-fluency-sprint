@@ -166,7 +166,7 @@ function Insp10t4Content() {
                 >
                     <motion.div className="w-full max-w-3xl mx-auto mb-2 bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden" variants={fadeInUp}>
                         <div className="p-8 text-left">
-                            <h2 className="text-2xl md:text-4xl font-extrabold text-navy mb-6 leading-tight">
+                            <h2 className="text-xl md:text-3xl font-extrabold text-navy mb-6 leading-tight">
                                 Your 4-year-old just learned the F-word. Church is in 30 seconds...
                             </h2>
                             {isRevealed ? (
@@ -199,7 +199,7 @@ function Insp10t4Content() {
             </section>
 
             {/* SECTION 2 — Conversation Cards */}
-            <section ref={hookRef} className="pt-8 pb-12 px-6 bg-gray-50">
+            <section ref={hookRef} className="pt-8 pb-6 px-6 bg-gray-50">
                 <motion.div
                     className="max-w-5xl mx-auto"
                     initial="hidden"
@@ -207,7 +207,7 @@ function Insp10t4Content() {
                     viewport={{ once: true }}
                     variants={staggerContainer}
                 >
-                    <motion.div className="text-center mb-12" variants={fadeInUp}>
+                    <motion.div className="text-center mb-6" variants={fadeInUp}>
                         <h2 className="text-3xl md:text-4xl font-bold text-navy mb-2 inline-block relative">
                             Meanwhile, in other crises...
                             <svg className="absolute w-full h-4 -bottom-2 left-0 text-yellow-300 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
