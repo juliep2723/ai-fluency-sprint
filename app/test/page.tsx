@@ -191,6 +191,47 @@ function TestContent() {
                                 </div>
                             </Card>
                         </motion.div>
+                        {/* Card 3: Operation: Get the Teen to Use Words */}
+                        <motion.div variants={scaleIn} className="md:transform md:-rotate-1 flex">
+                            <Card className="p-6 shadow-lg border-2 border-navy bg-white w-full rounded-xl">
+                                <h3 className="text-2xl font-bold text-navy mb-2">🤐 Operation: Get the Teen to Use Words</h3>
+                                <div className="space-y-3">
+                                    <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, exasperated:</p>
+                                        <p className="text-gray-800 text-lg leading-normal">
+                                            My teen hasn&apos;t said more than one syllable since September. You are an FBI Interrogator and a Teen Anthropologist. <strong>What psychological trick unlocks teen speech?</strong>
+                                        </p>
+                                    </div>
+                                    <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">AI, working the case:</p>
+                                        <p className="text-gray-800 text-lg leading-normal">
+                                            Use side-by-side interaction (car rides, dishes). Then: <strong>say something wrong on purpose so they have to correct you.</strong> Rookie mistake: direct questions. Teens smell desperation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </motion.div>
+
+                        {/* Card 4: The Grandkid Decoder Ring */}
+                        <motion.div variants={scaleIn} className="md:transform md:rotate-2 md:mt-12 flex">
+                            <Card className="p-6 shadow-lg border-2 border-navy bg-white w-full rounded-tr-[30px]">
+                                <h3 className="text-2xl font-bold text-navy mb-2">👵 The Grandkid Decoder Ring</h3>
+                                <div className="space-y-3">
+                                    <div className="bg-teal/10 rounded-xl p-4 border border-teal/20">
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">You, confused:</p>
+                                        <p className="text-gray-800 text-lg leading-normal">
+                                            <strong>Translate this into Boomer</strong> so I understand what my grandson just texted me: &quot;No cap, the fit has drip. Bet.&quot;
+                                        </p>
+                                    </div>
+                                    <div className="bg-slate-100 rounded-xl p-4 border-l-4 border-navy">
+                                        <p className="text-base font-bold text-[#0D9488] mb-2 uppercase tracking-wider">AI, fluent in Gen Z:</p>
+                                        <p className="text-gray-800 text-lg leading-normal">
+                                            Full sentence in Boomer: <strong>&quot;I&apos;m being serious — your outfit looks really cool. Absolutely.&quot;</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </Card>
+                        </motion.div>
                     </motion.div>
                 </motion.div>
             </section>
